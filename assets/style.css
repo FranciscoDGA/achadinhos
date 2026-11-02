@@ -1603,19 +1603,64 @@ select {
 }
 
 @media (max-width: 860px) {
+  .container {
+    padding: 0 12px;
+  }
+
   .header-main {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .mobile-menu-btn {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    flex-shrink: 0;
+  }
+
+  .brand-logo {
+    flex: 1;
+    min-width: 0;
+    gap: 7px;
+  }
+
+  .brand-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .brand-title {
+    font-size: 1.02rem;
+    white-space: nowrap;
+  }
+
+  .brand-tagline {
+    font-size: 0.62rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-actions {
+    gap: 6px;
+    flex-shrink: 0;
+    margin-left: auto;
   }
 
   .search-wrapper {
     order: 3;
     max-width: 100%;
     flex: 1 1 100%;
+  }
+
+  .search-input {
+    height: 40px;
+    font-size: 0.86rem;
+    padding: 0 72px 0 14px;
   }
 
   .header-actions .header-action-link:first-child,
@@ -1629,6 +1674,15 @@ select {
 
   .subnav-dropdown-wrap {
     display: none;
+  }
+
+  .hero-section {
+    padding: 10px 0 6px;
+  }
+
+  .hero-banner,
+  .hero-full-link {
+    border-radius: 14px;
   }
 
   .hero-fallback-wrap {
@@ -1654,19 +1708,43 @@ select {
   .category-cards-scroll {
     display: flex;
     overflow-x: auto;
-    gap: 10px;
-    padding-bottom: 8px;
+    gap: 8px;
+    padding-bottom: 6px;
     scroll-snap-type: x mandatory;
   }
 
   .category-card-btn {
-    flex: 0 0 104px;
+    flex: 0 0 96px;
+    min-height: 92px;
+    padding: 10px 6px;
     scroll-snap-align: start;
   }
 
-  /* Filtros num botão "Filtrar" que abre um painel no celular */
+  /* Barra de título + botão Filtrar + Ordenação ajustados em 100% da tela */
+  .section-title {
+    font-size: 1.12rem;
+  }
+
+  .vitrine-controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
   .mobile-filter-trigger {
     display: inline-flex;
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .sort-select {
+    flex: 1;
+    min-width: 0;
+    height: 36px;
+    font-size: 0.78rem;
+    padding: 0 8px;
   }
 
   .vitrine-layout {
@@ -1702,39 +1780,101 @@ select {
     display: inline-block;
   }
 
-  /* Cards em 2 colunas no celular */
+  /* Cards em 2 colunas perfeitamente alinhados no celular */
   .products-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px;
   }
 
   .product-card {
-    padding: 10px;
+    padding: 9px;
+    min-width: 0;
+  }
+
+  .card-top-badges {
+    gap: 4px;
+    margin-bottom: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .rank-badge {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 56px);
+  }
+
+  .card-Quick-actions {
+    gap: 3px;
+    flex-shrink: 0;
+  }
+
+  .card-icon-btn {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card-icon-btn svg {
+    width: 13px;
+    height: 13px;
   }
 
   .card-image-link {
-    height: 125px;
+    height: 118px;
+    padding: 6px;
+    margin-bottom: 8px;
   }
 
   .card-image {
-    max-height: 112px;
+    max-height: 104px;
+  }
+
+  .card-category-tag {
+    font-size: 0.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .card-title {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+    min-height: 2.1rem;
   }
 
   .card-price-value {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
+  }
+
+  .card-consulted-date {
+    font-size: 0.64rem;
+    margin-bottom: 8px;
   }
 
   .card-cta-btn {
-    font-size: 0.75rem;
-    padding: 9px 8px;
+    font-size: 0.72rem;
+    padding: 8px 6px;
+    gap: 4px;
+  }
+
+  .card-Sub-cta {
+    font-size: 0.64rem;
+  }
+
+  /* Campeões de vendas em 1 coluna confortável no celular */
+  .leaders-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .info-grid {
     grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .info-card {
+    padding: 18px;
   }
 
   .footer-top {
