@@ -272,6 +272,31 @@
     <!-- ======================= VITRINE PRINCIPAL + FILTROS LATERAIS ======================= -->
     <section class="vitrine-section" id="vitrine" aria-labelledby="vitrineHeading">
       <div class="container">
+        <!-- Faixa "3 Passos para uma Compra Consciente" (Redução de Devoluções) -->
+        <div class="conscious-guide-strip" aria-label="Guia rápido de compra consciente">
+          <div class="conscious-step">
+            <span class="conscious-step-icon" aria-hidden="true">⚡</span>
+            <div class="conscious-step-text">
+              <strong>1. Confira Voltagem e Medidas</strong>
+              <span>Cheque 110V/220V, dimensões ou compatibilidade no anúncio antes de finalizar.</span>
+            </div>
+          </div>
+          <div class="conscious-step">
+            <span class="conscious-step-icon" aria-hidden="true">⭐</span>
+            <div class="conscious-step-text">
+              <strong>2. Olhe Avaliações e Fotos Reais</strong>
+              <span>Veja a nota do produto e fotos postadas por compradores reais no Mercado Livre.</span>
+            </div>
+          </div>
+          <div class="conscious-step">
+            <span class="conscious-step-icon" aria-hidden="true">🛡️</span>
+            <div class="conscious-step-text">
+              <strong>3. Compra Garantida Oficial</strong>
+              <span>Compare o frete para seu CEP e compre com proteção 100% oficial na plataforma.</span>
+            </div>
+          </div>
+        </div>
+
         <!-- Cabeçalho da Seção com Fonte Oficial e Botão Mobile de Filtro -->
         <div class="section-header vitrine-header">
           <div>
@@ -305,6 +330,28 @@
               </select>
             </div>
           </div>
+        </div>
+
+        <!-- Atalhos de "Escolha Segura" (Curadoria sem empurrometria) -->
+        <div class="smart-shortcuts-bar" id="smartShortcutsBar" role="toolbar" aria-label="Atalhos de escolha segura">
+          <button type="button" class="smart-pill active" data-preset="all">
+            <span>✨ Todos os 100</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="top1">
+            <span>🏆 Só os Top #1 (Líderes Absolutos)</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="top3">
+            <span>🔥 Pódio (1º ao 3º de cada categoria)</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="under100">
+            <span>💡 Dia a Dia até R$ 100</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="home">
+            <span>🏠 Casa &amp; Oficina</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="tech">
+            <span>🎧 Tech &amp; Games</span>
+          </button>
         </div>
 
         <div class="vitrine-layout">
@@ -360,6 +407,10 @@
                   <label class="radio-label">
                     <input type="radio" name="rankFilter" value="all" checked />
                     <span>Todos do Top 10</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="rankFilter" value="1" />
+                    <span>Apenas #1 (Líderes de cada categoria)</span>
                   </label>
                   <label class="radio-label">
                     <input type="radio" name="rankFilter" value="3" />
@@ -537,6 +588,37 @@
       </div>
     </div>
   </footer>
+
+  <!-- ======================= BARRA FLUTUANTE E MODAL DE COMPARAÇÃO (ATÉ 3 PRODUTOS) ======================= -->
+  <div class="compare-floating-bar" id="compareFloatingBar" hidden aria-live="polite">
+    <div class="container compare-bar-inner">
+      <div class="compare-bar-left">
+        <span class="compare-bar-title">⚖️ Comparar Lado a Lado (<span id="compareCountText">0</span>/3)</span>
+        <div class="compare-thumbs-list" id="compareThumbsList"></div>
+      </div>
+      <div class="compare-bar-actions">
+        <button type="button" class="compare-clear-btn" id="clearCompareBtn">Limpar</button>
+        <button type="button" class="compare-open-btn" id="openCompareModalBtn">
+          Comparar Agora &rarr;
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Comparador Lado a Lado -->
+  <div class="compare-modal-backdrop" id="compareModalBackdrop" hidden></div>
+  <div class="compare-modal" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareModalTitle" hidden>
+    <div class="compare-modal-header">
+      <div>
+        <h3 id="compareModalTitle">⚖️ Comparativo para Compra Consciente</h3>
+        <p>Compare posição no ranking, valor de referência e dicas antes de abrir no Mercado Livre</p>
+      </div>
+      <button type="button" class="compare-modal-close" id="closeCompareModalBtn" aria-label="Fechar comparativo">&times;</button>
+    </div>
+    <div class="compare-modal-body" id="compareModalBody">
+      <!-- Preenchido dinamicamente via JS -->
+    </div>
+  </div>
 
   <!-- Botão Flutuante Voltar ao Topo -->
   <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Voltar ao topo da página" hidden>

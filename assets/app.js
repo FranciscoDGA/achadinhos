@@ -1,8 +1,9 @@
 /**
  * ACHADINHOS ONLINES — Script Principal (assets/app.js)
  * Carrega products.json, organiza por categoria oficial do Mercado Livre,
- * gerencia busca em tempo real, filtros de preço/ranking, favoritos no navegador
- * e compartilhamento rápido no WhatsApp.
+ * gerencia busca em tempo real, filtros de preço/ranking, atalhos de escolha segura,
+ * lembretes de compra consciente (redução de devoluções), comparador lado a lado (até 3 itens),
+ * favoritos no navegador e compartilhamento rápido no WhatsApp.
  */
 
 (function () {
@@ -10,18 +11,68 @@
 
   const FAVORITES_STORAGE_KEY = 'achadinhos_ml_favorites_v1';
 
-  // Ícones das 10 categorias oficiais da página Mais Vendidos do Mercado Livre
+  // Ícones e dicas de "Compra Sem Erro" das 10 categorias oficiais do Mercado Livre
   const CATEGORY_META = {
-    'Games': { icon: '🎮', shortName: 'Games' },
-    'Eletrodomésticos': { icon: '🍳', shortName: 'Eletrodomésticos' },
-    'Ferramentas': { icon: '🛠️', shortName: 'Ferramentas' },
-    'Beleza e Cuidado Pessoal': { icon: '🧴', shortName: 'Beleza e Cuidado' },
-    'Celulares e Telefones': { icon: '📱', shortName: 'Celulares e Telefones' },
-    'Informática': { icon: '💻', shortName: 'Informática' },
-    'Eletrônicos, Áudio e Vídeo': { icon: '🎧', shortName: 'Eletrônicos e Áudio' },
-    'Esportes e Fitness': { icon: '⚽', shortName: 'Esportes e Fitness' },
-    'Calçados, Roupas e Bolsas': { icon: '👕', shortName: 'Calçados e Moda' },
-    'Acessórios para Veículos': { icon: '🛞', shortName: 'Acessórios Veículos' }
+    'Games': {
+      icon: '🎮',
+      shortName: 'Games',
+      cardTip: '🎮 Confira plataforma ou região da conta no ML',
+      categoryAlert: 'Dica de Compra Consciente: Para gift cards e jogos digitais, confirme a região da sua conta; para acessórios, verifique a compatibilidade com seu console/PC.'
+    },
+    'Eletrodomésticos': {
+      icon: '🍳',
+      shortName: 'Eletrodomésticos',
+      cardTip: '⚡ Confira a voltagem (110V ou 220V) no anúncio',
+      categoryAlert: 'Evite devoluções: Antes de finalizar no Mercado Livre, selecione a voltagem correta da sua tomada (110V ou 220V) e confira as dimensões do aparelho.'
+    },
+    'Ferramentas': {
+      icon: '🛠️',
+      shortName: 'Ferramentas',
+      cardTip: '⚡ Confira voltagem/bateria e itens da maleta',
+      categoryAlert: 'Evite devoluções: Verifique no anúncio a voltagem (110V/220V ou Bivolt) e a lista exata de brocas, baterias ou acessórios inclusos na embalagem.'
+    },
+    'Beleza e Cuidado Pessoal': {
+      icon: '🧴',
+      shortName: 'Beleza e Cuidado',
+      cardTip: '🧴 Confira volume/peso e avaliações de uso',
+      categoryAlert: 'Dica de Compra Consciente: Para aparelhos elétricos (secadores/escovas), confira a voltagem; para cosméticos, verifique a volumetria (ml/g) na descrição.'
+    },
+    'Celulares e Telefones': {
+      icon: '📱',
+      shortName: 'Celulares e Telefones',
+      cardTip: '📱 Confira memória (GB/RAM) na ficha técnica',
+      categoryAlert: 'Compra Segura: Confira a capacidade de armazenamento (GB), memória RAM e se o vendedor possui termômetro verde ou selo de Loja Oficial.'
+    },
+    'Informática': {
+      icon: '💻',
+      shortName: 'Informática',
+      cardTip: '💻 Confira conexões e especificações técnicas',
+      categoryAlert: 'Dica de Compra Consciente: Verifique conexões (USB, HDMI, Wi-Fi), sistema operacional e requisitos de compatibilidade na ficha técnica do anúncio.'
+    },
+    'Eletrônicos, Áudio e Vídeo': {
+      icon: '🎧',
+      shortName: 'Eletrônicos e Áudio',
+      cardTip: '🔌 Confira conexões e polegadas compatíveis',
+      categoryAlert: 'Evite erros de compatibilidade: Em suportes de TV, confira o padrão VESA e polegadas; em cabos e áudio, verifique o tipo de entrada do seu aparelho.'
+    },
+    'Esportes e Fitness': {
+      icon: '⚽',
+      shortName: 'Esportes e Fitness',
+      cardTip: '🏅 Confira peso/tamanho e tabela nutricional',
+      categoryAlert: 'Dica de Compra Consciente: Em suplementos, verifique o peso líquido (g/kg) e sabor selecionado; em equipamentos, confira o tamanho ou carga suportada.'
+    },
+    'Calçados, Roupas e Bolsas': {
+      icon: '👕',
+      shortName: 'Calçados e Moda',
+      cardTip: '📏 Confira a tabela de medidas (cm) no anúncio',
+      categoryAlert: 'Evite trocas de numeração: Consulte o Guia de Tamanhos (em centímetros) dentro do anúncio do Mercado Livre e veja nos comentários se a forma é normal.'
+    },
+    'Acessórios para Veículos': {
+      icon: '🛞',
+      shortName: 'Acessórios Veículos',
+      cardTip: '🚗 Confirme ano/modelo do seu veículo no ML',
+      categoryAlert: 'Evite devoluções: Use o verificador de compatibilidade de veículos do Mercado Livre ou confirme nas perguntas se a peça atende ao ano/modelo do seu carro ou moto.'
+    }
   };
 
   // Estado Global da Vitrine
@@ -30,11 +81,14 @@
     categories: [],
     searchQuery: '',
     selectedCategory: 'all',
+    categoryGroup: null, // 'home' | 'tech' | null
+    activePreset: 'all',
     maxPrice: 2500,
     maxRank: 'all',
     onlyFavorites: false,
     sortBy: 'rank',
-    favorites: new Set()
+    favorites: new Set(),
+    compareList: [] // IDs de até 3 produtos para comparação lado a lado
   };
 
   // Elementos do DOM
@@ -55,6 +109,7 @@
     priceRangeLabel: document.getElementById('priceRangeLabel'),
     onlyFavoritesToggle: document.getElementById('onlyFavoritesToggle'),
     sortSelect: document.getElementById('sortSelect'),
+    smartShortcutsBar: document.getElementById('smartShortcutsBar'),
     productsContainer: document.getElementById('productsContainer'),
     emptyState: document.getElementById('emptyState'),
     activeSectionTitle: document.getElementById('activeSectionTitle'),
@@ -78,11 +133,20 @@
     logoResetBtn: document.getElementById('logoResetBtn'),
     footerAllLink: document.getElementById('footerAllLink'),
     footerFavLink: document.getElementById('footerFavLink'),
-    backToTopBtn: document.getElementById('backToTopBtn')
+    backToTopBtn: document.getElementById('backToTopBtn'),
+    compareFloatingBar: document.getElementById('compareFloatingBar'),
+    compareCountText: document.getElementById('compareCountText'),
+    compareThumbsList: document.getElementById('compareThumbsList'),
+    clearCompareBtn: document.getElementById('clearCompareBtn'),
+    openCompareModalBtn: document.getElementById('openCompareModalBtn'),
+    compareModalBackdrop: document.getElementById('compareModalBackdrop'),
+    compareModal: document.getElementById('compareModal'),
+    closeCompareModalBtn: document.getElementById('closeCompareModalBtn'),
+    compareModalBody: document.getElementById('compareModalBody')
   };
 
   // =========================================================================
-  // UTILITÁRIOS DE FORMATAÇÃO
+  // UTILITÁRIOS DE FORMATAÇÃO E DICAS DE COMPRA CONSCIENTE
   // =========================================================================
   function formatCurrencyBRL(value) {
     return Number(value).toLocaleString('pt-BR', {
@@ -104,6 +168,18 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;')
       .replace(/'/g, '&#39;');
+  }
+
+  function getCategoryTip(categoryName) {
+    const meta = CATEGORY_META[categoryName];
+    return meta ? meta.cardTip : '✅ Confira descrição e avaliações no ML';
+  }
+
+  function getCategoryAlert(categoryName) {
+    const meta = CATEGORY_META[categoryName];
+    return meta
+      ? meta.categoryAlert
+      : 'Confira sempre as especificações técnicas e avaliações de compradores no anúncio oficial.';
   }
 
   // =========================================================================
@@ -154,6 +230,123 @@
   }
 
   // =========================================================================
+  // COMPARADOR LADO A LADO (ATÉ 3 PRODUTOS)
+  // =========================================================================
+  function toggleCompare(productId) {
+    const id = Number(productId);
+    const idx = state.compareList.indexOf(id);
+    if (idx >= 0) {
+      state.compareList.splice(idx, 1);
+    } else {
+      if (state.compareList.length >= 3) {
+        state.compareList.shift(); // Substitui o mais antigo se já tiver 3
+      }
+      state.compareList.push(id);
+    }
+    renderCompareBar();
+    renderProducts();
+  }
+
+  function renderCompareBar() {
+    if (!els.compareFloatingBar) return;
+    const count = state.compareList.length;
+    if (count === 0) {
+      els.compareFloatingBar.hidden = true;
+      return;
+    }
+
+    els.compareFloatingBar.hidden = false;
+    if (els.compareCountText) els.compareCountText.textContent = String(count);
+
+    const selectedProducts = state.compareList
+      .map((id) => state.products.find((p) => Number(p.id) === id))
+      .filter(Boolean);
+
+    if (els.compareThumbsList) {
+      els.compareThumbsList.innerHTML = selectedProducts
+        .map(
+          (p) => `
+          <div class="compare-thumb-chip" title="${escapeHtml(p.name)}">
+            <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" />
+            <span class="compare-thumb-name">${escapeHtml(p.name)}</span>
+            <button type="button" class="compare-thumb-remove" data-action="remove-compare" data-id="${p.id}" aria-label="Remover da comparação">&times;</button>
+          </div>
+        `
+        )
+        .join('');
+    }
+  }
+
+  function openCompareModal() {
+    if (!els.compareModal || !els.compareModalBody) return;
+    const selectedProducts = state.compareList
+      .map((id) => state.products.find((p) => Number(p.id) === id))
+      .filter(Boolean);
+
+    if (selectedProducts.length === 0) return;
+
+    const minPrice = Math.min(...selectedProducts.map((p) => Number(p.price)));
+    const minRank = Math.min(...selectedProducts.map((p) => Number(p.rank)));
+
+    const cardsHtml = selectedProducts
+      .map((p) => {
+        const isCheapest = selectedProducts.length > 1 && Number(p.price) === minPrice;
+        const isBestRank = selectedProducts.length > 1 && Number(p.rank) === minRank;
+        const shortDate = formatShortDate(p.consultedAt);
+
+        return `
+          <div class="compare-col-card">
+            <div class="compare-col-badges">
+              <span class="rank-badge ${p.rank === 1 ? 'rank-top1' : ''}">#${p.rank} em ${escapeHtml(p.category)}</span>
+              ${isBestRank ? '<span class="compare-win-badge">🏆 Melhor Ranking</span>' : ''}
+              ${isCheapest ? '<span class="compare-save-badge">💰 Menor Preço</span>' : ''}
+            </div>
+            <div class="compare-col-img-wrap">
+              <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="compare-col-img" />
+            </div>
+            <h4 class="compare-col-title">${escapeHtml(p.name)}</h4>
+            <div class="compare-col-price">
+              <strong>${formatCurrencyBRL(p.price)}</strong>
+              <span>Consultado em ${shortDate}</span>
+            </div>
+            <div class="compare-col-checklist">
+              <strong>🛡️ O que conferir no anúncio:</strong>
+              <p>${escapeHtml(getCategoryAlert(p.category))}</p>
+            </div>
+            <div class="compare-col-actions">
+              <a
+                href="${escapeHtml(p.affiliateUrl)}"
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                class="card-cta-btn"
+              >
+                <span>Ver no Mercado Livre</span>
+              </a>
+              <a
+                href="${escapeHtml(p.affiliateUrl)}"
+                target="_blank"
+                rel="sponsored nofollow noopener"
+                class="card-Sub-cta"
+              >
+                Conferir avaliações e ficha técnica &rarr;
+              </a>
+            </div>
+          </div>
+        `;
+      })
+      .join('');
+
+    els.compareModalBody.innerHTML = `<div class="compare-grid cols-${selectedProducts.length}">${cardsHtml}</div>`;
+    els.compareModalBackdrop.hidden = false;
+    els.compareModal.hidden = false;
+  }
+
+  function closeCompareModal() {
+    if (els.compareModal) els.compareModal.hidden = true;
+    if (els.compareModalBackdrop) els.compareModalBackdrop.hidden = true;
+  }
+
+  // =========================================================================
   // COMPARTILHAMENTO NO WHATSAPP
   // =========================================================================
   function shareOnWhatsApp(product) {
@@ -165,7 +358,7 @@
       `📦 *${product.name}*\n` +
       `🏆 ${product.rank}º mais vendido em ${product.category}\n` +
       `💰 Preço consultado em ${shortDate}: *${priceFormatted}*\n\n` +
-      `👉 Confira o preço atual no Mercado Livre:\n${link}`;
+      `👉 Confira avaliações, frete e preço atual no Mercado Livre:\n${link}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -190,13 +383,21 @@
     }));
   }
 
+  function updateSmartPillsUI() {
+    if (!els.smartShortcutsBar) return;
+    els.smartShortcutsBar.querySelectorAll('.smart-pill').forEach((btn) => {
+      const preset = btn.getAttribute('data-preset');
+      btn.classList.toggle('active', preset === state.activePreset);
+    });
+  }
+
   function renderNavigationAndCategories() {
     const totalCount = state.products.length;
 
     // 1. Subnav links
     if (els.subnavLinks) {
       const itemsHtml = [
-        `<li><button type="button" class="subnav-link-btn ${state.selectedCategory === 'all' ? 'active' : ''}" data-cat="all">Mais Vendidos (${totalCount})</button></li>`
+        `<li><button type="button" class="subnav-link-btn ${state.selectedCategory === 'all' && !state.categoryGroup ? 'active' : ''}" data-cat="all">Mais Vendidos (${totalCount})</button></li>`
       ];
       state.categories.forEach((cat) => {
         const isActive = state.selectedCategory === cat.name ? 'active' : '';
@@ -210,7 +411,7 @@
     // 2. Dropdown "Todas as Categorias"
     if (els.categoriesDropdownMenu) {
       const dropHtml = [
-        `<button type="button" class="dropdown-cat-item ${state.selectedCategory === 'all' ? 'active' : ''}" data-cat="all">
+        `<button type="button" class="dropdown-cat-item ${state.selectedCategory === 'all' && !state.categoryGroup ? 'active' : ''}" data-cat="all">
           <span>🏠 Todas as Categorias</span>
           <span class="dropdown-cat-count">${totalCount}</span>
         </button>`
@@ -230,7 +431,7 @@
     // 3. Cards de Categorias em Destaque
     if (els.categoryCardsGrid) {
       const cardsHtml = [
-        `<button type="button" role="tab" aria-selected="${state.selectedCategory === 'all'}" class="category-card-btn ${state.selectedCategory === 'all' ? 'active' : ''}" data-cat="all">
+        `<button type="button" role="tab" aria-selected="${state.selectedCategory === 'all' && !state.categoryGroup}" class="category-card-btn ${state.selectedCategory === 'all' && !state.categoryGroup ? 'active' : ''}" data-cat="all">
           <div class="cat-icon-box" aria-hidden="true">🔥</div>
           <span class="cat-card-name">Todas (${totalCount})</span>
         </button>`
@@ -275,26 +476,45 @@
         )
         .join('');
     }
+
+    updateSmartPillsUI();
   }
 
   // =========================================================================
   // RENDERIZAÇÃO DO CARD DE PRODUTO
   // =========================================================================
   function createProductCardHtml(product) {
-    const isFav = state.favorites.has(Number(product.id));
+    const id = Number(product.id);
+    const isFav = state.favorites.has(id);
+    const isCompared = state.compareList.includes(id);
     const shortDate = formatShortDate(product.consultedAt);
     const priceFormatted = formatCurrencyBRL(product.price);
     const rankClass = product.rank === 1 ? 'rank-badge rank-top1' : 'rank-badge';
     const rankLabel = product.rank === 1 ? '🏆 1º MAIS VENDIDO' : `${product.rank}º Mais Vendido`;
+    const smartTip = getCategoryTip(product.category);
 
     return `
-      <article class="product-card" data-product-id="${product.id}">
+      <article class="product-card ${isCompared ? 'card-compared' : ''}" data-product-id="${product.id}">
         <div>
           <div class="card-top-badges">
             <span class="${rankClass}" title="Posição no ranking de mais vendidos da categoria ${escapeHtml(product.category)}">
               ${rankLabel}
             </span>
             <div class="card-Quick-actions">
+              <button
+                type="button"
+                class="card-icon-btn compare-btn ${isCompared ? 'compare-active' : ''}"
+                data-action="compare"
+                data-id="${product.id}"
+                aria-label="${isCompared ? 'Remover da comparação' : 'Comparar lado a lado'}"
+                title="${isCompared ? 'Remover da comparação' : 'Comparar lado a lado (até 3)'}"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </button>
               <button
                 type="button"
                 class="card-icon-btn ${isFav ? 'fav-active' : ''}"
@@ -348,6 +568,10 @@
           >
             <h3 class="card-title">${escapeHtml(product.name)}</h3>
           </a>
+
+          <div class="card-smart-tip" title="${escapeHtml(getCategoryAlert(product.category))}">
+            ${escapeHtml(smartTip)}
+          </div>
         </div>
 
         <div class="card-price-box">
@@ -374,7 +598,7 @@
             rel="sponsored nofollow noopener"
             class="card-Sub-cta"
           >
-            Ver preço atual no Mercado Livre &rarr;
+            Conferir avaliações e ficha técnica &rarr;
           </a>
         </div>
       </article>
@@ -388,11 +612,16 @@
     const query = state.searchQuery.trim().toLowerCase();
 
     const filtered = state.products.filter((p) => {
-      // Categoria
-      if (state.selectedCategory !== 'all' && p.category !== state.selectedCategory) {
+      // Grupo de categorias dos Atalhos de Escolha Segura
+      if (state.categoryGroup === 'home') {
+        if (!['Eletrodomésticos', 'Ferramentas'].includes(p.category)) return false;
+      } else if (state.categoryGroup === 'tech') {
+        if (!['Games', 'Celulares e Telefones', 'Informática', 'Eletrônicos, Áudio e Vídeo'].includes(p.category)) return false;
+      } else if (state.selectedCategory !== 'all' && p.category !== state.selectedCategory) {
         return false;
       }
-      // Faixa de preço (se maxPrice < 2500 aplica teto; 2500 significa sem limite)
+
+      // Faixa de preço
       if (state.maxPrice < 2500 && Number(p.price) > state.maxPrice) {
         return false;
       }
@@ -430,6 +659,16 @@
     if (els.activeSectionTitle) {
       if (state.onlyFavorites) {
         els.activeSectionTitle.textContent = 'Meus Produtos Favoritos ❤️';
+      } else if (state.activePreset === 'top1') {
+        els.activeSectionTitle.textContent = 'Líderes Absolutos (#1 de Cada Categoria)';
+      } else if (state.activePreset === 'top3') {
+        els.activeSectionTitle.textContent = 'Pódio de Vendas (Top 1º ao 3º)';
+      } else if (state.activePreset === 'under100') {
+        els.activeSectionTitle.textContent = 'Utilidades do Dia a Dia até R$ 100';
+      } else if (state.categoryGroup === 'home') {
+        els.activeSectionTitle.textContent = 'Casa, Cozinha & Oficina';
+      } else if (state.categoryGroup === 'tech') {
+        els.activeSectionTitle.textContent = 'Tecnologia, Áudio & Games';
       } else if (state.selectedCategory !== 'all') {
         els.activeSectionTitle.textContent = `Mais vendidos em ${state.selectedCategory}`;
       } else {
@@ -444,6 +683,7 @@
     // Ponto indicador de filtro ativo no mobile
     const hasActiveFilter =
       state.selectedCategory !== 'all' ||
+      state.categoryGroup !== null ||
       state.maxPrice < 2500 ||
       state.maxRank !== 'all' ||
       state.onlyFavorites ||
@@ -461,9 +701,30 @@
 
     els.emptyState.hidden = true;
 
-    // Se estiver mostrando TODAS as categorias e ordenando por posição no ranking (padrão),
-    // agrupa visualmente por seção de categoria igual ao Mercado Livre
-    if (state.selectedCategory === 'all' && state.sortBy === 'rank' && !state.onlyFavorites && !state.searchQuery.trim()) {
+    // Se estiver mostrando uma única categoria selecionada, exibe o alerta educativo da categoria no topo
+    if (state.selectedCategory !== 'all' && !state.categoryGroup) {
+      const catAlert = getCategoryAlert(state.selectedCategory);
+      els.productsContainer.innerHTML = `
+        <div class="category-smart-banner">
+          <span class="category-smart-icon">🛡️</span>
+          <p>${escapeHtml(catAlert)}</p>
+        </div>
+        <div class="products-grid">
+          ${filtered.map(createProductCardHtml).join('')}
+        </div>
+      `;
+      return;
+    }
+
+    // Se estiver agrupado por categoria (visão padrão)
+    if (
+      state.selectedCategory === 'all' &&
+      !state.categoryGroup &&
+      state.sortBy === 'rank' &&
+      !state.onlyFavorites &&
+      !state.searchQuery.trim() &&
+      state.maxRank !== '1'
+    ) {
       const groupedHtml = [];
       state.categories.forEach((cat) => {
         const catProducts = filtered.filter((p) => p.category === cat.name);
@@ -472,10 +733,13 @@
         groupedHtml.push(`
           <div class="category-block" id="cat-${escapeHtml(cat.name)}">
             <div class="category-block-header">
-              <h3 class="category-block-title">
-                <span>${cat.icon}</span>
-                <span>Mais vendidos em ${escapeHtml(cat.name)}</span>
-              </h3>
+              <div>
+                <h3 class="category-block-title">
+                  <span>${cat.icon}</span>
+                  <span>Mais vendidos em ${escapeHtml(cat.name)}</span>
+                </h3>
+                <p class="category-block-tip">🛡️ ${escapeHtml(getCategoryAlert(cat.name))}</p>
+              </div>
               <span class="category-block-badge">Top ${catProducts.length}</span>
             </div>
             <div class="products-grid">
@@ -526,10 +790,56 @@
   }
 
   // =========================================================================
-  // SINCRONIZAÇÃO DE CONTROLES E EVENTOS
+  // ATALHOS DE ESCOLHA SEGURA E SINCRONIZAÇÃO DE FILTROS
   // =========================================================================
+  function applySmartPreset(preset) {
+    state.activePreset = preset;
+    state.onlyFavorites = false;
+    state.selectedCategory = 'all';
+    state.categoryGroup = null;
+    state.maxPrice = 2500;
+    state.maxRank = 'all';
+    state.sortBy = 'rank';
+
+    if (preset === 'top1') {
+      state.maxRank = '1';
+    } else if (preset === 'top3') {
+      state.maxRank = '3';
+    } else if (preset === 'under100') {
+      state.maxPrice = 100;
+      state.sortBy = 'price-asc';
+    } else if (preset === 'home') {
+      state.categoryGroup = 'home';
+    } else if (preset === 'tech') {
+      state.categoryGroup = 'tech';
+    }
+
+    // Sincroniza controles da sidebar
+    if (els.sidebarCategorySelect) els.sidebarCategorySelect.value = 'all';
+    if (els.priceRangeSlider) els.priceRangeSlider.value = state.maxPrice;
+    if (els.priceRangeLabel) {
+      els.priceRangeLabel.textContent =
+        state.maxPrice >= 2500 ? 'Até R$ 2.500+' : `Até ${formatCurrencyBRL(state.maxPrice)}`;
+    }
+    if (els.onlyFavoritesToggle) els.onlyFavoritesToggle.checked = false;
+    if (els.sortSelect) els.sortSelect.value = state.sortBy;
+
+    document.querySelectorAll('input[name="rankFilter"]').forEach((r) => {
+      r.checked = r.value === state.maxRank;
+    });
+    document.querySelectorAll('.price-chip').forEach((chip) => {
+      chip.classList.toggle('active', Number(chip.getAttribute('data-max')) === state.maxPrice && state.maxPrice < 2500);
+    });
+
+    updateFavoritesBadges();
+    renderNavigationAndCategories();
+    renderProducts();
+  }
+
   function setCategory(catName, scrollToVitrine = false) {
     state.selectedCategory = catName || 'all';
+    state.categoryGroup = null;
+    state.activePreset = state.selectedCategory === 'all' ? 'all' : '';
     if (els.sidebarCategorySelect) {
       els.sidebarCategorySelect.value = state.selectedCategory;
     }
@@ -543,31 +853,9 @@
 
   function resetAllFilters() {
     state.searchQuery = '';
-    state.selectedCategory = 'all';
-    state.maxPrice = 2500;
-    state.maxRank = 'all';
-    state.onlyFavorites = false;
-    state.sortBy = 'rank';
-
     if (els.searchInput) els.searchInput.value = '';
     if (els.clearSearchBtn) els.clearSearchBtn.hidden = true;
-    if (els.priceRangeSlider) els.priceRangeSlider.value = 2500;
-    if (els.priceRangeLabel) els.priceRangeLabel.textContent = 'Até R$ 2.500+';
-    if (els.onlyFavoritesToggle) els.onlyFavoritesToggle.checked = false;
-    if (els.sortSelect) els.sortSelect.value = 'rank';
-
-    const rankRadios = document.querySelectorAll('input[name="rankFilter"]');
-    rankRadios.forEach((r) => {
-      r.checked = r.value === 'all';
-    });
-
-    document.querySelectorAll('.price-chip').forEach((chip) => {
-      chip.classList.remove('active');
-    });
-
-    updateFavoritesBadges();
-    renderNavigationAndCategories();
-    renderProducts();
+    applySmartPreset('all');
   }
 
   function closeMobileDrawer() {
@@ -590,9 +878,11 @@
     if (els.searchInput) {
       els.searchInput.addEventListener('input', (e) => {
         state.searchQuery = e.target.value;
+        state.activePreset = '';
         if (els.clearSearchBtn) {
           els.clearSearchBtn.hidden = !state.searchQuery;
         }
+        updateSmartPillsUI();
         renderProducts();
       });
     }
@@ -614,7 +904,17 @@
       });
     }
 
-    // Clique nos cards de categoria, subnav e dropdown
+    // Atalhos de Escolha Segura
+    if (els.smartShortcutsBar) {
+      els.smartShortcutsBar.addEventListener('click', (e) => {
+        const pill = e.target.closest('[data-preset]');
+        if (!pill) return;
+        const preset = pill.getAttribute('data-preset');
+        applySmartPreset(preset);
+      });
+    }
+
+    // Cliques globais (Categorias, Favoritos, WhatsApp, Comparador)
     document.addEventListener('click', (e) => {
       // Categoria em qualquer botão com data-cat
       const catBtn = e.target.closest('[data-cat]');
@@ -626,7 +926,7 @@
         return;
       }
 
-      // Ações dentro do card de produto (Favoritar / WhatsApp)
+      // Ações dentro do card ou barra de comparação
       const actionBtn = e.target.closest('[data-action]');
       if (actionBtn) {
         e.preventDefault();
@@ -639,6 +939,8 @@
           toggleFavorite(id);
         } else if (action === 'share') {
           shareOnWhatsApp(product);
+        } else if (action === 'compare' || action === 'remove-compare') {
+          toggleCompare(id);
         }
         return;
       }
@@ -652,6 +954,24 @@
         els.categoriesDropdownMenu.hidden = true;
       }
     });
+
+    // Barra e Modal de Comparação
+    if (els.clearCompareBtn) {
+      els.clearCompareBtn.addEventListener('click', () => {
+        state.compareList = [];
+        renderCompareBar();
+        renderProducts();
+      });
+    }
+    if (els.openCompareModalBtn) {
+      els.openCompareModalBtn.addEventListener('click', openCompareModal);
+    }
+    if (els.closeCompareModalBtn) {
+      els.closeCompareModalBtn.addEventListener('click', closeCompareModal);
+    }
+    if (els.compareModalBackdrop) {
+      els.compareModalBackdrop.addEventListener('click', closeCompareModal);
+    }
 
     // Toggle Dropdown "Todas as Categorias"
     if (els.allCategoriesToggle && els.categoriesDropdownMenu) {
@@ -674,9 +994,11 @@
       els.priceRangeSlider.addEventListener('input', (e) => {
         const val = Number(e.target.value);
         state.maxPrice = val;
+        state.activePreset = '';
         if (els.priceRangeLabel) {
           els.priceRangeLabel.textContent = val >= 2500 ? 'Até R$ 2.500+' : `Até ${formatCurrencyBRL(val)}`;
         }
+        updateSmartPillsUI();
         renderProducts();
       });
     }
@@ -686,12 +1008,14 @@
       chip.addEventListener('click', () => {
         const max = Number(chip.getAttribute('data-max'));
         state.maxPrice = max;
+        state.activePreset = max === 100 ? 'under100' : '';
         if (els.priceRangeSlider) els.priceRangeSlider.value = max;
         if (els.priceRangeLabel) {
           els.priceRangeLabel.textContent = max >= 2500 ? 'Até R$ 2.500+' : `Até ${formatCurrencyBRL(max)}`;
         }
         document.querySelectorAll('.price-chip').forEach((c) => c.classList.remove('active'));
         chip.classList.add('active');
+        updateSmartPillsUI();
         renderProducts();
       });
     });
@@ -700,6 +1024,8 @@
     document.querySelectorAll('input[name="rankFilter"]').forEach((radio) => {
       radio.addEventListener('change', (e) => {
         state.maxRank = e.target.value;
+        state.activePreset = state.maxRank === '1' ? 'top1' : state.maxRank === '3' ? 'top3' : '';
+        updateSmartPillsUI();
         renderProducts();
       });
     });
@@ -708,6 +1034,8 @@
     if (els.onlyFavoritesToggle) {
       els.onlyFavoritesToggle.addEventListener('change', (e) => {
         state.onlyFavorites = e.target.checked;
+        state.activePreset = '';
+        updateSmartPillsUI();
         updateFavoritesBadges();
         renderProducts();
       });
@@ -717,7 +1045,9 @@
     if (els.headerFavBtn) {
       els.headerFavBtn.addEventListener('click', () => {
         state.onlyFavorites = !state.onlyFavorites;
+        state.activePreset = '';
         if (els.onlyFavoritesToggle) els.onlyFavoritesToggle.checked = state.onlyFavorites;
+        updateSmartPillsUI();
         updateFavoritesBadges();
         renderProducts();
         const vitrineEl = document.getElementById('vitrine');
@@ -728,7 +1058,9 @@
     if (els.drawerFavLink) {
       els.drawerFavLink.addEventListener('click', () => {
         state.onlyFavorites = true;
+        state.activePreset = '';
         if (els.onlyFavoritesToggle) els.onlyFavoritesToggle.checked = true;
+        updateSmartPillsUI();
         updateFavoritesBadges();
         renderProducts();
         closeMobileDrawer();
@@ -738,7 +1070,9 @@
     if (els.footerFavLink) {
       els.footerFavLink.addEventListener('click', () => {
         state.onlyFavorites = true;
+        state.activePreset = '';
         if (els.onlyFavoritesToggle) els.onlyFavoritesToggle.checked = true;
+        updateSmartPillsUI();
         updateFavoritesBadges();
         renderProducts();
       });
@@ -836,7 +1170,7 @@
         els.productsContainer.innerHTML = `
           <div class="empty-state">
             <h3>Não foi possível carregar o arquivo products.json</h3>
-            <p>Se você abriu o arquivo direto pelo computador (file://), use um servidor local ou suba os arquivos na HostGator para que o navegador permita carregar o products.json.</p>
+            <p>Se você abriu o arquivo direto pelo computador (file://), use um servidor local ou suba os arquivos na hospedagem para que o navegador permita carregar o products.json.</p>
           </div>
         `;
       }
