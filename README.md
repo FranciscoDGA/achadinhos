@@ -1,21 +1,24 @@
 # Achadinhos Onlines — Vitrine de Afiliados do Mercado Livre
 
-Site vitrine estático, rápido e responsivo (Desktop e Celular) desenvolvido para divulgação de produtos do **Programa de Afiliados do Mercado Livre**, organizado exatamente pelas 10 categorias da página oficial de **Mais Vendidos do Mercado Livre**.
+Site vitrine estático, rápido e responsivo (Desktop e Celular) desenvolvido para divulgação consciente de produtos do **Programa de Afiliados do Mercado Livre**, organizado pelas 10 categorias da página oficial de **Mais Vendidos do Mercado Livre**.
+
+> 📘 **Consulte também o [MANUAL-DO-PROJETO.md](MANUAL-DO-PROJETO.md)** na raiz desta pasta para o histórico completo do que criamos, seus códigos de afiliado (`matt_word` e `matt_tool`), funcionalidades de compra consciente e o passo a passo de atualização contínua pela **Vercel + GitHub**.
 
 ---
 
 ## 📁 Estrutura de Arquivos
 
 ```text
-├── index.html          # Página principal da vitrine
-├── products.json       # Base de dados com os 100 produtos separados do HTML
-├── README.md           # Este guia de instruções
+├── index.html             # Página principal da vitrine
+├── products.json          # Base de dados com os 100 produtos separados do HTML
+├── MANUAL-DO-PROJETO.md   # Documentação completa de tudo o que criamos e combinamos
+├── README.md              # Este guia rápido
 └── assets/
-    ├── style.css       # Estilos visuais (tema amarelo/preto/azul + responsivo)
-    ├── app.js          # Lógica de busca, filtros, favoritos e WhatsApp
-    ├── favicon.svg     # Ícone da aba do navegador
-    ├── banner.jpg          (Local onde você colocará sua arte Desktop)
-    └── banner-mobile.jpg   (Opcional: local para sua arte Mobile)
+    ├── style.css          # Estilos visuais (tema amarelo/preto/azul + responsivo)
+    ├── app.js             # Lógica de busca, filtros, comparador, favoritos e WhatsApp
+    ├── favicon.svg        # Ícone da aba do navegador
+    ├── banner.jpg         # Arte oficial Desktop (1666 × 580 px)
+    └── banner-mobile.jpg  # Arte oficial Mobile (800 × 1221 px)
 ```
 
 ---
