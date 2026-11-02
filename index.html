@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achadinhos Onlines — Os Mais Vendidos e Melhores Ofertas do Mercado Livre</title>
+  <meta name="description" content="Descubra, compare e economize com a curadoria dos produtos mais vendidos no Mercado Livre divididos por categoria. Compra 100% segura direto na plataforma oficial." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#FFE600" />
+
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Achadinhos Onlines" />
+  <meta property="og:title" content="Achadinhos Onlines — Os Mais Vendidos do Mercado Livre" />
+  <meta property="og:description" content="Ranking atualizado dos produtos mais vendidos no Mercado Livre por categoria. Confira preços e compre direto na loja oficial!" />
+  <meta property="og:image" content="assets/banner.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Achadinhos Onlines — Os Mais Vendidos do Mercado Livre" />
+  <meta name="twitter:description" content="Descubra os produtos mais vendidos no Mercado Livre com entrega para todo o Brasil." />
+  <meta name="twitter:image" content="assets/banner.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- =====================================================================
+       GOOGLE ANALYTICS (GA4) — Descomente o bloco abaixo e substitua
+       "G-XXXXXXXXXX" pelo seu ID de Métrica do Google Analytics
+       ===================================================================== -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+
+  <!-- ======================= CABEÇALHO PRINCIPAL ======================= -->
+  <header class="site-header" id="topo">
+    <div class="container header-main">
+      <!-- Botão Menu Gaveta (Mobile) -->
+      <button class="mobile-menu-btn" id="openDrawerBtn" aria-label="Abrir menu de categorias" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Logo -->
+      <a href="#topo" class="brand-logo" id="logoResetBtn" aria-label="Achadinhos Onlines - Página Inicial">
+        <div class="brand-icon" aria-hidden="true">
+          <svg width="38" height="38" viewBox="0 0 44 44" fill="none">
+            <path d="M5 9H11L15.5 28H34L38 14H14" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="17.5" cy="35.5" r="3.2" fill="#111111"/>
+            <circle cx="32.5" cy="35.5" r="3.2" fill="#111111"/>
+            <path d="M25 17V24M21.5 20.5H28.5" stroke="#0050B3" stroke-width="2.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">ACHADINHOS<strong>ONLINES</strong></span>
+          <span class="brand-tagline">Descubra. Compare. Economize.</span>
+        </div>
+      </a>
+
+      <!-- Barra de Busca -->
+      <div class="search-wrapper" role="search">
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Buscar produtos, marcas ou categorias..."
+          aria-label="Buscar produtos"
+          autocomplete="off"
+        />
+        <button type="button" id="clearSearchBtn" class="clear-search-btn" aria-label="Limpar busca" hidden>&times;</button>
+        <button type="button" id="searchBtn" class="search-submit-btn" aria-label="Pesquisar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Ações Rápidas no Topo -->
+      <div class="header-actions">
+        <a href="#ranking-top" class="header-action-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+          </svg>
+          <div class="action-labels">
+            <span>Ranking Oficial</span>
+            <strong>Mais Vendidos</strong>
+          </div>
+        </a>
+
+        <button type="button" class="header-action-link fav-toggle-btn" id="headerFavBtn" aria-label="Ver meus produtos favoritos">
+          <div class="fav-icon-wrap">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="fav-badge" id="favCountBadge">0</span>
+          </div>
+          <div class="action-labels">
+            <span>Salvos</span>
+            <strong>Meus Favoritos</strong>
+          </div>
+        </button>
+
+        <div class="header-updated-pill" title="Fonte oficial: Mercado Livre">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="headerUpdatedDate">Atualizado em 02/11</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Navegação de Categorias (Sub-header) -->
+    <nav class="subnav-bar" aria-label="Navegação por categorias">
+      <div class="container subnav-inner">
+        <div class="subnav-dropdown-wrap">
+          <button type="button" class="all-categories-btn" id="allCategoriesToggle" aria-expanded="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <span>Todas as Categorias</span>
+            <svg class="chevron-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="categories-dropdown-menu" id="categoriesDropdownMenu" hidden>
+            <!-- Preenchido via JS com as categorias oficiais -->
+          </div>
+        </div>
+
+        <ul class="subnav-links" id="subnavLinks">
+          <!-- Preenchido via JS com links rápidos das categorias -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================= MENU GAVETA (MOBILE) ======================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu lateral" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-brand">ACHADINHOS<strong>ONLINES</strong></span>
+      <button type="button" class="drawer-close-btn" id="closeDrawerBtn" aria-label="Fechar menu">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-section-title">Navegação</div>
+      <ul class="drawer-nav-list">
+        <li><a href="#vitrine" class="drawer-link" data-cat="all">🏠 Todos os Produtos</a></li>
+        <li><a href="#vitrine" class="drawer-link" id="drawerFavLink">❤️ Meus Favoritos (<span id="drawerFavCount">0</span>)</a></li>
+        <li><a href="#ranking-top" class="drawer-link">🏆 Top #1 de Cada Categoria</a></li>
+      </ul>
+      <div class="drawer-section-title">Categorias do Mercado Livre</div>
+      <ul class="drawer-cat-list" id="drawerCategoryList">
+        <!-- Preenchido via JS -->
+      </ul>
+      <div class="drawer-section-title">Institucional</div>
+      <ul class="drawer-nav-list">
+        <li><a href="#sobre" class="drawer-link" data-modal="sobreModal">ℹ️ Sobre Nós</a></li>
+        <li><a href="#privacidade" class="drawer-link" data-modal="privacidadeModal">🔒 Política de Privacidade</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ======================= BANNER PRINCIPAL ======================= -->
+    <section class="hero-section" aria-label="Destaque principal">
+      <div class="container">
+        <div class="hero-banner">
+          <!-- Conteúdo Textual da Referência -->
+          <div class="hero-content">
+            <span class="hero-kicker">CURADORIA OFICIAL • MAIS VENDIDOS</span>
+            <h1 class="hero-title">
+              As Melhores Ofertas
+              <span class="hero-highlight">do Mercado Livre!</span>
+            </h1>
+            <p class="hero-subtitle">
+              Produtos incríveis, preços imperdíveis e entrega para todo o Brasil!
+            </p>
+            <div class="hero-cta-group">
+              <a href="#vitrine" class="hero-cta-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span>Aproveite Agora</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Área da Imagem do Banner (Pronta para receber assets/banner.jpg ou assets/banner-mobile.jpg) -->
+          <div class="hero-visual">
+            <div class="hero-stamp" aria-hidden="true">Ofertas<br/>Imperdíveis!</div>
+            <picture class="hero-picture">
+              <source media="(max-width: 768px)" srcset="assets/banner-mobile.jpg" />
+              <img
+                src="assets/banner.jpg"
+                alt="Banner de ofertas em destaque do Mercado Livre"
+                class="hero-banner-img"
+                id="heroBannerImg"
+                onerror="this.style.display='none'; document.getElementById('bannerPlaceholderSlot').style.display='flex';"
+              />
+            </picture>
+            <!-- Espaço Demarcado (visível enquanto você ainda não subiu sua imagem assets/banner.jpg) -->
+            <div class="banner-placeholder-slot" id="bannerPlaceholderSlot">
+              <div class="placeholder-inner">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFE600" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <strong>ESPAÇO RESERVADO PARA SUA ARTE DO BANNER</strong>
+                <span>Coloque sua imagem em <code>assets/banner.jpg</code> (Desktop: 1280×360 px) ou <code>assets/banner-mobile.jpg</code> (Celular: 800×500 px)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CATEGORIAS EM DESTAQUE ======================= -->
+    <section class="categories-section" aria-labelledby="catHeading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="catHeading" class="section-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+              <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+              <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+            </svg>
+            <span>Categorias em Destaque</span>
+          </h2>
+          <button type="button" class="section-action-link" id="resetCatBtn">
+            Ver todas as categorias &rarr;
+          </button>
+        </div>
+
+        <div class="category-cards-scroll" id="categoryCardsGrid" role="tablist" aria-label="Filtrar por categoria">
+          <!-- Gerado dinamicamente via JS a partir das 10 categorias oficiais do Mercado Livre -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= VITRINE PRINCIPAL + FILTROS LATERAIS ======================= -->
+    <section class="vitrine-section" id="vitrine" aria-labelledby="vitrineHeading">
+      <div class="container">
+        <!-- Cabeçalho da Seção com Fonte Oficial e Botão Mobile de Filtro -->
+        <div class="section-header vitrine-header">
+          <div>
+            <h2 id="vitrineHeading" class="section-title">
+              <span class="bolt-badge" aria-hidden="true">⚡</span>
+              <span id="activeSectionTitle">Mais vendidos no Mercado Livre</span>
+            </h2>
+            <p class="section-source-note">
+              Fonte oficial: <a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer">Mercado Livre — Mais Vendidos</a> • <span id="resultsCounterText">Carregando produtos...</span>
+            </p>
+          </div>
+
+          <div class="vitrine-controls">
+            <!-- Botão "Filtrar" para Celular -->
+            <button type="button" class="mobile-filter-trigger" id="openFilterPanelBtn" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+              <span>Filtrar</span>
+              <span class="active-filter-dot" id="mobileFilterDot" hidden></span>
+            </button>
+
+            <!-- Ordenação rápida -->
+            <div class="sort-control">
+              <label for="sortSelect" class="sr-only">Ordenar por</label>
+              <select id="sortSelect" class="sort-select" aria-label="Ordenar produtos">
+                <option value="rank">Posição no Ranking (1º ao 10º)</option>
+                <option value="price-asc">Menor Preço Consultado</option>
+                <option value="price-desc">Maior Preço Consultado</option>
+                <option value="name-asc">Nome (A–Z)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="vitrine-layout">
+          <!-- Painel Lateral de Filtros (Sidebar no Desktop / Painel Deslizante no Celular) -->
+          <div class="filter-backdrop" id="filterBackdrop" hidden></div>
+          <aside class="filters-sidebar" id="filtersSidebar" aria-label="Filtros de produtos">
+            <div class="filters-card">
+              <div class="filters-card-header">
+                <div class="filters-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                  </svg>
+                  <strong>Filtros de Produtos</strong>
+                </div>
+                <button type="button" class="close-filter-mobile" id="closeFilterPanelBtn" aria-label="Fechar filtros">&times;</button>
+              </div>
+
+              <!-- Filtro: Categoria -->
+              <div class="filter-group">
+                <label for="sidebarCategorySelect" class="filter-label">Categoria</label>
+                <select id="sidebarCategorySelect" class="filter-select">
+                  <option value="all">Todas as categorias (10)</option>
+                </select>
+              </div>
+
+              <!-- Filtro: Faixa de Preço -->
+              <div class="filter-group">
+                <div class="filter-label-row">
+                  <label for="priceRangeSlider" class="filter-label">Preço Máximo</label>
+                  <span class="price-range-value" id="priceRangeLabel">Até R$ 2.500+</span>
+                </div>
+                <input
+                  type="range"
+                  id="priceRangeSlider"
+                  class="price-slider"
+                  min="20"
+                  max="2500"
+                  step="10"
+                  value="2500"
+                />
+                <div class="price-presets">
+                  <button type="button" class="price-chip" data-max="50">Até R$ 50</button>
+                  <button type="button" class="price-chip" data-max="100">Até R$ 100</button>
+                  <button type="button" class="price-chip" data-max="300">Até R$ 300</button>
+                  <button type="button" class="price-chip" data-max="2500">Todos</button>
+                </div>
+              </div>
+
+              <!-- Filtro: Posição no Ranking -->
+              <div class="filter-group">
+                <label class="filter-label">Posição no Ranking</label>
+                <div class="rank-filter-options">
+                  <label class="radio-label">
+                    <input type="radio" name="rankFilter" value="all" checked />
+                    <span>Todos do Top 10</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="rankFilter" value="3" />
+                    <span>Apenas Pódio (Top 1º ao 3º)</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="rankFilter" value="5" />
+                    <span>Top 5 de cada categoria</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Filtro: Apenas Favoritos -->
+              <div class="filter-group toggle-group">
+                <label for="onlyFavoritesToggle" class="filter-label">Somente Meus Favoritos ❤️</label>
+                <input type="checkbox" id="onlyFavoritesToggle" class="toggle-switch" />
+              </div>
+
+              <!-- Botões de Ação do Filtro -->
+              <div class="filter-actions">
+                <button type="button" class="apply-filters-btn" id="applyFiltersBtn">Aplicar Filtros</button>
+                <button type="button" class="reset-filters-btn" id="resetFiltersBtn">Limpar todos os filtros</button>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Área de Produtos em Cards -->
+          <div class="products-area">
+            <!-- Estado Vazio (quando nenhum produto corresponde ao filtro) -->
+            <div class="empty-state" id="emptyState" hidden>
+              <div class="empty-icon">🔍</div>
+              <h3>Nenhum produto encontrado com esses filtros</h3>
+              <p>Tente buscar outro termo ou limpar os filtros selecionados para ver todos os produtos mais vendidos.</p>
+              <button type="button" class="apply-filters-btn" id="emptyResetBtn">Mostrar Todos os Produtos</button>
+            </div>
+
+            <!-- Container de Seções por Categoria ou Grid Filtrado -->
+            <div id="productsContainer">
+              <!-- Renderizado via JS a partir do products.json -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SEÇÃO TOP #1 DE CADA CATEGORIA ======================= -->
+    <section class="top-leaders-section" id="ranking-top" aria-labelledby="leadersHeading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="leadersHeading" class="section-title">
+              <span aria-hidden="true">🏆</span>
+              <span>Campeões de Vendas (#1 de Cada Categoria)</span>
+            </h2>
+            <p class="section-source-note">Os produtos número 1 em vendas de cada departamento no Mercado Livre</p>
+          </div>
+          <a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer" class="section-action-link">
+            Ver ranking completo no Mercado Livre &rarr;
+          </a>
+        </div>
+
+        <div class="leaders-grid" id="leadersGrid">
+          <!-- Renderizado via JS com os #1 de cada categoria -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SEÇÃO INSTITUCIONAL (SOBRE E PRIVACIDADE) ======================= -->
+    <section class="info-sections" aria-label="Informações Institucionais">
+      <div class="container info-grid">
+        <article class="info-card" id="sobre">
+          <h2>Sobre o Achadinhos Onlines</h2>
+          <p>
+            O <strong>Achadinhos Onlines</strong> é uma vitrine independente de curadoria de ofertas e produtos populares. Nosso objetivo é facilitar sua pesquisa reunindo, em um só lugar e de forma organizada, os itens que lideram o ranking oficial de <strong>Mais Vendidos do Mercado Livre</strong>.
+          </p>
+          <p>
+            Não somos uma loja virtual nem processamos pagamentos ou entregas. Quando você clica em <em>"Ver no Mercado Livre"</em>, você é direcionado diretamente para o anúncio oficial dentro da plataforma do Mercado Livre, onde pode conferir o preço atualizado em tempo real, prazo de frete para o seu CEP e realizar sua compra com toda a proteção do Compra Garantida.
+          </p>
+        </article>
+
+        <article class="info-card" id="privacidade">
+          <h2>Política de Privacidade e Transparência</h2>
+          <p>
+            Respeitamos sua privacidade. Este site não exige cadastro, login nem coleta dados pessoais sensíveis ou bancários. A funcionalidade de <strong>Meus Favoritos</strong> utiliza apenas o armazenamento local do seu próprio navegador (<code>localStorage</code>) para lembrar os itens que você marcou com coração.
+          </p>
+          <p>
+            <strong>Programa de Afiliados:</strong> Participamos do Programa de Afiliados do Mercado Livre. Ao clicar nos links de produtos (identificados com <code>rel="sponsored nofollow noopener"</code>) e realizar uma compra na plataforma oficial, podemos receber uma pequena comissão publicitária, sem nenhum custo adicional para você.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= RODAPÉ COM SELOS DE CONFIANÇA ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Coluna 1: Marca -->
+        <div class="footer-brand-col">
+          <div class="brand-logo footer-logo">
+            <div class="brand-icon" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 44 44" fill="none">
+                <path d="M5 9H11L15.5 28H34L38 14H14" stroke="#FFE600" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="17.5" cy="35.5" r="3.2" fill="#FFE600"/>
+                <circle cx="32.5" cy="35.5" r="3.2" fill="#FFE600"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">ACHADINHOS<strong>ONLINES</strong></span>
+              <span class="brand-tagline">Sua vitrine de achadinhos na internet</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Institucional -->
+        <div class="footer-links-col">
+          <h3>Institucional</h3>
+          <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#privacidade">Política de Privacidade</a></li>
+            <li><a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer">Fonte: Mais Vendidos ML</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Atalhos -->
+        <div class="footer-links-col">
+          <h3>Navegação Rápida</h3>
+          <ul>
+            <li><a href="#vitrine" id="footerAllLink">Todos os Produtos</a></li>
+            <li><a href="#ranking-top">Campeões de Vendas (#1)</a></li>
+            <li><a href="#vitrine" id="footerFavLink">Meus Favoritos Salvos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Selos de Confiança -->
+        <div class="footer-trust-col">
+          <div class="trust-badge">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#FFE600" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <strong>Compra Segura</strong>
+              <span>Checkout oficial no Mercado Livre</span>
+            </div>
+          </div>
+
+          <div class="trust-badge">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="#FFE600" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div class="trust-text">
+              <strong>Links Verificados</strong>
+              <span>Redirecionamento direto ao anúncio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aviso Obrigatório de Transparência de Afiliado -->
+      <div class="footer-disclaimer">
+        <p>
+          Este site contém links de afiliado. Podemos receber comissão por compras feitas pelos links, sem custo extra pra você. As compras são feitas diretamente no Mercado Livre.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AchadinhosOnlines. Todos os direitos reservados.</span>
+        <span class="footer-slogan"><em>Economia</em> de verdade, sempre com você! 💛</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante Voltar ao Topo -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Voltar ao topo da página" hidden>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script Principal -->
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
