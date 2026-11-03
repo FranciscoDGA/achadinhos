@@ -202,7 +202,27 @@ Diferente do Instagram onde um post dura 24 horas, um Pin no **Pinterest** conti
 
 ---
 
-## 7. Comandos Rápidos de Git (Caso edite pelo computador)
+## 7. Padrões de Responsividade Mobile e Trava de Overflow Horizontal (Tela 100% Firme)
+
+Para garantir uma experiência de navegação impecável em qualquer smartphone (iOS e Android), sem que o visitante consiga arrastar a página para os lados com o dedo:
+
+### O Que Foi Identificado e Corrigido:
+1. **Quebra dos Controles da Vitrine (`.vitrine-controls`):**
+   - Com múltiplos botões (*"Indicar no WhatsApp"*, *"Copiar Link"*, *"Filtrar"* e *"Ordenar por"*), uma linha fixa somava mais de `520px` (estourando telas de 360px a 414px).
+   - **Solução implementada:** `flex-wrap: wrap; max-width: 100%;` com botões flexíveis (`flex: 1 1 calc(50% - 4px)` em telas até 600px).
+2. **Contenção no Flexbox do Subnav (`.subnav-links`):**
+   - No Flexbox, elementos com rolagem horizontal sem `min-width: 0` podem forçar o container pai a se expandir até a largura de todo o texto somado (+700px).
+   - **Solução implementada:** `min-width: 0; width: 100%; max-width: 100%; -webkit-overflow-scrolling: touch;`.
+3. **Bloqueio Global no `html` e `body`:**
+   - Adicionado no CSS: `overflow-x: hidden !important; width: 100% !important; max-width: 100vw !important; position: relative;`. Isso trava o canvas do navegador impedindo qualquer deslocamento indesejado para as laterais.
+4. **Isolamento de Carrosséis Internos:**
+   - As áreas que realmente precisam deslizar com o dedo (ex.: os atalhos de escolha segura `#smartShortcutsBar` e os cards de categorias `.category-cards-scroll`) rolam de forma fluida internamente via toque, mantendo o restante da página estável.
+5. **Barra Flutuante de Comparação no Celular (`.compare-floating-bar`):**
+   - Configurada em coluna vertical com botões ocupando 100% da largura, evitando sobreposição e vazamento em telas estreitas.
+
+---
+
+## 8. Comandos Rápidos de Git (Caso edite pelo computador)
 
 Sempre que alterar algum arquivo na pasta `c:\Users\User\OneDrive\Desktop\Achadinhos` e quiser enviar para o GitHub/Vercel pelo terminal:
 
@@ -211,4 +231,5 @@ git add .
 git commit -m "atualiza produtos e ofertas"
 git push origin main
 ```
+
 
