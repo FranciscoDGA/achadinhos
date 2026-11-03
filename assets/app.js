@@ -314,7 +314,7 @@
         return `
           <div class="compare-col-card">
             <div class="compare-col-badges">
-              <span class="rank-badge ${p.rank === 1 ? 'rank-top1' : ''}">#${p.rank} em ${escapeHtml(p.category)}</span>
+              <span class="rank-badge ${p.rank === 1 ? 'rank-top1' : ''}">${p.rank}º em ${escapeHtml(p.category)}</span>
               ${isBestRank ? '<span class="compare-win-badge">🏆 Melhor Ranking</span>' : ''}
               ${isCheapest ? '<span class="compare-save-badge">💰 Menor Preço</span>' : ''}
             </div>
@@ -677,7 +677,7 @@
       if (state.onlyFavorites) {
         els.activeSectionTitle.textContent = 'Meus Produtos Favoritos ❤️';
       } else if (state.activePreset === 'top1') {
-        els.activeSectionTitle.textContent = 'Líderes Absolutos (#1 de Cada Categoria)';
+        els.activeSectionTitle.textContent = 'Líderes Absolutos (1º Lugar de Cada Categoria)';
       } else if (state.activePreset === 'top3') {
         els.activeSectionTitle.textContent = 'Pódio de Vendas (Top 1º ao 3º)';
       } else if (state.activePreset === 'under100') {
@@ -854,7 +854,7 @@
             target="_blank"
             rel="sponsored nofollow noopener"
             class="leader-card"
-            title="Ver #1 em ${escapeHtml(p.category)} no Mercado Livre"
+            title="Ver 1º lugar em ${escapeHtml(p.category)} no Mercado Livre"
           >
             <span class="leader-number">${index + 1}</span>
             <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="leader-img" loading="lazy" />
