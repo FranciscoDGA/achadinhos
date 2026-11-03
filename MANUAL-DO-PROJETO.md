@@ -123,14 +123,16 @@ Abra o arquivo `products.json` no Bloco de Notas ou VS Code. Cada produto tem es
 
 ```text
 Achadinhos/
-├── index.html                  # Estrutura principal da vitrine, guia consciente e modal comparador
+├── index.html                  # Estrutura principal, SEO Schema.org, FAQ, VIP WhatsApp e Comparador
 ├── products.json               # Base com os 100 produtos mais vendidos + seus links de afiliado
-├── MANUAL-DO-PROJETO.md        # Este documento completo com tudo o que construímos e combinamos
+├── robots.txt                  # Liberação de rastreamento para Google, Bing e buscadores
+├── sitemap.xml                 # Mapa do site com todas as categorias e filtros para o Google Search Console
+├── MANUAL-DO-PROJETO.md        # Este documento completo com tudo o que construímos e o plano 100k/mês
 ├── README.md                   # Guia rápido do repositório
 ├── achadinhos-hostgator.zip    # Pacote pronto caso queira subir também em hospedagem cPanel/HostGator
 └── assets/
     ├── style.css               # Visual amarelo/preto/azul + responsividade Desktop, Tablet e Celular
-    ├── app.js                  # Lógica de filtros, busca, dicas anti-devolução, comparador e favoritos
+    ├── app.js                  # Lógica de filtros, URL compartilhável, listas WhatsApp, comparador e busca ML
     ├── favicon.svg             # Ícone de carrinho na aba do navegador
     ├── banner.jpg              # Banner Oficial Horizontal para Computador/Tablet (1666 × 580 px)
     └── banner-mobile.jpg       # Banner Oficial Vertical para Celular até 600px (800 × 1221 px)
@@ -143,7 +145,64 @@ Achadinhos/
 
 ---
 
-## 5. Comandos Rápidos de Git (Caso edite pelo computador)
+## 5. Os 6 Motores de Tração Orgânica e Viralização Implementados no Site
+
+Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúncios pagos, implementamos 6 motores técnicos:
+
+1. **Motor 1 — SEO Completo para o Google (`Schema.org JSON-LD` + `sitemap.xml` + `robots.txt` + FAQ):**
+   - O cabeçalho do site entrega ao Google dados estruturados de `WebSite`, `FAQPage` (Perguntas Frequentes que aparecem direto na página de busca do Google) e `ItemList` dinâmico com os Campeões de Vendas (`1º Lugar`).
+2. **Motor 2 — Botão Viral "📲 Enviar Favoritos no WhatsApp" e "📲 Enviar Comparativo no WhatsApp":**
+   - Quando o visitante marca produtos com coração (`❤️`) ou adiciona até 3 itens no Comparador Lado a Lado (`⚖️`), ele pode clicar em **Enviar no WhatsApp**.
+   - A mensagem já sai formatada com os nomes dos produtos, preços de referência e **todos os seus links de afiliado** (`matt_word=trgatyva20230819121948&matt_tool=21540510`), além do link do seu site no final. Assim, quando a pessoa manda para o marido, esposa ou grupo da família, qualquer um que clicar e comprar gera comissão para você.
+3. **Motor 3 — Links Inteligentes por Categoria/Filtro + Botão "🔗 Copiar Link":**
+   - O site aceita links diretos que já abrem a vitrine filtrada e rolam até os produtos:
+     - `https://achadinhos.vercel.app/?filtro=under50` *(Abre direto nos Presentes & Achadinhos até R$ 50)*
+     - `https://achadinhos.vercel.app/?filtro=under100` *(Abre direto nas Utilidades do Dia a Dia até R$ 100)*
+     - `https://achadinhos.vercel.app/?filtro=top1` *(Abre direto nos 10 Líderes Absolutos — 1º Lugar de cada categoria)*
+     - `https://achadinhos.vercel.app/?filtro=home` *(Abre direto em Casa & Oficina)*
+     - `https://achadinhos.vercel.app/?filtro=tech` *(Abre direto em Tech & Games)*
+     - `https://achadinhos.vercel.app/?filtro=wellness` *(Abre direto em Saúde, Beleza & Treino)*
+     - `https://achadinhos.vercel.app/?categoria=Eletrodomésticos` *(Funciona com qualquer uma das 10 categorias)*
+     - `https://achadinhos.vercel.app/?busca=air+fryer` *(Abre direto pesquisando qualquer termo)*
+4. **Motor 4 — Atalhos "O Que o Brasileiro Mais Procura":**
+   - Filtros de 1 clique para compras por impulso consciente: **🎁 Presentes & Achadinhos até R$ 50**, **💡 Dia a Dia até R$ 100** e **💪 Saúde, Beleza & Treino**.
+5. **Motor 5 — Busca Infinita com Seu Código de Afiliado:**
+   - Mesmo que o visitante digite na barra de busca algo que **não está nos 100 produtos** (ex.: *"Bicicleta"*, *"Perfume árabe"*, *"Pneu aro 15"*), o site exibe um botão direto para abrir a pesquisa daquele produto no Mercado Livre já cravado com a sua tag de afiliado. Você nunca perde uma venda.
+6. **Motor 6 — Central de Achadinhos no WhatsApp (Envio do Top 10 `1º Lugar`):**
+   - Na seção verde especial antes do rodapé, o visitante pode clicar em **"🏆 Enviar Top 10 (1º Lugares) no Meu WhatsApp"** para guardar os 10 campeões de vendas no próprio celular com todos os seus links de afiliado prontos para clicar a qualquer hora.
+
+---
+
+## 6. Roteiro Prático de Tráfego Orgânico Rumo aos R$ 100k/mês
+
+O site já converte, educa para evitar devoluções e mantém seu código de afiliado em 100% dos cliques. Agora, para atrair milhares de brasileiros todos os dias de graça:
+
+### Passo 1: Cadastrar o Sitemap no Google Search Console (10 minutos — Uma única vez)
+1. Acesse [search.google.com/search-console](https://search.google.com/search-console).
+2. Adicione a propriedade com a URL do seu site (`https://achadinhos.vercel.app/`).
+3. No menu lateral esquerdo, clique em **Sitemaps** e digite `sitemap.xml` → clique em **Enviar**.
+4. Isso avisa ao Google sobre todas as suas páginas e filtros (`?filtro=under50`, `?categoria=Eletrodomésticos`, etc.) e ativa as perguntas frequentes (FAQ) nos resultados de busca.
+
+### Passo 2: Máquina de Vídeos Curtos Sem Aparecer (TikTok, Reels, YouTube Shorts e Kwai)
+O brasileiro consome vídeos de 15 a 30 segundos mostrando utilidades práticas. Em vez de mandar a pessoa comentar "Eu quero", mande para a sua **vitrine de compra consciente**:
+- **Formato Campeão 1 — "Os 3 Mais Vendidos de Cozinha no Mercado Livre (e o que olhar antes de comprar)":**
+  - Mostre a imagem/vídeo rápido da Air Fryer, Balança Digital e Chaleira Elétrica.
+  - Diga: *"Quer comparar os 3 lado a lado e ver a ficha técnica oficial para não errar a voltagem? O link da curadoria de Casa & Cozinha está na bio!"*
+  - Use o link direto: `https://achadinhos.vercel.app/?filtro=home`
+- **Formato Campeão 2 — "5 Achadinhos Úteis até R$ 50 que todo mundo está comprando no Mercado Livre":**
+  - Use o link direto: `https://achadinhos.vercel.app/?filtro=under50`
+- **Formato Campeão 3 — "O 1º Lugar de cada categoria no Mercado Livre este mês":**
+  - Use o link direto: `https://achadinhos.vercel.app/?filtro=top1`
+
+### Passo 3: Pinterest Brasil (Tráfego Perpétuo no Piloto Automático)
+Diferente do Instagram onde um post dura 24 horas, um Pin no **Pinterest** continua mandando cliques para o seu site por **6 a 12 meses**:
+1. Crie uma conta gratuita no Pinterest Business (*Achadinhos Onlines*).
+2. Crie pastas com os mesmos nomes dos seus filtros: *"Achadinhos até R$ 50"*, *"Cozinha & Eletrodomésticos Mais Vendidos"*, *"Ferramentas Campeãs de Vendas"*.
+3. Suba as fotos dos produtos e coloque no campo **Link de destino** a URL filtrada do seu site (ex.: `https://achadinhos.vercel.app/?categoria=Eletrodomésticos`). Quando a pessoa clica no Pinterest, ela cai na sua vitrine, vê o selo de confiança, compara e clica para o Mercado Livre com seu cookie de afiliado ativo por 24h!
+
+---
+
+## 7. Comandos Rápidos de Git (Caso edite pelo computador)
 
 Sempre que alterar algum arquivo na pasta `c:\Users\User\OneDrive\Desktop\Achadinhos` e quiser enviar para o GitHub/Vercel pelo terminal:
 
@@ -152,3 +211,4 @@ git add .
 git commit -m "atualiza produtos e ofertas"
 git push origin main
 ```
+

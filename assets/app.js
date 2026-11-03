@@ -146,8 +146,32 @@
     compareModalBackdrop: document.getElementById('compareModalBackdrop'),
     compareModal: document.getElementById('compareModal'),
     closeCompareModalBtn: document.getElementById('closeCompareModalBtn'),
-    compareModalBody: document.getElementById('compareModalBody')
+    compareModalBody: document.getElementById('compareModalBody'),
+    shareFavsWhatsAppBtn: document.getElementById('shareFavsWhatsAppBtn'),
+    shareSelectionWhatsAppBtn: document.getElementById('shareSelectionWhatsAppBtn'),
+    copySelectionLinkBtn: document.getElementById('copySelectionLinkBtn'),
+    shareCompareWhatsAppBtn: document.getElementById('shareCompareWhatsAppBtn'),
+    sendTop10WhatsappBtn: document.getElementById('sendTop10WhatsappBtn'),
+    shareSiteWhatsappBtn: document.getElementById('shareSiteWhatsappBtn'),
+    copySiteLinkBottomBtn: document.getElementById('copySiteLinkBottomBtn'),
+    toastNotification: document.getElementById('toastNotification'),
+    dynamicItemListSchema: document.getElementById('dynamicItemListSchema')
   };
+
+  let toastTimeout = null;
+  function showToast(message) {
+    if (!els.toastNotification) return;
+    els.toastNotification.textContent = message;
+    els.toastNotification.hidden = false;
+    els.toastNotification.classList.add('visible');
+    if (toastTimeout) clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+      els.toastNotification.classList.remove('visible');
+      setTimeout(() => {
+        if (els.toastNotification) els.toastNotification.hidden = true;
+      }, 250);
+    }, 3200);
+  }
 
   // =========================================================================
   // UTILITÁRIOS DE FORMATAÇÃO E DICAS DE COMPRA CONSCIENTE
@@ -243,6 +267,10 @@
     if (els.drawerFavCount) els.drawerFavCount.textContent = count;
     if (els.headerFavBtn) {
       els.headerFavBtn.classList.toggle('active-fav-filter', state.onlyFavorites);
+    }
+    if (els.shareFavsWhatsAppBtn) {
+      els.shareFavsWhatsAppBtn.hidden = count === 0;
+      els.shareFavsWhatsAppBtn.innerHTML = `<span>📲 Enviar Favoritos (${count}) no WhatsApp</span>`;
     }
   }
 
@@ -364,21 +392,224 @@
   }
 
   // =========================================================================
-  // COMPARTILHAMENTO NO WHATSAPP
+  // COMPARTILHAMENTO NO WHATSAPP & LINKS COMPARTILHÁVEIS (MOTORES DE TRÁFEGO)
   // =========================================================================
+  function getBaseSiteUrl() {
+    if (window.location.protocol === 'file:') {
+      return 'https://achadinhos.vercel.app/';
+    }
+    return `${window.location.origin}${window.location.pathname}`;
+  }
+
+  function getShareableSelectionUrl() {
+    const base = getBaseSiteUrl();
+    const params = new URLSearchParams();
+
+    if (state.searchQuery && state.searchQuery.trim() !== '') {
+      params.set('busca', state.searchQuery.trim());
+    } else if (state.selectedCategory && state.selectedCategory !== 'all') {
+      params.set('categoria', state.selectedCategory);
+    } else if (state.activePreset && state.activePreset !== 'all') {
+      params.set('filtro', state.activePreset);
+    }
+
+    const qs = params.toString();
+    return qs ? `${base}?${qs}` : base;
+  }
+
+  function syncUrlWithState() {
+    if (window.location.protocol === 'file:') return;
+    try {
+      const url = getShareableSelectionUrl();
+      window.history.replaceState({}, '', url);
+    } catch (e) {
+      // Ignora em ambientes restritos
+    }
+  }
+
+  function copyCurrentSelectionLink(forceRoot = false) {
+    const urlToCopy = forceRoot ? getBaseSiteUrl() : getShareableSelectionUrl();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard
+        .writeText(urlToCopy)
+        .then(() => {
+          showToast('🔗 Link copiado! Pronto para colar no WhatsApp, Instagram ou TikTok.');
+        })
+        .catch(() => {
+          showToast(`🔗 Link para compartilhar: ${urlToCopy}`);
+        });
+    } else {
+      showToast(`🔗 Link para compartilhar: ${urlToCopy}`);
+    }
+  }
+
   function shareOnWhatsApp(product) {
     const priceFormatted = formatCurrencyBRL(product.price);
     const shortDate = formatShortDate(product.consultedAt);
     const link = product.affiliateUrl;
+    const siteUrl = getBaseSiteUrl();
     const message =
       `🔥 *Achadinho nos Mais Vendidos do Mercado Livre!*\n\n` +
       `📦 *${product.name}*\n` +
       `🏆 ${product.rank}º mais vendido em ${product.category}\n` +
       `💰 Preço consultado em ${shortDate}: *${priceFormatted}*\n\n` +
-      `👉 Confira avaliações, frete e preço atual no Mercado Livre:\n${link}`;
+      `👉 Confira avaliações, frete e preço atual no Mercado Livre:\n${link}\n\n` +
+      `✨ Veja todos os 100 mais vendidos em:\n${siteUrl}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  function shareFavoritesOnWhatsApp() {
+    const favProducts = state.products.filter((p) => state.favorites.has(Number(p.id)));
+    if (favProducts.length === 0) {
+      showToast('❤️ Clique no coração nos produtos para montar sua lista de favoritos primeiro!');
+      return;
+    }
+
+    const itemsLines = favProducts
+      .slice(0, 12)
+      .map(
+        (p, idx) =>
+          `*${idx + 1}. ${p.name}*\n` +
+          `🏆 ${p.rank}º em ${p.category} • 💰 Ref: *${formatCurrencyBRL(p.price)}*\n` +
+          `👉 Ver no ML: ${p.affiliateUrl}`
+      )
+      .join('\n\n');
+
+    const message =
+      `❤️ *Minha Lista de Favoritos — Achadinhos Onlines (Mercado Livre)*\n` +
+      `Separei esses produtos campeões de vendas para conferir com calma:\n\n` +
+      `${itemsLines}\n\n` +
+      `✨ Veja a vitrine completa dos 100 Mais Vendidos em:\n${getBaseSiteUrl()}`;
+
+    const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  function shareCompareOnWhatsApp() {
+    const selectedProducts = state.compareList
+      .map((id) => state.products.find((p) => Number(p.id) === id))
+      .filter(Boolean);
+
+    if (selectedProducts.length === 0) return;
+
+    const itemsLines = selectedProducts
+      .map(
+        (p, idx) =>
+          `*Opção ${idx + 1}: ${p.name}*\n` +
+          `🏆 ${p.rank}º mais vendido em ${p.category}\n` +
+          `💰 Preço ref: *${formatCurrencyBRL(p.price)}*\n` +
+          `👉 Anúncio oficial: ${p.affiliateUrl}`
+      )
+      .join('\n\n');
+
+    const message =
+      `⚖️ *Comparativo de Produtos — Qual vale mais a pena?*\n` +
+      `Estou em dúvida entre esses campeões de vendas do Mercado Livre:\n\n` +
+      `${itemsLines}\n\n` +
+      `✨ Compare também no Achadinhos Onlines:\n${getBaseSiteUrl()}`;
+
+    const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  function shareTop10LeadersOnWhatsApp() {
+    const leaders = state.products.filter((p) => Number(p.rank) === 1);
+    if (leaders.length === 0) return;
+
+    const itemsLines = leaders
+      .map(
+        (p, idx) =>
+          `🏆 *1º em ${p.category}:* ${p.name}\n` +
+          `💰 Ref: *${formatCurrencyBRL(p.price)}*\n` +
+          `👉 ${p.affiliateUrl}`
+      )
+      .join('\n\n');
+
+    const message =
+      `🏆 *Os 10 Campeões de Vendas (1º Lugar de Cada Categoria no Mercado Livre)*\n` +
+      `Resumo atualizado do Achadinhos Onlines para guardar e consultar sempre que precisar:\n\n` +
+      `${itemsLines}\n\n` +
+      `✨ Vitrine completa com os 100 Mais Vendidos:\n${getBaseSiteUrl()}`;
+
+    const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  function shareCurrentSelectionOnWhatsApp(forceRoot = false) {
+    const shareUrl = forceRoot ? getBaseSiteUrl() : getShareableSelectionUrl();
+    const filtered = getFilteredProducts();
+    const sectionTitle = els.activeSectionTitle ? els.activeSectionTitle.textContent.trim() : 'Mais Vendidos no Mercado Livre';
+
+    const highlights = filtered
+      .slice(0, 3)
+      .map((p) => `• *${p.name}* (${formatCurrencyBRL(p.price)})\n  👉 ${p.affiliateUrl}`)
+      .join('\n\n');
+
+    const message =
+      `⚡ *Achadinhos Onlines — ${sectionTitle}*\n` +
+      `Olha essa curadoria dos produtos mais vendidos e bem avaliados do Mercado Livre (sem empurrometria!):\n\n` +
+      (highlights ? `*Destaques desta seleção:*\n${highlights}\n\n` : '') +
+      `👉 *Acesse a seleção completa aqui:*\n${shareUrl}`;
+
+    const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  }
+
+  function injectDynamicSeoItemList() {
+    if (!els.dynamicItemListSchema || state.products.length === 0) return;
+    const leaders = state.products.filter((p) => Number(p.rank) === 1);
+    const schemaObj = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Campeões de Vendas — 1º Lugar de Cada Categoria no Mercado Livre',
+      description: 'Os produtos mais vendidos em cada departamento oficial do Mercado Livre curados pelo Achadinhos Onlines.',
+      numberOfItems: leaders.length,
+      itemListElement: leaders.map((p, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: `${p.name} (1º Lugar em ${p.category})`,
+        url: p.affiliateUrl
+      }))
+    };
+    els.dynamicItemListSchema.textContent = JSON.stringify(schemaObj);
+  }
+
+  function applyUrlParamsOnLoad() {
+    const params = new URLSearchParams(window.location.search);
+    const catParam = params.get('categoria');
+    const filtroParam = params.get('filtro');
+    const buscaParam = params.get('busca');
+
+    if (buscaParam && buscaParam.trim() !== '') {
+      state.searchQuery = buscaParam.trim();
+      state.activePreset = '';
+      if (els.searchInput) els.searchInput.value = state.searchQuery;
+      if (els.clearSearchBtn) els.clearSearchBtn.hidden = false;
+      return true;
+    }
+
+    if (catParam) {
+      const matchedCat = state.categories.find(
+        (c) => c.name.toLowerCase() === catParam.trim().toLowerCase()
+      );
+      if (matchedCat) {
+        state.selectedCategory = matchedCat.name;
+        state.activePreset = '';
+        return true;
+      }
+    }
+
+    if (filtroParam) {
+      const validPresets = ['top1', 'top3', 'under50', 'under100', 'home', 'tech', 'wellness'];
+      if (validPresets.includes(filtroParam)) {
+        applySmartPreset(filtroParam);
+        return true;
+      }
+    }
+
+    return false;
   }
 
   // =========================================================================
@@ -634,6 +865,8 @@
         if (!['Eletrodomésticos', 'Ferramentas'].includes(p.category)) return false;
       } else if (state.categoryGroup === 'tech') {
         if (!['Games', 'Celulares e Telefones', 'Informática', 'Eletrônicos, Áudio e Vídeo'].includes(p.category)) return false;
+      } else if (state.categoryGroup === 'wellness') {
+        if (!['Beleza e Cuidado Pessoal', 'Esportes e Fitness', 'Calçados, Roupas e Bolsas'].includes(p.category)) return false;
       } else if (state.selectedCategory !== 'all' && p.category !== state.selectedCategory) {
         return false;
       }
@@ -671,6 +904,7 @@
 
   function renderProducts() {
     const filtered = getFilteredProducts();
+    syncUrlWithState();
 
     // Atualiza título ativo e contador
     if (els.activeSectionTitle) {
@@ -680,12 +914,16 @@
         els.activeSectionTitle.textContent = 'Líderes Absolutos (1º Lugar de Cada Categoria)';
       } else if (state.activePreset === 'top3') {
         els.activeSectionTitle.textContent = 'Pódio de Vendas (Top 1º ao 3º)';
+      } else if (state.activePreset === 'under50') {
+        els.activeSectionTitle.textContent = 'Presentes & Achadinhos Úteis até R$ 50';
       } else if (state.activePreset === 'under100') {
         els.activeSectionTitle.textContent = 'Utilidades do Dia a Dia até R$ 100';
       } else if (state.categoryGroup === 'home') {
         els.activeSectionTitle.textContent = 'Casa, Cozinha & Oficina';
       } else if (state.categoryGroup === 'tech') {
         els.activeSectionTitle.textContent = 'Tecnologia, Áudio & Games';
+      } else if (state.categoryGroup === 'wellness') {
+        els.activeSectionTitle.textContent = 'Saúde, Beleza, Moda & Treino';
       } else if (state.selectedCategory !== 'all') {
         els.activeSectionTitle.textContent = `Mais vendidos em ${state.selectedCategory}`;
       } else {
@@ -840,7 +1078,7 @@
   }
 
   // =========================================================================
-  // RENDERIZAÇÃO DOS #1 DE CADA CATEGORIA (SEÇÃO INFERIOR)
+  // RENDERIZAÇÃO DOS 1º LUGARES DE CADA CATEGORIA (SEÇÃO INFERIOR)
   // =========================================================================
   function renderTopLeaders() {
     if (!els.leadersGrid) return;
@@ -885,6 +1123,9 @@
       state.maxRank = '1';
     } else if (preset === 'top3') {
       state.maxRank = '3';
+    } else if (preset === 'under50') {
+      state.maxPrice = 50;
+      state.sortBy = 'price-asc';
     } else if (preset === 'under100') {
       state.maxPrice = 100;
       state.sortBy = 'price-asc';
@@ -892,6 +1133,8 @@
       state.categoryGroup = 'home';
     } else if (preset === 'tech') {
       state.categoryGroup = 'tech';
+    } else if (preset === 'wellness') {
+      state.categoryGroup = 'wellness';
     }
 
     // Sincroniza controles da sidebar
@@ -1002,6 +1245,29 @@
       });
     }
 
+    // Botões de Compartilhamento Viral e Copiar Link
+    if (els.shareFavsWhatsAppBtn) {
+      els.shareFavsWhatsAppBtn.addEventListener('click', shareFavoritesOnWhatsApp);
+    }
+    if (els.shareSelectionWhatsAppBtn) {
+      els.shareSelectionWhatsAppBtn.addEventListener('click', () => shareCurrentSelectionOnWhatsApp(false));
+    }
+    if (els.copySelectionLinkBtn) {
+      els.copySelectionLinkBtn.addEventListener('click', () => copyCurrentSelectionLink(false));
+    }
+    if (els.shareCompareWhatsAppBtn) {
+      els.shareCompareWhatsAppBtn.addEventListener('click', shareCompareOnWhatsApp);
+    }
+    if (els.sendTop10WhatsappBtn) {
+      els.sendTop10WhatsappBtn.addEventListener('click', shareTop10LeadersOnWhatsApp);
+    }
+    if (els.shareSiteWhatsappBtn) {
+      els.shareSiteWhatsappBtn.addEventListener('click', () => shareCurrentSelectionOnWhatsApp(true));
+    }
+    if (els.copySiteLinkBottomBtn) {
+      els.copySiteLinkBottomBtn.addEventListener('click', () => copyCurrentSelectionLink(true));
+    }
+
     // Cliques globais (Categorias, Favoritos, WhatsApp, Comparador)
     document.addEventListener('click', (e) => {
       // Categoria em qualquer botão com data-cat
@@ -1096,7 +1362,7 @@
       chip.addEventListener('click', () => {
         const max = Number(chip.getAttribute('data-max'));
         state.maxPrice = max;
-        state.activePreset = max === 100 ? 'under100' : '';
+        state.activePreset = max === 50 ? 'under50' : max === 100 ? 'under100' : '';
         if (els.priceRangeSlider) els.priceRangeSlider.value = max;
         if (els.priceRangeLabel) {
           els.priceRangeLabel.textContent = max >= 2500 ? 'Até R$ 2.500+' : `Até ${formatCurrencyBRL(max)}`;
@@ -1249,9 +1515,18 @@
         els.headerUpdatedDate.textContent = `Atualizado em ${shortDate}`;
       }
 
+      const hadUrlFilter = applyUrlParamsOnLoad();
       renderNavigationAndCategories();
       renderProducts();
       renderTopLeaders();
+      injectDynamicSeoItemList();
+
+      if (hadUrlFilter) {
+        const vitrineEl = document.getElementById('vitrine');
+        if (vitrineEl) {
+          setTimeout(() => vitrineEl.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+        }
+      }
     } catch (err) {
       console.error('Erro ao carregar produtos:', err);
       if (els.productsContainer) {

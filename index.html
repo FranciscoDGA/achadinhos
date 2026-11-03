@@ -33,6 +33,52 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/style.css" />
 
+  <!-- Dados Estruturados para Google SEO (Schema.org WebSite + FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Achadinhos Onlines",
+        "alternateName": "Achadinhos Onlines — Mais Vendidos do Mercado Livre",
+        "url": "https://achadinhos.vercel.app/",
+        "description": "Curadoria independente e atualizada dos 100 produtos mais vendidos no Mercado Livre divididos nas 10 categorias oficiais."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Quais são os produtos mais vendidos no Mercado Livre hoje?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Os produtos mais vendidos no Mercado Livre hoje estão organizados em 10 departamentos principais: Eletrodomésticos (como Air Fryers e Liquidificadores), Ferramentas (Parafusadeiras e Kits de Chaves), Eletrônicos e Áudio (Fones Bluetooth, Suportes de TV e Projetores), Celulares, Informática, Games, Beleza, Esportes e Suplementos, Calçados e Acessórios para Veículos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como comprar com segurança e evitar devoluções no Mercado Livre?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Antes de finalizar a compra no Mercado Livre, verifique sempre 3 itens no anúncio oficial: 1) A voltagem correta da sua região (110V ou 220V) para eletrodomésticos e ferramentas; 2) A tabela de medidas em centímetros para calçados e roupas; 3) As fotos reais e avaliações de quem já comprou."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O site Achadinhos Onlines é confiável? Onde o pagamento é feito?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! O Achadinhos Onlines funciona como um guia e comparador gratuito. Não cobramos nada nem pedimos cadastro: ao escolher um produto, você é direcionado diretamente para o anúncio oficial dentro do Mercado Livre, contando com a proteção total do Compra Garantida."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="dynamicItemListSchema"></script>
+
   <!-- =====================================================================
        GOOGLE ANALYTICS (GA4) — Descomente o bloco abaixo e substitua
        "G-XXXXXXXXXX" pelo seu ID de Métrica do Google Analytics
@@ -310,10 +356,25 @@
           </div>
 
           <div class="vitrine-controls">
+            <!-- Botão Enviar Favoritos no WhatsApp (visível quando há favoritos) -->
+            <button type="button" class="whatsapp-list-btn" id="shareFavsWhatsAppBtn" hidden title="Enviar sua lista de favoritos no WhatsApp com links diretos">
+              <span>📲 Enviar Favoritos no WhatsApp</span>
+            </button>
+
+            <!-- Botão Indicar Seleção Atual no WhatsApp -->
+            <button type="button" class="vitrine-share-btn whatsapp-accent" id="shareSelectionWhatsAppBtn" title="Compartilhar esta seleção de produtos no WhatsApp">
+              <span>📲 Indicar no WhatsApp</span>
+            </button>
+
+            <!-- Botão Copiar Link Direto desta Categoria/Filtro -->
+            <button type="button" class="vitrine-share-btn" id="copySelectionLinkBtn" title="Copiar link direto desta categoria ou filtro para compartilhar">
+              <span>🔗 Copiar Link</span>
+            </button>
+
             <!-- Botão "Filtrar" para Celular -->
             <button type="button" class="mobile-filter-trigger" id="openFilterPanelBtn" aria-expanded="false">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                <polygon points="22 3 2 3 10 12.46 10 19 14 12.46 22 3"></polygon>
               </svg>
               <span>Filtrar</span>
               <span class="active-filter-dot" id="mobileFilterDot" hidden></span>
@@ -343,6 +404,9 @@
           <button type="button" class="smart-pill" data-preset="top3">
             <span>🔥 Pódio (1º ao 3º de cada categoria)</span>
           </button>
+          <button type="button" class="smart-pill" data-preset="under50">
+            <span>🎁 Presentes &amp; Achadinhos até R$ 50</span>
+          </button>
           <button type="button" class="smart-pill" data-preset="under100">
             <span>💡 Dia a Dia até R$ 100</span>
           </button>
@@ -351,6 +415,9 @@
           </button>
           <button type="button" class="smart-pill" data-preset="tech">
             <span>🎧 Tech &amp; Games</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="wellness">
+            <span>💪 Saúde, Beleza &amp; Treino</span>
           </button>
         </div>
 
@@ -495,6 +562,77 @@
       </div>
     </section>
 
+    <!-- ======================= CENTRAL DE COMPARTILHAMENTO & ACHADINHOS NO WHATSAPP ======================= -->
+    <section class="vip-whatsapp-section" id="achadinhos-whatsapp" aria-labelledby="vipWhatsappHeading">
+      <div class="container">
+        <div class="vip-whatsapp-card">
+          <div class="vip-whatsapp-content">
+            <span class="vip-whatsapp-badge">📲 Praticidade &amp; Economia no WhatsApp</span>
+            <h2 id="vipWhatsappHeading">Guarde os Melhores Achadinhos ou Envie para Quem Você Gosta</h2>
+            <p>
+              Quer consultar depois no celular ou mandar para a família decidir junto? Envie agora mesmo o resumo dos <strong>10 Campeões de Vendas (1º Lugar de cada categoria)</strong> ou compartilhe esta vitrine direto no seu WhatsApp com um clique:
+            </p>
+            <div class="vip-whatsapp-actions">
+              <button type="button" class="vip-btn-primary" id="sendTop10WhatsappBtn">
+                <span>🏆 Enviar Top 10 (1º Lugares) no Meu WhatsApp</span>
+              </button>
+              <button type="button" class="vip-btn-secondary" id="shareSiteWhatsappBtn">
+                <span>📲 Indicar Vitrine para um Amigo</span>
+              </button>
+              <button type="button" class="vip-btn-outline" id="copySiteLinkBottomBtn">
+                <span>🔗 Copiar Link da Vitrine</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PERGUNTAS FREQUENTES (SEO & COMPRA CONSCIENTE) ======================= -->
+    <section class="faq-section" id="duvidas-frequentes" aria-labelledby="faqHeading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="faqHeading" class="section-title">
+              <span aria-hidden="true">❓</span>
+              <span>Dúvidas Frequentes antes de Comprar</span>
+            </h2>
+            <p class="section-source-note">Transparência total sobre como funciona nossa curadoria dos Mais Vendidos do Mercado Livre</p>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">Como saber quais são os produtos mais vendidos no Mercado Livre hoje?</summary>
+            <div class="faq-answer">
+              <p>O <strong>Achadinhos Onlines</strong> reúne e organiza os 100 produtos que lideram o ranking oficial de <em>Mais Vendidos do Mercado Livre</em> em 10 grandes categorias (do 1º ao 10º lugar), permitindo filtrar por preço, comparar itens lado a lado e consultar avaliações reais antes de comprar.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">É seguro comprar pelos links do Achadinhos Onlines?</summary>
+            <div class="faq-answer">
+              <p>Sim, 100% seguro. Nós não processamos pagamentos nem pedimos cadastro ou senha. Todos os botões redirecionam diretamente para o anúncio oficial dentro do site ou aplicativo do <strong>Mercado Livre</strong>, onde você conta com a proteção oficial do programa <em>Compra Garantida</em> e entrega rastreada.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Como evitar arrependimento ou devolução ao comprar online?</summary>
+            <div class="faq-answer">
+              <p>Antes de finalizar a compra no Mercado Livre, recomendamos 3 passos rápidos que destacamos em todos os nossos cards: <strong>1)</strong> conferir a voltagem (110V, 220V ou Bivolt) ou medidas exatas na ficha técnica; <strong>2)</strong> ler as fotos e comentários de quem já recebeu o produto; e <strong>3)</strong> usar nosso comparador lado a lado (botão <em>"⚖️ Comparar"</em>) para avaliar até 3 produtos similares sem pressa.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Posso salvar uma lista de produtos ou enviar no WhatsApp para decidir depois?</summary>
+            <div class="faq-answer">
+              <p>Sim! Basta clicar no ícone de coração (<strong>❤️</strong>) nos produtos que você gostou para salvá-los em <em>Meus Favoritos</em>. Depois, clique no botão <strong>"📲 Enviar Favoritos no WhatsApp"</strong> no topo da vitrine para mandar a lista completa com preços e links diretos para o seu próprio contato ou para sua família.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ======================= SEÇÃO INSTITUCIONAL (SOBRE E PRIVACIDADE) ======================= -->
     <section class="info-sections" aria-label="Informações Institucionais">
       <div class="container info-grid">
@@ -547,6 +685,7 @@
           <h3>Institucional</h3>
           <ul>
             <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#duvidas-frequentes">Dúvidas Frequentes</a></li>
             <li><a href="#privacidade">Política de Privacidade</a></li>
             <li><a href="https://www.mercadolivre.com.br/mais-vendidos?matt_word=trgatyva20230819121948&amp;matt_tool=21540510" target="_blank" rel="sponsored nofollow noopener">Fonte: Mais Vendidos ML</a></li>
           </ul>
@@ -558,6 +697,7 @@
           <ul>
             <li><a href="#vitrine" id="footerAllLink">Todos os Produtos</a></li>
             <li><a href="#ranking-top">Campeões de Vendas (1º Lugar)</a></li>
+            <li><a href="#achadinhos-whatsapp">Enviar Lista no WhatsApp</a></li>
             <li><a href="#vitrine" id="footerFavLink">Meus Favoritos Salvos</a></li>
           </ul>
         </div>
@@ -615,6 +755,9 @@
       </div>
       <div class="compare-bar-actions">
         <button type="button" class="compare-clear-btn" id="clearCompareBtn">Limpar</button>
+        <button type="button" class="compare-whatsapp-btn" id="shareCompareWhatsAppBtn" title="Enviar comparativo no WhatsApp">
+          📲 Enviar no WhatsApp
+        </button>
         <button type="button" class="compare-open-btn" id="openCompareModalBtn">
           Comparar Agora &rarr;
         </button>
@@ -636,6 +779,9 @@
       <!-- Preenchido dinamicamente via JS -->
     </div>
   </div>
+
+  <!-- Toast de Notificação (Link Copiado / Ações Rápidas) -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite" hidden></div>
 
   <!-- Botão Flutuante Voltar ao Topo -->
   <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Voltar ao topo da página" hidden>
