@@ -112,6 +112,10 @@
     smartShortcutsBar: document.getElementById('smartShortcutsBar'),
     productsContainer: document.getElementById('productsContainer'),
     emptyState: document.getElementById('emptyState'),
+    emptyStateTitle: document.getElementById('emptyStateTitle'),
+    emptyStateDesc: document.getElementById('emptyStateDesc'),
+    emptyMlSearchBtn: document.getElementById('emptyMlSearchBtn'),
+    emptyMlSearchBtnText: document.getElementById('emptyMlSearchBtnText'),
     activeSectionTitle: document.getElementById('activeSectionTitle'),
     resultsCounterText: document.getElementById('resultsCounterText'),
     leadersGrid: document.getElementById('leadersGrid'),
@@ -148,6 +152,19 @@
   // =========================================================================
   // UTILITÁRIOS DE FORMATAÇÃO E DICAS DE COMPRA CONSCIENTE
   // =========================================================================
+  const AFFILIATE_QUERY = 'matt_word=trgatyva20230819121948&matt_tool=21540510';
+
+  function buildMlSearchAffiliateUrl(rawQuery) {
+    const clean = String(rawQuery || '')
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, '-');
+    if (!clean) {
+      return `https://www.mercadolivre.com.br/mais-vendidos?${AFFILIATE_QUERY}`;
+    }
+    return `https://lista.mercadolivre.com.br/${encodeURIComponent(clean)}?${AFFILIATE_QUERY}`;
+  }
+
   function formatCurrencyBRL(value) {
     return Number(value).toLocaleString('pt-BR', {
       style: 'currency',
@@ -692,14 +709,75 @@
       els.mobileFilterDot.hidden = !hasActiveFilter;
     }
 
-    // Estado vazio
+    // Estado vazio (com botão direto para buscar o termo no Mercado Livre com seu código de afiliado)
+    const trimmedQuery = state.searchQuery.trim();
     if (filtered.length === 0) {
       els.emptyState.hidden = false;
       els.productsContainer.innerHTML = '';
+
+      if (trimmedQuery) {
+        if (els.emptyStateTitle) {
+          els.emptyStateTitle.textContent = `Não encontrou "${trimmedQuery}" nos 100 da vitrine?`;
+        }
+        if (els.emptyStateDesc) {
+          els.emptyStateDesc.textContent = `Sem problemas! Clique no botão abaixo para ver todas as ofertas, preços e avaliações de "${trimmedQuery}" direto na busca oficial do Mercado Livre:`;
+        }
+        if (els.emptyMlSearchBtn) {
+          els.emptyMlSearchBtn.href = buildMlSearchAffiliateUrl(trimmedQuery);
+        }
+        if (els.emptyMlSearchBtnText) {
+          els.emptyMlSearchBtnText.textContent = `Ver ofertas de "${trimmedQuery}" no Mercado Livre →`;
+        }
+      } else if (state.onlyFavorites) {
+        if (els.emptyStateTitle) {
+          els.emptyStateTitle.textContent = 'Você ainda não salvou produtos nos Favoritos ❤️';
+        }
+        if (els.emptyStateDesc) {
+          els.emptyStateDesc.textContent = 'Clique no coração nos produtos da vitrine para salvá-los aqui, ou explore o ranking completo no Mercado Livre:';
+        }
+        if (els.emptyMlSearchBtn) {
+          els.emptyMlSearchBtn.href = buildMlSearchAffiliateUrl('');
+        }
+        if (els.emptyMlSearchBtnText) {
+          els.emptyMlSearchBtnText.textContent = 'Explorar Mais Vendidos no Mercado Livre →';
+        }
+      } else {
+        if (els.emptyStateTitle) {
+          els.emptyStateTitle.textContent = 'Nenhum produto encontrado com esses filtros';
+        }
+        if (els.emptyStateDesc) {
+          els.emptyStateDesc.textContent = 'Limpe os filtros abaixo ou pesquise qualquer produto diretamente no Mercado Livre:';
+        }
+        if (els.emptyMlSearchBtn) {
+          els.emptyMlSearchBtn.href = buildMlSearchAffiliateUrl('');
+        }
+        if (els.emptyMlSearchBtnText) {
+          els.emptyMlSearchBtnText.textContent = 'Buscar direto no Mercado Livre →';
+        }
+      }
       return;
     }
 
     els.emptyState.hidden = true;
+
+    const searchMoreBannerHtml = trimmedQuery
+      ? `
+        <div class="ml-search-more-banner">
+          <div class="ml-search-more-text">
+            <strong>🔎 Quer ver mais modelos de "${escapeHtml(trimmedQuery)}"?</strong>
+            <span>Confira centenas de outras marcas, tamanhos e preços para "${escapeHtml(trimmedQuery)}" direto na plataforma oficial:</span>
+          </div>
+          <a
+            href="${escapeHtml(buildMlSearchAffiliateUrl(trimmedQuery))}"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            class="empty-ml-search-btn"
+          >
+            <span>Ver mais opções de "${escapeHtml(trimmedQuery)}" no Mercado Livre &rarr;</span>
+          </a>
+        </div>
+      `
+      : '';
 
     // Se estiver mostrando uma única categoria selecionada, exibe o alerta educativo da categoria no topo
     if (state.selectedCategory !== 'all' && !state.categoryGroup) {
@@ -712,6 +790,7 @@
         <div class="products-grid">
           ${filtered.map(createProductCardHtml).join('')}
         </div>
+        ${searchMoreBannerHtml}
       `;
       return;
     }
@@ -722,7 +801,7 @@
       !state.categoryGroup &&
       state.sortBy === 'rank' &&
       !state.onlyFavorites &&
-      !state.searchQuery.trim() &&
+      !trimmedQuery &&
       state.maxRank !== '1'
     ) {
       const groupedHtml = [];
@@ -755,6 +834,7 @@
         <div class="products-grid">
           ${filtered.map(createProductCardHtml).join('')}
         </div>
+        ${searchMoreBannerHtml}
       `;
     }
   }
@@ -884,6 +964,14 @@
         }
         updateSmartPillsUI();
         renderProducts();
+      });
+
+      els.searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          const vitrineEl = document.getElementById('vitrine');
+          if (vitrineEl) vitrineEl.scrollIntoView({ behavior: 'smooth' });
+        }
       });
     }
 

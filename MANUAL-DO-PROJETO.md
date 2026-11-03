@@ -56,6 +56,10 @@ Extraídos diretamente da sua conta de afiliado (`Francisco`):
      - Os **Favoritos (`❤️`)** de cada visitante ficam salvos na memória do próprio navegador dele (`localStorage`), sem exigir login nem senha.
      - O pagamento e a entrega acontecem 100% dentro do Mercado Livre.
 
+4. **"E se o visitante não quiser nenhum dos 100 produtos e pesquisar outro item?"**
+   - **Lá no Mercado Livre (Janela de 24h):** Quando o visitante clica em qualquer link do seu site e entra no Mercado Livre, o seu código de afiliado fica registrado por **24 horas**. Se ele desistir do item inicial, pesquisar outro produto lá dentro do Mercado Livre e comprar, **você ganha a comissão normalmente** (venda indireta).
+   - **Na Barra de Busca do seu próprio site (`Achadinhos Onlines`):** Se o visitante digitar qualquer produto na busca do seu site que não esteja entre os 100 (ex.: *"Cadeira Gamer"* ou *"Geladeira"*), o site exibe automaticamente o botão amarelo **`🔎 Ver ofertas de "[termo]" no Mercado Livre →`** (e também exibe um banner no rodapé quando há resultados parciais), levando o cliente direto para a pesquisa oficial no Mercado Livre **já com o seu código `matt_word=trgatyva20230819121948&matt_tool=21540510` embutido**!
+
 ---
 
 ## 3. Como Atualizar Produtos ou Adicionar Novos Itens Sempre que Quiser

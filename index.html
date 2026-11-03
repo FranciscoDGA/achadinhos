@@ -305,7 +305,7 @@
               <span id="activeSectionTitle">Mais vendidos no Mercado Livre</span>
             </h2>
             <p class="section-source-note">
-              Fonte oficial: <a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer">Mercado Livre — Mais Vendidos</a> • <span id="resultsCounterText">Carregando produtos...</span>
+              Fonte oficial: <a href="https://www.mercadolivre.com.br/mais-vendidos?matt_word=trgatyva20230819121948&amp;matt_tool=21540510" target="_blank" rel="sponsored nofollow noopener">Mercado Livre — Mais Vendidos</a> • <span id="resultsCounterText">Carregando produtos...</span>
             </p>
           </div>
 
@@ -439,12 +439,29 @@
 
           <!-- Área de Produtos em Cards -->
           <div class="products-area">
-            <!-- Estado Vazio (quando nenhum produto corresponde ao filtro) -->
+            <!-- Estado Vazio (quando nenhum produto corresponde ao filtro ou busca) -->
             <div class="empty-state" id="emptyState" hidden>
-              <div class="empty-icon">🔍</div>
-              <h3>Nenhum produto encontrado com esses filtros</h3>
-              <p>Tente buscar outro termo ou limpar os filtros selecionados para ver todos os produtos mais vendidos.</p>
-              <button type="button" class="apply-filters-btn" id="emptyResetBtn">Mostrar Todos os Produtos</button>
+              <div class="empty-icon">🔎</div>
+              <h3 id="emptyStateTitle">Não encontrou esse produto nos 100 da vitrine?</h3>
+              <p id="emptyStateDesc">Você pode buscar esse produto diretamente na plataforma oficial do Mercado Livre com entrega para todo o Brasil:</p>
+              <div class="empty-state-actions">
+                <a
+                  href="https://www.mercadolivre.com.br/mais-vendidos?matt_word=trgatyva20230819121948&amp;matt_tool=21540510"
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  class="empty-ml-search-btn"
+                  id="emptyMlSearchBtn"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span id="emptyMlSearchBtnText">Buscar direto no Mercado Livre &rarr;</span>
+                </a>
+                <button type="button" class="reset-filters-btn empty-reset-secondary" id="emptyResetBtn">
+                  Voltar para os 100 produtos da vitrine
+                </button>
+              </div>
             </div>
 
             <!-- Container de Seções por Categoria ou Grid Filtrado -->
@@ -467,7 +484,7 @@
             </h2>
             <p class="section-source-note">Os produtos número 1 em vendas de cada departamento no Mercado Livre</p>
           </div>
-          <a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer" class="section-action-link">
+          <a href="https://www.mercadolivre.com.br/mais-vendidos?matt_word=trgatyva20230819121948&amp;matt_tool=21540510" target="_blank" rel="sponsored nofollow noopener" class="section-action-link">
             Ver ranking completo no Mercado Livre &rarr;
           </a>
         </div>
@@ -531,7 +548,7 @@
           <ul>
             <li><a href="#sobre">Sobre Nós</a></li>
             <li><a href="#privacidade">Política de Privacidade</a></li>
-            <li><a href="https://www.mercadolivre.com.br/mais-vendidos" target="_blank" rel="noopener noreferrer">Fonte: Mais Vendidos ML</a></li>
+            <li><a href="https://www.mercadolivre.com.br/mais-vendidos?matt_word=trgatyva20230819121948&amp;matt_tool=21540510" target="_blank" rel="sponsored nofollow noopener">Fonte: Mais Vendidos ML</a></li>
           </ul>
         </div>
 
