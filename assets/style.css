@@ -2369,42 +2369,52 @@ select {
   /* Cards em 2 colunas perfeitamente alinhados no celular */
   .products-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    gap: 6px;
   }
 
   .product-card {
-    padding: 9px;
+    padding: 7px 6px;
     min-width: 0;
   }
 
   .card-top-badges {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
     gap: 3px;
     margin-bottom: 6px;
-    flex-wrap: nowrap;
   }
 
   .rank-badge {
     font-size: 0.56rem;
-    padding: 3px 5px;
+    font-weight: 800;
+    padding: 2px 5px;
+    border-radius: 999px;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: calc(100% - 76px);
+    overflow: visible;
+    text-overflow: clip;
+    max-width: none;
+    flex-shrink: 0;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
   }
 
   .card-Quick-actions {
+    display: flex;
+    align-items: center;
     gap: 2px;
     flex-shrink: 0;
   }
 
   .card-icon-btn {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
   }
 
   .card-icon-btn svg {
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
   }
 
   .card-image-link {

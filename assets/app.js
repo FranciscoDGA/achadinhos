@@ -738,7 +738,7 @@
     const shortDate = formatShortDate(product.consultedAt);
     const priceFormatted = formatCurrencyBRL(product.price);
     const rankClass = product.rank === 1 ? 'rank-badge rank-top1' : 'rank-badge';
-    const rankLabel = product.rank === 1 ? '🏆 1º MAIS VENDIDO' : `${product.rank}º Mais Vendido`;
+    const rankLabel = `${product.rank}º Mais Vendido`;
     const smartTip = getCategoryTip(product.category);
 
     return `
