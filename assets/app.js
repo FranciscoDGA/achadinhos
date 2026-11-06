@@ -1519,10 +1519,17 @@
       state.products = Array.isArray(data) ? data : [];
       state.categories = extractCategories(state.products);
 
-      // Atualiza a data no topo com base no primeiro produto
+      // Atualiza a data no topo com a consulta mais recente dos produtos
       if (state.products.length > 0 && els.headerUpdatedDate) {
-        const shortDate = formatShortDate(state.products[0].consultedAt);
-        els.headerUpdatedDate.textContent = `Atualizado em ${shortDate}`;
+        const datas = state.products
+          .map((p) => p.consultedAt)
+          .filter(Boolean)
+          .sort((a, b) => {
+            const [da, ma, ya] = String(a).split('/').map(Number);
+            const [db, mb, yb] = String(b).split('/').map(Number);
+            return new Date(ya, (ma || 1) - 1, da || 1) - new Date(yb, (mb || 1) - 1, db || 1);
+          });
+        els.headerUpdatedDate.textContent = `Atualizado em ${formatShortDate(datas[datas.length - 1])}`;
       }
 
       const hadUrlFilter = applyUrlParamsOnLoad();
