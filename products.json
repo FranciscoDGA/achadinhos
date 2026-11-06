@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
-    "price": 150.0,
+    "price": 150,
     "consultedAt": "02/11/2026",
     "category": "Games",
     "rank": 1,
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Razer Gold Digital R$ 30 (digital)",
-    "price": 30.0,
+    "price": 30,
     "consultedAt": "02/11/2026",
     "category": "Games",
     "rank": 2,
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Nintendo Gift Card eShop R$ 50 (Digital)",
-    "price": 50.0,
+    "price": 50,
     "consultedAt": "02/11/2026",
     "category": "Games",
     "rank": 4,
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Controle Joystick Sem Fio Sony PlayStation 5 CFI-ZCT1W Midnight Black",
-    "price": 439.0,
+    "price": 439,
     "consultedAt": "02/11/2026",
     "category": "Games",
     "rank": 6,
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "name": "Fone de Ouvido JBL Quantum 100M2 Gamer Over-ear com Microfone Removível para PS4 e PS5",
-    "price": 179.0,
+    "price": 179,
     "consultedAt": "02/11/2026",
     "category": "Games",
     "rank": 10,
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "name": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
-    "price": 169.0,
+    "price": 169,
     "consultedAt": "02/11/2026",
     "category": "Eletrodomésticos",
     "rank": 1,
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "name": "Aspirador Pó E Água Soprador Wap Gtw 10 Maré 1400w Cor Cinza",
-    "price": 370.0,
+    "price": 370,
     "consultedAt": "02/11/2026",
     "category": "Eletrodomésticos",
     "rank": 4,
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "name": "Lavadora de Alta Pressão Kärcher Compacta 1.500 PSI/Libras 1400W 300L/h com Aplicador de Detergente e Lança Regulável 220v",
-    "price": 348.0,
+    "price": 348,
     "consultedAt": "02/11/2026",
     "category": "Ferramentas",
     "rank": 4,
@@ -402,7 +402,7 @@
   {
     "id": 41,
     "name": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
-    "price": 1233.0,
+    "price": 1233,
     "consultedAt": "02/11/2026",
     "category": "Celulares e Telefones",
     "rank": 1,
@@ -442,7 +442,7 @@
   {
     "id": 45,
     "name": "Carregador 30w Turbo Para iPhone 8 X Xr 11 12 13 14 Pro Max Fonte Usb C Cor Branca Dtimp",
-    "price": 44.0,
+    "price": 44,
     "consultedAt": "02/11/2026",
     "category": "Celulares e Telefones",
     "rank": 5,
@@ -452,7 +452,7 @@
   {
     "id": 46,
     "name": "Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul",
-    "price": 899.0,
+    "price": 899,
     "consultedAt": "02/11/2026",
     "category": "Celulares e Telefones",
     "rank": 6,
@@ -512,7 +512,7 @@
   {
     "id": 52,
     "name": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
-    "price": 57.0,
+    "price": 57,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 2,
@@ -522,7 +522,7 @@
   {
     "id": 53,
     "name": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
-    "price": 150.0,
+    "price": 150,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 3,
@@ -542,7 +542,7 @@
   {
     "id": 55,
     "name": "Xbox Cartão Presente R$ 100 Gift card (Digital)",
-    "price": 100.0,
+    "price": 100,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 5,
@@ -552,7 +552,7 @@
   {
     "id": 56,
     "name": "Roblox R$ 100 eGift (Digital)",
-    "price": 100.0,
+    "price": 100,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 6,
@@ -562,7 +562,7 @@
   {
     "id": 57,
     "name": "Razer Gold Digital R$ 30 (digital)",
-    "price": 30.0,
+    "price": 30,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 7,
@@ -572,7 +572,7 @@
   {
     "id": 58,
     "name": "Bambu Lab PLA Lite vermelho",
-    "price": 118.0,
+    "price": 118,
     "consultedAt": "02/11/2026",
     "category": "Informática",
     "rank": 8,
@@ -602,7 +602,7 @@
   {
     "id": 61,
     "name": "Suporte TV Fixo Universal 10\" a 100\" Polegadas Forte Para Todas as Marcas",
-    "price": 19.0,
+    "price": 19,
     "consultedAt": "02/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
     "rank": 1,
@@ -782,7 +782,7 @@
   {
     "id": 79,
     "name": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
-    "price": 155.0,
+    "price": 155,
     "consultedAt": "02/11/2026",
     "category": "Esportes e Fitness",
     "rank": 9,
@@ -972,7 +972,7 @@
   {
     "id": 98,
     "name": "Amplificador Taramps TS 800x4 800W 4 Canais para Som Automotivo",
-    "price": 264.0,
+    "price": 264,
     "consultedAt": "02/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 8,
@@ -998,5 +998,105 @@
     "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_886444-MLB95702648919_102025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/scanner-automotivo-bluetooth-obd2-eml-327-android-ios-obdii/up/MLBU1458199008?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 101,
+    "name": "Geladeira Brastemp Frost Free Inverse 500 Litros Inox - BRE66",
+    "price": 3819,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 1,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_738389-MLA107202927243_022026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/geladeira-brastemp-frost-free-inverse-500-litros-inox-bre66/p/MLB65590853?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 102,
+    "name": "Micro-ondas Electrolux Efficient 20L Branco Função Descongelar e Receitas Pré-Programadas (ME20B)",
+    "price": 445.23,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 2,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_676177-MLA116180493260_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/micro-ondas-electrolux-efficient-20l-branco-funcao-descongelar-e-receitas-pre-programadas-me20b/p/MLB76780230?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 103,
+    "name": "Jogo De Panelas Antiaderente 5 Pçs Sicília Tramontina Avelã",
+    "price": 404.45,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 3,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_785565-MLA95694795440_102025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/jogo-de-panelas-antiaderente-5-pcs-sicilia-tramontina-avela/p/MLB33311323?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 104,
+    "name": "Perfume Dolce & Gabbana Devotion Edp 100ml Masculino",
+    "price": 351.46,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 4,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_908221-MLA107686995620_032026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/perfume-dolce-gabbana-devotion-edp-100ml-masculino/up/MLBU5795826850?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 105,
+    "name": "Ar Condicionado Portátil Haier 12000 Btus Frio 110v R32 Branco",
+    "price": 1651,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 5,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_873049-MLA115547319930_082026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/ar-condicionado-portatil-haier-12000-btus-frio-110v-r32-branco-110v/p/MLB78717889?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 106,
+    "name": "Smart Tv Tcl 55 Polegadas Qd-Mini Led 4k C6k Wifi Bluetooth Google Tv 4 Hdmi 144hz Hdr10+ 55c6k",
+    "price": 3639,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 6,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_976857-MLA114607312864_082026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/smart-tv-tcl-55-polegadas-qd-mini-led-4k-c6k-wifi-bluetooth-google-tv-4-hdmi-144hz-hdr10-55c6k/p/MLB48808732?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 107,
+    "name": "Notebook ASUS Vivobook Go 15 E1504 AMD RYZEN 5 7520U 8GB Ram 256GB SSD Linux KeepOS 15,6” FHD Black E1504FA-NJ731",
+    "price": 2949,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 7,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_830301-MLA99949667885_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/notebook-asus-vivobook-go-15-e1504-amd-ryzen-5-7520u-8gb-ram-256gb-ssd-linux-keepos-156-fhd-black-e1504fa-nj731/p/MLB36772633?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 110,
+    "name": "LG UltraGear Monitor Gamer 27\" IPS, 144Hz Nativo, 1ms (MBR), Full HD (1920x1080), HDR10, NVIDIA G-SYNC, AMD FreeSync, Preto - 27G411B",
+    "price": 729,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 8,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_896633-MLA120723721883_112026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/lg-ultragear-monitor-gamer-27-ips-144hz-nativo-1ms-mbr-full-hd-1920x1080-hdr10-nvidia-g-sync-amd-freesync-preto-27g411b/p/MLB79391475?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 108,
+    "name": "TP-Link Tapo C500 Câmera de Segurança Wifi 1080P 360° Colorida IP65",
+    "price": 167.92,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 9,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_794417-MLA99985509435_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/tp-link-tapo-c500-camera-de-seguranca-wifi-1080p-360-colorida-ip65/p/MLB23037572?matt_word=trgatyva20230819121948&matt_tool=21540510"
+  },
+  {
+    "id": 109,
+    "name": "Console Playstation 5 Slim Edição Digital 825 Gb",
+    "price": 4084,
+    "consultedAt": "06/11/2026",
+    "category": "Black Friday",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_971864-MLA91925160023_092025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/console-playstation-5-slim-edicao-digital-825-gb/p/MLB54963150?matt_word=trgatyva20230819121948&matt_tool=21540510"
   }
 ]

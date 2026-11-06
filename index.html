@@ -43,7 +43,7 @@
         "name": "Achado Reviews",
         "alternateName": "Achado Reviews — Mais Vendidos do Mercado Livre",
         "url": "https://achadoreviews.com.br/",
-        "description": "Curadoria independente e atualizada dos 100 produtos mais vendidos no Mercado Livre divididos nas 10 categorias oficiais."
+        "description": "Curadoria independente e atualizada dos 110 produtos mais vendidos no Mercado Livre divididos nas 10 categorias oficiais, além de uma seleção especial de Black Friday."
       },
       {
         "@type": "FAQPage",
@@ -310,7 +310,7 @@
         </div>
 
         <div class="category-cards-scroll" id="categoryCardsGrid" role="tablist" aria-label="Filtrar por categoria">
-          <!-- Gerado dinamicamente via JS a partir das 10 categorias oficiais do Mercado Livre -->
+          <!-- Gerado dinamicamente via JS a partir das 11 categorias da vitrine (10 oficiais do ML + Black Friday) -->
         </div>
       </div>
     </section>
@@ -396,7 +396,10 @@
         <!-- Atalhos de "Escolha Segura" (Curadoria sem empurrometria) -->
         <div class="smart-shortcuts-bar" id="smartShortcutsBar" role="toolbar" aria-label="Atalhos de escolha segura">
           <button type="button" class="smart-pill active" data-preset="all">
-            <span>✨ Todos os 100</span>
+            <span>✨ Todos os 110</span>
+          </button>
+          <button type="button" class="smart-pill" data-preset="bf">
+            <span>🖤 Black Friday</span>
           </button>
           <button type="button" class="smart-pill" data-preset="top1">
             <span>🏆 Só os 1º Lugares (Líderes Absolutos)</span>
@@ -509,7 +512,7 @@
             <!-- Estado Vazio (quando nenhum produto corresponde ao filtro ou busca) -->
             <div class="empty-state" id="emptyState" hidden>
               <div class="empty-icon">🔎</div>
-              <h3 id="emptyStateTitle">Não encontrou esse produto nos 100 da vitrine?</h3>
+              <h3 id="emptyStateTitle">Não encontrou esse produto nos 110 da vitrine?</h3>
               <p id="emptyStateDesc">Você pode buscar esse produto diretamente na plataforma oficial do Mercado Livre com entrega para todo o Brasil:</p>
               <div class="empty-state-actions">
                 <a
@@ -526,7 +529,7 @@
                   <span id="emptyMlSearchBtnText">Buscar direto no Mercado Livre &rarr;</span>
                 </a>
                 <button type="button" class="reset-filters-btn empty-reset-secondary" id="emptyResetBtn">
-                  Voltar para os 100 produtos da vitrine
+                  Voltar para os 110 produtos da vitrine
                 </button>
               </div>
             </div>
@@ -605,7 +608,7 @@
           <details class="faq-item" open>
             <summary class="faq-question">Como saber quais são os produtos mais vendidos no Mercado Livre hoje?</summary>
             <div class="faq-answer">
-              <p>O <strong>Achado Reviews</strong> reúne e organiza os 100 produtos que lideram o ranking oficial de <em>Mais Vendidos do Mercado Livre</em> em 10 grandes categorias (do 1º ao 10º lugar), permitindo filtrar por preço, comparar itens lado a lado e consultar avaliações reais antes de comprar.</p>
+              <p>O <strong>Achado Reviews</strong> reúne e organiza os 110 produtos que lideram o ranking oficial de <em>Mais Vendidos do Mercado Livre</em> nas 10 grandes categorias oficiais (do 1º ao 10º lugar), mais uma seleção especial de <strong>Black Friday</strong> (do 1º ao 10º lugar), permitindo filtrar por preço, comparar itens lado a lado e consultar avaliações reais antes de comprar.</p>
             </div>
           </details>
 

@@ -11,7 +11,7 @@
 
   const FAVORITES_STORAGE_KEY = 'achadinhos_ml_favorites_v1';
 
-  // Ícones e dicas de "Compra Sem Erro" das 10 categorias oficiais do Mercado Livre
+  // Ícones e dicas de "Compra Sem Erro" das 11 categorias da vitrine (10 oficiais do ML + Black Friday)
   const CATEGORY_META = {
     'Games': {
       icon: '🎮',
@@ -72,6 +72,12 @@
       shortName: 'Acessórios Veículos',
       cardTip: '🚗 Confirme ano/modelo do seu veículo no ML',
       categoryAlert: 'Evite devoluções: Use o verificador de compatibilidade de veículos do Mercado Livre ou confirme nas perguntas se a peça atende ao ano/modelo do seu carro ou moto.'
+    },
+    'Black Friday': {
+      icon: '🖤',
+      shortName: 'Black Friday',
+      cardTip: '🖤 Confira o desconto real: compare preço antes e depois no anúncio',
+      categoryAlert: 'Black Friday: Compare o preço de antes e depois do desconto, confira o frete para o seu CEP e valide se a oferta é do vendedor oficial antes de finalizar a compra.'
     }
   };
 
@@ -454,7 +460,7 @@
       `🏆 ${product.rank}º mais vendido em ${product.category}\n` +
       `💰 Preço consultado em ${shortDate}: *${priceFormatted}*\n\n` +
       `👉 Confira avaliações, frete e preço atual no Mercado Livre:\n${link}\n\n` +
-      `✨ Veja todos os 100 mais vendidos em:\n${siteUrl}`;
+      `✨ Veja todos os 110 mais vendidos em:\n${siteUrl}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -481,7 +487,7 @@
       `❤️ *Minha Lista de Favoritos — Achado Reviews (Mercado Livre)*\n` +
       `Separei esses produtos campeões de vendas para conferir com calma:\n\n` +
       `${itemsLines}\n\n` +
-      `✨ Veja a vitrine completa dos 100 Mais Vendidos em:\n${getBaseSiteUrl()}`;
+      `✨ Veja a vitrine completa dos 110 Mais Vendidos em:\n${getBaseSiteUrl()}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -531,7 +537,7 @@
       `🏆 *Os 10 Campeões de Vendas (1º Lugar de Cada Categoria no Mercado Livre)*\n` +
       `Resumo atualizado do Achado Reviews para guardar e consultar sempre que precisar:\n\n` +
       `${itemsLines}\n\n` +
-      `✨ Vitrine completa com os 100 Mais Vendidos:\n${getBaseSiteUrl()}`;
+      `✨ Vitrine completa com os 110 Mais Vendidos:\n${getBaseSiteUrl()}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -602,7 +608,7 @@
     }
 
     if (filtroParam) {
-      const validPresets = ['top1', 'top3', 'under50', 'under100', 'home', 'tech', 'wellness'];
+      const validPresets = ['top1', 'top3', 'under50', 'under100', 'home', 'tech', 'wellness', 'bf'];
       if (validPresets.includes(filtroParam)) {
         applySmartPreset(filtroParam);
         return true;
@@ -918,6 +924,8 @@
         els.activeSectionTitle.textContent = 'Presentes & Achadinhos Úteis até R$ 50';
       } else if (state.activePreset === 'under100') {
         els.activeSectionTitle.textContent = 'Utilidades do Dia a Dia até R$ 100';
+      } else if (state.activePreset === 'bf') {
+        els.activeSectionTitle.textContent = 'Ofertas de Black Friday 🖤';
       } else if (state.categoryGroup === 'home') {
         els.activeSectionTitle.textContent = 'Casa, Cozinha & Oficina';
       } else if (state.categoryGroup === 'tech') {
@@ -955,7 +963,7 @@
 
       if (trimmedQuery) {
         if (els.emptyStateTitle) {
-          els.emptyStateTitle.textContent = `Não encontrou "${trimmedQuery}" nos 100 da vitrine?`;
+          els.emptyStateTitle.textContent = `Não encontrou "${trimmedQuery}" nos 110 da vitrine?`;
         }
         if (els.emptyStateDesc) {
           els.emptyStateDesc.textContent = `Sem problemas! Clique no botão abaixo para ver todas as ofertas, preços e avaliações de "${trimmedQuery}" direto na busca oficial do Mercado Livre:`;
@@ -1135,6 +1143,8 @@
       state.categoryGroup = 'tech';
     } else if (preset === 'wellness') {
       state.categoryGroup = 'wellness';
+    } else if (preset === 'bf') {
+      state.selectedCategory = 'Black Friday';
     }
 
     // Sincroniza controles da sidebar
