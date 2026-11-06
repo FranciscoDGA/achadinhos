@@ -1,4 +1,4 @@
-# Achadinhos Onlines — Vitrine de Afiliados do Mercado Livre
+# Achado Reviews — Vitrine de Afiliados do Mercado Livre
 
 Site vitrine estático, rápido e responsivo (Desktop e Celular) desenvolvido para divulgação consciente de produtos do **Programa de Afiliados do Mercado Livre**, organizado pelas 10 categorias da página oficial de **Mais Vendidos do Mercado Livre**.
 

@@ -1,7 +1,7 @@
-# 📘 Manual Completo do Projeto — Achadinhos Onlines
+# 📘 Manual Completo do Projeto — Achado Reviews
 
 > **Documento de Referência e Histórico de Decisões**  
-> **Projeto:** Vitrine de Afiliados do Mercado Livre — *Achadinhos Onlines*  
+> **Projeto:** Vitrine de Afiliados do Mercado Livre — *Achado Reviews*  
 > **Repositório GitHub:** `https://github.com/FranciscoDGA/achadinhos`  
 > **Hospedagem Recomendada:** Vercel (integrada automaticamente ao GitHub) ou HostGator (`achadinhos-hostgator.zip`)
 
@@ -9,7 +9,7 @@
 
 ## 1. Visão e Filosofia do Projeto (Compra Consciente)
 
-O **Achadinhos Onlines** foi projetado para **não ser mais um site de prateleiras forçado** que tenta empurrar produtos "goela abaixo" dos visitantes.
+O **Achado Reviews** foi projetado para **não ser mais um site de prateleiras forçado** que tenta empurrar produtos "goela abaixo" dos visitantes.
 
 ### Por que adotamos a filosofia de Compra Consciente?
 No Programa de Afiliados do Mercado Livre, **toda vez que um comprador devolve um produto por erro ou arrependimento, a comissão do afiliado é cancelada**.  
@@ -58,7 +58,7 @@ Extraídos diretamente da sua conta de afiliado (`Francisco`):
 
 4. **"E se o visitante não quiser nenhum dos 100 produtos e pesquisar outro item?"**
    - **Lá no Mercado Livre (Janela de 24h):** Quando o visitante clica em qualquer link do seu site e entra no Mercado Livre, o seu código de afiliado fica registrado por **24 horas**. Se ele desistir do item inicial, pesquisar outro produto lá dentro do Mercado Livre e comprar, **você ganha a comissão normalmente** (venda indireta).
-   - **Na Barra de Busca do seu próprio site (`Achadinhos Onlines`):** Se o visitante digitar qualquer produto na busca do seu site que não esteja entre os 100 (ex.: *"Cadeira Gamer"* ou *"Geladeira"*), o site exibe automaticamente o botão amarelo **`🔎 Ver ofertas de "[termo]" no Mercado Livre →`** (e também exibe um banner no rodapé quando há resultados parciais), levando o cliente direto para a pesquisa oficial no Mercado Livre **já com o seu código `matt_word=trgatyva20230819121948&matt_tool=21540510` embutido**!
+   - **Na Barra de Busca do seu próprio site (`Achado Reviews`):** Se o visitante digitar qualquer produto na busca do seu site que não esteja entre os 100 (ex.: *"Cadeira Gamer"* ou *"Geladeira"*), o site exibe automaticamente o botão amarelo **`🔎 Ver ofertas de "[termo]" no Mercado Livre →`** (e também exibe um banner no rodapé quando há resultados parciais), levando o cliente direto para a pesquisa oficial no Mercado Livre **já com o seu código `matt_word=trgatyva20230819121948&matt_tool=21540510` embutido**!
 
 ---
 
@@ -156,14 +156,14 @@ Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúnc
    - A mensagem já sai formatada com os nomes dos produtos, preços de referência e **todos os seus links de afiliado** (`matt_word=trgatyva20230819121948&matt_tool=21540510`), além do link do seu site no final. Assim, quando a pessoa manda para o marido, esposa ou grupo da família, qualquer um que clicar e comprar gera comissão para você.
 3. **Motor 3 — Links Inteligentes por Categoria/Filtro + Botão "🔗 Copiar Link":**
    - O site aceita links diretos que já abrem a vitrine filtrada e rolam até os produtos:
-     - `https://achadinhos.vercel.app/?filtro=under50` *(Abre direto nos Presentes & Achadinhos até R$ 50)*
-     - `https://achadinhos.vercel.app/?filtro=under100` *(Abre direto nas Utilidades do Dia a Dia até R$ 100)*
-     - `https://achadinhos.vercel.app/?filtro=top1` *(Abre direto nos 10 Líderes Absolutos — 1º Lugar de cada categoria)*
-     - `https://achadinhos.vercel.app/?filtro=home` *(Abre direto em Casa & Oficina)*
-     - `https://achadinhos.vercel.app/?filtro=tech` *(Abre direto em Tech & Games)*
-     - `https://achadinhos.vercel.app/?filtro=wellness` *(Abre direto em Saúde, Beleza & Treino)*
-     - `https://achadinhos.vercel.app/?categoria=Eletrodomésticos` *(Funciona com qualquer uma das 10 categorias)*
-     - `https://achadinhos.vercel.app/?busca=air+fryer` *(Abre direto pesquisando qualquer termo)*
+     - `https://achadoreviews.com.br/?filtro=under50` *(Abre direto nos Presentes & Achadinhos até R$ 50)*
+     - `https://achadoreviews.com.br/?filtro=under100` *(Abre direto nas Utilidades do Dia a Dia até R$ 100)*
+     - `https://achadoreviews.com.br/?filtro=top1` *(Abre direto nos 10 Líderes Absolutos — 1º Lugar de cada categoria)*
+     - `https://achadoreviews.com.br/?filtro=home` *(Abre direto em Casa & Oficina)*
+     - `https://achadoreviews.com.br/?filtro=tech` *(Abre direto em Tech & Games)*
+     - `https://achadoreviews.com.br/?filtro=wellness` *(Abre direto em Saúde, Beleza & Treino)*
+     - `https://achadoreviews.com.br/?categoria=Eletrodomésticos` *(Funciona com qualquer uma das 10 categorias)*
+     - `https://achadoreviews.com.br/?busca=air+fryer` *(Abre direto pesquisando qualquer termo)*
 4. **Motor 4 — Atalhos "O Que o Brasileiro Mais Procura":**
    - Filtros de 1 clique para compras por impulso consciente: **🎁 Presentes & Achadinhos até R$ 50**, **💡 Dia a Dia até R$ 100** e **💪 Saúde, Beleza & Treino**.
 5. **Motor 5 — Busca Infinita com Seu Código de Afiliado:**
@@ -179,7 +179,7 @@ O site já converte, educa para evitar devoluções e mantém seu código de afi
 
 ### Passo 1: Cadastrar o Sitemap no Google Search Console (10 minutos — Uma única vez)
 1. Acesse [search.google.com/search-console](https://search.google.com/search-console).
-2. Adicione a propriedade com a URL do seu site (`https://achadinhos.vercel.app/`).
+2. Adicione a propriedade com a URL do seu site (`https://achadoreviews.com.br/`).
 3. No menu lateral esquerdo, clique em **Sitemaps** e digite `sitemap.xml` → clique em **Enviar**.
 4. Isso avisa ao Google sobre todas as suas páginas e filtros (`?filtro=under50`, `?categoria=Eletrodomésticos`, etc.) e ativa as perguntas frequentes (FAQ) nos resultados de busca.
 
@@ -188,17 +188,17 @@ O brasileiro consome vídeos de 15 a 30 segundos mostrando utilidades práticas.
 - **Formato Campeão 1 — "Os 3 Mais Vendidos de Cozinha no Mercado Livre (e o que olhar antes de comprar)":**
   - Mostre a imagem/vídeo rápido da Air Fryer, Balança Digital e Chaleira Elétrica.
   - Diga: *"Quer comparar os 3 lado a lado e ver a ficha técnica oficial para não errar a voltagem? O link da curadoria de Casa & Cozinha está na bio!"*
-  - Use o link direto: `https://achadinhos.vercel.app/?filtro=home`
+  - Use o link direto: `https://achadoreviews.com.br/?filtro=home`
 - **Formato Campeão 2 — "5 Achadinhos Úteis até R$ 50 que todo mundo está comprando no Mercado Livre":**
-  - Use o link direto: `https://achadinhos.vercel.app/?filtro=under50`
+  - Use o link direto: `https://achadoreviews.com.br/?filtro=under50`
 - **Formato Campeão 3 — "O 1º Lugar de cada categoria no Mercado Livre este mês":**
-  - Use o link direto: `https://achadinhos.vercel.app/?filtro=top1`
+  - Use o link direto: `https://achadoreviews.com.br/?filtro=top1`
 
 ### Passo 3: Pinterest Brasil (Tráfego Perpétuo no Piloto Automático)
 Diferente do Instagram onde um post dura 24 horas, um Pin no **Pinterest** continua mandando cliques para o seu site por **6 a 12 meses**:
-1. Crie uma conta gratuita no Pinterest Business (*Achadinhos Onlines*).
+1. Crie uma conta gratuita no Pinterest Business (*Achado Reviews*).
 2. Crie pastas com os mesmos nomes dos seus filtros: *"Achadinhos até R$ 50"*, *"Cozinha & Eletrodomésticos Mais Vendidos"*, *"Ferramentas Campeãs de Vendas"*.
-3. Suba as fotos dos produtos e coloque no campo **Link de destino** a URL filtrada do seu site (ex.: `https://achadinhos.vercel.app/?categoria=Eletrodomésticos`). Quando a pessoa clica no Pinterest, ela cai na sua vitrine, vê o selo de confiança, compara e clica para o Mercado Livre com seu cookie de afiliado ativo por 24h!
+3. Suba as fotos dos produtos e coloque no campo **Link de destino** a URL filtrada do seu site (ex.: `https://achadoreviews.com.br/?categoria=Eletrodomésticos`). Quando a pessoa clica no Pinterest, ela cai na sua vitrine, vê o selo de confiança, compara e clica para o Mercado Livre com seu cookie de afiliado ativo por 24h!
 
 ---
 

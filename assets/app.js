@@ -1,5 +1,5 @@
 /**
- * ACHADINHOS ONLINES — Script Principal (assets/app.js)
+ * ACHADO REVIEWS — Script Principal (assets/app.js)
  * Carrega products.json, organiza por categoria oficial do Mercado Livre,
  * gerencia busca em tempo real, filtros de preço/ranking, atalhos de escolha segura,
  * lembretes de compra consciente (redução de devoluções), comparador lado a lado (até 3 itens),
@@ -396,7 +396,7 @@
   // =========================================================================
   function getBaseSiteUrl() {
     if (window.location.protocol === 'file:') {
-      return 'https://achadinhos.vercel.app/';
+      return 'https://achadoreviews.com.br/';
     }
     return `${window.location.origin}${window.location.pathname}`;
   }
@@ -478,7 +478,7 @@
       .join('\n\n');
 
     const message =
-      `❤️ *Minha Lista de Favoritos — Achadinhos Onlines (Mercado Livre)*\n` +
+      `❤️ *Minha Lista de Favoritos — Achado Reviews (Mercado Livre)*\n` +
       `Separei esses produtos campeões de vendas para conferir com calma:\n\n` +
       `${itemsLines}\n\n` +
       `✨ Veja a vitrine completa dos 100 Mais Vendidos em:\n${getBaseSiteUrl()}`;
@@ -508,7 +508,7 @@
       `⚖️ *Comparativo de Produtos — Qual vale mais a pena?*\n` +
       `Estou em dúvida entre esses campeões de vendas do Mercado Livre:\n\n` +
       `${itemsLines}\n\n` +
-      `✨ Compare também no Achadinhos Onlines:\n${getBaseSiteUrl()}`;
+      `✨ Compare também no Achado Reviews:\n${getBaseSiteUrl()}`;
 
     const waUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -529,7 +529,7 @@
 
     const message =
       `🏆 *Os 10 Campeões de Vendas (1º Lugar de Cada Categoria no Mercado Livre)*\n` +
-      `Resumo atualizado do Achadinhos Onlines para guardar e consultar sempre que precisar:\n\n` +
+      `Resumo atualizado do Achado Reviews para guardar e consultar sempre que precisar:\n\n` +
       `${itemsLines}\n\n` +
       `✨ Vitrine completa com os 100 Mais Vendidos:\n${getBaseSiteUrl()}`;
 
@@ -548,7 +548,7 @@
       .join('\n\n');
 
     const message =
-      `⚡ *Achadinhos Onlines — ${sectionTitle}*\n` +
+      `⚡ *Achado Reviews — ${sectionTitle}*\n` +
       `Olha essa curadoria dos produtos mais vendidos e bem avaliados do Mercado Livre (sem empurrometria!):\n\n` +
       (highlights ? `*Destaques desta seleção:*\n${highlights}\n\n` : '') +
       `👉 *Acesse a seleção completa aqui:*\n${shareUrl}`;
@@ -564,7 +564,7 @@
       '@context': 'https://schema.org',
       '@type': 'ItemList',
       name: 'Campeões de Vendas — 1º Lugar de Cada Categoria no Mercado Livre',
-      description: 'Os produtos mais vendidos em cada departamento oficial do Mercado Livre curados pelo Achadinhos Onlines.',
+      description: 'Os produtos mais vendidos em cada departamento oficial do Mercado Livre curados pelo Achado Reviews.',
       numberOfItems: leaders.length,
       itemListElement: leaders.map((p, idx) => ({
         '@type': 'ListItem',
