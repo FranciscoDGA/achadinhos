@@ -65,6 +65,13 @@ article {
   max-width: 100%;
 }
 
+/* O atributo hidden sempre esconde o elemento — sem esta regra, os estilos
+   do autor (ex.: display:flex) vencem a regra padrão do navegador e o
+   elemento fica visível mesmo com hidden (botão de favoritos/voltar ao topo). */
+[hidden] {
+  display: none !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -870,6 +877,12 @@ select {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Agrupa os botões de compartilhar; no desktop os botões ficam como itens
+   diretos do .vitrine-controls (display: contents = layout inalterado) */
+.vitrine-share-row {
+  display: contents;
 }
 
 .mobile-filter-trigger {
@@ -2930,5 +2943,86 @@ select {
 .toast-notification.visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ==========================================================================
+   REORDENAÇÃO MOBILE — produtos logo após o banner (desktop inalterado)
+   No celular: banner → título → Filtrar/Ordenar → atalhos → GRID DE PRODUTOS
+   → compartilhar → 3 passos → Categorias em Destaque → demais seções.
+   Os textos/informações não são removidos, apenas reposicionados.
+   ========================================================================== */
+@media (max-width: 860px) {
+  /* 1) <main> em coluna: banner primeiro, vitrine em seguida, categorias depois */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main > * {
+    order: 4;
+  }
+
+  .hero-section {
+    order: 1;
+  }
+
+  .vitrine-section {
+    order: 2;
+  }
+
+  .categories-section {
+    order: 3;
+  }
+
+  /* 2) Conteúdo da vitrine em coluna com ordem própria */
+  .vitrine-section > .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* "Desmonta" cabeçalho e controles para poder ordenar cada bloco */
+  .vitrine-header,
+  .vitrine-controls {
+    display: contents;
+  }
+
+  .vitrine-header > div:first-child {
+    order: 1;
+    margin-bottom: 8px;
+  }
+
+  .mobile-filter-trigger {
+    order: 2;
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .sort-control {
+    order: 3;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .smart-shortcuts-bar {
+    order: 4;
+  }
+
+  .vitrine-layout {
+    order: 5;
+  }
+
+  .vitrine-share-row {
+    order: 6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    margin: 6px 0 14px;
+  }
+
+  .conscious-guide-strip {
+    order: 7;
+    margin-top: 2px;
+  }
 }
 

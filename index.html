@@ -356,20 +356,23 @@
           </div>
 
           <div class="vitrine-controls">
-            <!-- Botão Enviar Favoritos no WhatsApp (visível quando há favoritos) -->
-            <button type="button" class="whatsapp-list-btn" id="shareFavsWhatsAppBtn" hidden title="Enviar sua lista de favoritos no WhatsApp com links diretos">
-              <span>📲 Enviar Favoritos no WhatsApp</span>
-            </button>
+            <!-- Botões de compartilhamento (no mobile vão para depois do grid) -->
+            <div class="vitrine-share-row">
+              <!-- Botão Enviar Favoritos no WhatsApp (visível quando há favoritos) -->
+              <button type="button" class="whatsapp-list-btn" id="shareFavsWhatsAppBtn" hidden title="Enviar sua lista de favoritos no WhatsApp com links diretos">
+                <span>📲 Enviar Favoritos no WhatsApp</span>
+              </button>
 
-            <!-- Botão Indicar Seleção Atual no WhatsApp -->
-            <button type="button" class="vitrine-share-btn whatsapp-accent" id="shareSelectionWhatsAppBtn" title="Compartilhar esta seleção de produtos no WhatsApp">
-              <span>📲 Indicar no WhatsApp</span>
-            </button>
+              <!-- Botão Indicar Seleção Atual no WhatsApp -->
+              <button type="button" class="vitrine-share-btn whatsapp-accent" id="shareSelectionWhatsAppBtn" title="Compartilhar esta seleção de produtos no WhatsApp">
+                <span>📲 Indicar no WhatsApp</span>
+              </button>
 
-            <!-- Botão Copiar Link Direto desta Categoria/Filtro -->
-            <button type="button" class="vitrine-share-btn" id="copySelectionLinkBtn" title="Copiar link direto desta categoria ou filtro para compartilhar">
-              <span>🔗 Copiar Link</span>
-            </button>
+              <!-- Botão Copiar Link Direto desta Categoria/Filtro -->
+              <button type="button" class="vitrine-share-btn" id="copySelectionLinkBtn" title="Copiar link direto desta categoria ou filtro para compartilhar">
+                <span>🔗 Copiar Link</span>
+              </button>
+            </div>
 
             <!-- Botão "Filtrar" para Celular -->
             <button type="button" class="mobile-filter-trigger" id="openFilterPanelBtn" aria-expanded="false">
