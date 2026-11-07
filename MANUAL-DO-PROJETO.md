@@ -64,6 +64,17 @@ Extraídos diretamente da sua conta de afiliado (`Francisco`):
 
 ## 3. Como Atualizar Produtos ou Adicionar Novos Itens Sempre que Quiser
 
+### 🤖 Atualização Automática Todo Dia às 06:00 (já configurada!)
+
+O site se atualiza **sozinho, todos os dias às 6 da manhã** (horário de Brasília):
+
+1. O **GitHub Actions** (arquivo `.github/workflows/daily-update.yml`) roda o script `scripts/update-products.js`.
+2. O script baixa as páginas **Mais Vendidos** e **Black Friday** do Mercado Livre e reconstrói o **Top 10 de cada uma das 11 categorias** (preços, imagens, links com o seu código de afiliado e a data do dia).
+3. Se tudo sair certo, ele faz o `git push` e a **Vercel publica automaticamente**. Se o Mercado Livre bloquear a consulta ou mudar a página, o script **aborta sem publicar** — o site mantém os últimos dados bons.
+4. Quiser rodar na mão: **GitHub → aba *Actions* → "Atualização diária de produtos" → *Run workflow***.
+
+As formas manuais abaixo continuam válidas para quando você quiser **incluir um produto específico**, corrigir um preço ou mudar algo à mão.
+
 Você tem **3 formas simples** de atualizar preços, trocar produtos ou adicionar novidades no site:
 
 ### Opção A — Pedindo aqui para a IA (Mais Prática!)
@@ -103,7 +114,7 @@ Abra o arquivo `products.json` no Bloco de Notas ou VS Code. Cada produto tem es
 
 #### ⚠️ Regras importantes ao editar o `products.json`:
 - **`price` (Preço):** Use sempre **ponto** para separar os centavos (ex.: `149.90` e nunca `149,90`).
-- **`category` (Categoria):** Use exatamente uma das 10 categorias oficiais:
+- **`category` (Categoria):** Use exatamente uma das 11 categorias da vitrine (10 oficiais + Black Friday):
   1. `"Games"`
   2. `"Eletrodomésticos"`
   3. `"Ferramentas"`
@@ -114,6 +125,7 @@ Abra o arquivo `products.json` no Bloco de Notas ou VS Code. Cada produto tem es
   8. `"Esportes e Fitness"`
   9. `"Calçados, Roupas e Bolsas"`
   10. `"Acessórios para Veículos"`
+  11. `"Black Friday"` (seleção especial de ofertas)
 - **Como pegar o endereço da foto (`"image"`) de um produto novo no Mercado Livre:**
   Clique com o **botão direito** em cima da foto do produto no Mercado Livre → clique em **"Copiar endereço da imagem"** e cole dentro das aspas do campo `"image"`.
 
@@ -124,11 +136,15 @@ Abra o arquivo `products.json` no Bloco de Notas ou VS Code. Cada produto tem es
 ```text
 Achadinhos/
 ├── index.html                  # Estrutura principal, SEO Schema.org, FAQ, VIP WhatsApp e Comparador
-├── products.json               # Base com os 100 produtos mais vendidos + seus links de afiliado
+├── products.json               # Base com os 110 produtos (10 categorias + Black Friday) e os links de afiliado
 ├── robots.txt                  # Liberação de rastreamento para Google, Bing e buscadores
 ├── sitemap.xml                 # Mapa do site com todas as categorias e filtros para o Google Search Console
 ├── MANUAL-DO-PROJETO.md        # Este documento completo com tudo o que construímos e o plano 100k/mês
 ├── README.md                   # Guia rápido do repositório
+├── scripts/
+│   └── update-products.js      # Scraper diário do Mercado Livre (roda no GitHub Actions às 06:00)
+├── .github/
+│   └── workflows/daily-update.yml  # Automação diária: atualiza products.json e publica
 ├── achadinhos-hostgator.zip    # Pacote pronto caso queira subir também em hospedagem cPanel/HostGator
 └── assets/
     ├── style.css               # Visual amarelo/preto/azul + responsividade Desktop, Tablet e Celular

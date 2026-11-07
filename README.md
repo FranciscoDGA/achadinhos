@@ -10,9 +10,13 @@ Site vitrine estático, rápido e responsivo (Desktop e Celular) desenvolvido pa
 
 ```text
 ├── index.html             # Página principal da vitrine
-├── products.json          # Base de dados com os 100 produtos separados do HTML
+├── products.json          # Base de dados com os 110 produtos separados do HTML
 ├── MANUAL-DO-PROJETO.md   # Documentação completa de tudo o que criamos e combinamos
 ├── README.md              # Este guia rápido
+├── scripts/
+│   └── update-products.js # Atualização automática diária dos produtos (GitHub Actions, 06:00)
+├── .github/workflows/
+│   └── daily-update.yml   # Rotina diária que roda o script e publica na Vercel
 └── assets/
     ├── style.css          # Estilos visuais (tema amarelo/preto/azul + responsivo)
     ├── app.js             # Lógica de busca, filtros, comparador, favoritos e WhatsApp
