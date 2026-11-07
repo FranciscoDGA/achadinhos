@@ -138,16 +138,23 @@ Achadinhos/
 ├── index.html                  # Estrutura principal, SEO Schema.org, FAQ, VIP WhatsApp e Comparador
 ├── products.json               # Base com os 110 produtos (10 categorias + Black Friday) e os links de afiliado
 ├── robots.txt                  # Liberação de rastreamento para Google, Bing e buscadores
-├── sitemap.xml                 # Mapa do site com todas as categorias e filtros para o Google Search Console
+├── sitemap.xml                 # Mapa do site com todas as categorias, filtros e artigos do blog
 ├── MANUAL-DO-PROJETO.md        # Este documento completo com tudo o que construímos e o plano 100k/mês
 ├── README.md                   # Guia rápido do repositório
+├── blog/
+│   ├── index.html              # Listagem do blog (5 artigos piloto)
+│   ├── melhor-creatina/        # Artigo: Qual a melhor creatina? Growth vs Dark Lab vs Soldiers
+│   ├── melhor-celular-ate-1400/# Artigo: Melhor celular até R$ 1.400 (Galaxy A17 vs A07 vs Moto G)
+│   ├── melhor-fone-bluetooth/  # Artigo: Melhor fone bluetooth até R$ 200
+│   ├── melhor-parafusadeira-sem-fio/ # Artigo: Melhor parafusadeira sem fio até R$ 150
+│   └── produtos-pele-sensivel/ # Artigo: Cicaplast vs CeraVe vs Hidrabene
 ├── scripts/
 │   └── update-products.js      # Scraper diário do Mercado Livre (roda no GitHub Actions às 06:00)
 ├── .github/
 │   └── workflows/daily-update.yml  # Automação diária: atualiza products.json e publica
 ├── achadinhos-hostgator.zip    # Pacote pronto caso queira subir também em hospedagem cPanel/HostGator
 └── assets/
-    ├── style.css               # Visual amarelo/preto/azul + responsividade Desktop, Tablet e Celular
+    ├── style.css               # Visual amarelo/preto/azul + responsividade Desktop, Tablet e Celular (inclui estilos do blog)
     ├── app.js                  # Lógica de filtros, URL compartilhável, listas WhatsApp, comparador e busca ML
     ├── favicon.svg             # Ícone de carrinho na aba do navegador
     ├── banner.jpg              # Banner Oficial Horizontal para Computador/Tablet (1666 × 580 px)
@@ -161,9 +168,9 @@ Achadinhos/
 
 ---
 
-## 5. Os 6 Motores de Tração Orgânica e Viralização Implementados no Site
+## 5. Os 7 Motores de Tração Orgânica e Viralização Implementados no Site
 
-Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúncios pagos, implementamos 6 motores técnicos:
+Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúncios pagos, implementamos 7 motores técnicos:
 
 1. **Motor 1 — SEO Completo para o Google (`Schema.org JSON-LD` + `sitemap.xml` + `robots.txt` + FAQ):**
    - O cabeçalho do site entrega ao Google dados estruturados de `WebSite`, `FAQPage` (Perguntas Frequentes que aparecem direto na página de busca do Google) e `ItemList` dinâmico com os Campeões de Vendas (`1º Lugar`).
@@ -186,6 +193,17 @@ Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúnc
    - Mesmo que o visitante digite na barra de busca algo que **não está nos 100 produtos** (ex.: *"Bicicleta"*, *"Perfume árabe"*, *"Pneu aro 15"*), o site exibe um botão direto para abrir a pesquisa daquele produto no Mercado Livre já cravado com a sua tag de afiliado. Você nunca perde uma venda.
 6. **Motor 6 — Central de Achadinhos no WhatsApp (Envio do Top 10 `1º Lugar`):**
    - Na seção verde especial antes do rodapé, o visitante pode clicar em **"🏆 Enviar Top 10 (1º Lugares) no Meu WhatsApp"** para guardar os 10 campeões de vendas no próprio celular com todos os seus links de afiliado prontos para clicar a qualquer hora.
+7. **Motor 7 — Blog de Reviews e Guias de Compra (`/blog/`):**
+   - **Listagem:** `https://achadoreviews.com.br/blog/` com os cards dos artigos.
+   - **5 artigos piloto** (páginas estáticas independentes, sem JavaScript):
+     - `/blog/melhor-creatina/` — Growth vs Dark Lab vs Soldiers (Esportes)
+     - `/blog/melhor-celular-ate-1400/` — Galaxy A17 vs A07 vs Moto G (Celulares)
+     - `/blog/melhor-fone-bluetooth/` — Anker vs Xiaomi vs JBL (Eletrônicos)
+     - `/blog/melhor-parafusadeira-sem-fio/` — 48V vs impacto vs WAP (Ferramentas)
+     - `/blog/produtos-pele-sensivel/` — Cicaplast vs CeraVe vs Hidrabene (Beleza)
+   - Cada artigo tem: `Schema.org` (`Article` + `FAQPage` + `BreadcrumbList`), links internos para a categoria correspondente da vitrine, links de afiliado com `rel="sponsored nofollow"` e data de publicação/atualização.
+   - **Como publicar um artigo novo:** crie uma pasta em `blog/<slug-do-artigo>/index.html` seguindo o modelo dos artigos existentes, adicione o card na listagem (`blog/index.html`), a URL no `sitemap.xml` e os links no rodapé/gaveta do site. Depois é só commitar (o deploy é automático na Vercel).
+   - **Manutenção:** os preços citados nos artigos têm data ("consultados em DD/MM/AAAA"). Revisar os artigos de 3 em 3 meses para atualizar preços e conferir se os links dos produtos continuam ativos.
 
 ---
 
