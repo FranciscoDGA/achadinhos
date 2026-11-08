@@ -96,6 +96,8 @@ Como a sua **Vercel** está conectada ao seu **GitHub**, qualquer alteração fe
 6. Pronto! A Vercel detecta a mudança e publica a nova versão do site sozinha.
 
 > **⚠️ Regra de cache (importante):** os arquivos de `/assets/` são servidos com cache de 1 ano (`immutable`, definido no `vercel.json`). Por isso, **sempre que alterar `style.css` ou `app.js`, incremente a versão no HTML**: troque `style.css?v=2.2` (e `app.js?v=2.2`) por `v=2.3`, `v=2.4` etc. Sem esse passo, visitantes fiéis continuam vendo a versão antiga. **Trocar o banner:** substitua os arquivos `assets/banner.webp` e `assets/banner-mobile.webp` (e os `.jpg` equivalentes, usados no preview do WhatsApp) — o site exibe a cada 1 hora, então a mudança aparece sozinha em até 1h.
+>
+> **⚠️ Acentuação (importante):** os HTMLs do site são **UTF-8**. Ao editar vários arquivos em lote, **não use PowerShell `Get-Content`/`Set-Content`** (o Windows 5.1 lê UTF-8 como ANSI e quebra os acentos — vira `Ã©`). Use um editor de texto (VS Code, Bloco de Notas com UTF-8) ou scripts Node. Se aparecer `Ã©`/`Ã¡` em algum artigo, o texto foi salvo com codificação duplicada — refaça a edição em UTF-8.
 
 ---
 
