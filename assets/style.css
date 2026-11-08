@@ -2438,13 +2438,13 @@ select {
   }
 
   .card-icon-btn {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   .card-icon-btn svg {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
   .card-image-link {

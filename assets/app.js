@@ -1566,8 +1566,13 @@
       const hadUrlFilter = applyUrlParamsOnLoad();
       renderNavigationAndCategories();
       renderProducts();
-      renderTopLeaders();
-      injectDynamicSeoItemList();
+      // As seções seguintes rodam em tasks separadas (setTimeout) para não
+      // acumular tudo num único task bloqueante — reduz o TBT medido pelo
+      // PageSpeed/Lighthouse mantendo todo o conteúdo idêntico.
+      setTimeout(() => {
+        renderTopLeaders();
+        setTimeout(injectDynamicSeoItemList, 0);
+      }, 0);
 
       if (hadUrlFilter) {
         const vitrineEl = document.getElementById('vitrine');
