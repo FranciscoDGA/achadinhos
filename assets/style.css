@@ -3543,3 +3543,93 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* --- Imagens de produto nos artigos --- */
+.product-figure {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  margin: 0 0 18px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.product-figure img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-sm);
+}
+
+.product-figure figcaption {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-top: 9px;
+  line-height: 1.45;
+}
+
+.product-figure--lead {
+  max-width: 300px;
+}
+
+/* Figure flutuando à direita no desktop (prosa do artigo) */
+@media (min-width: 900px) {
+  .article-body > .product-figure--float {
+    float: right;
+    width: 250px;
+    margin: 4px 0 14px 26px;
+  }
+
+  .article-body > .product-figure--float img {
+    max-width: 100%;
+  }
+
+  .article-body::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* Grade de imagens (3+ produtos lado a lado) */
+.product-figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.product-figure-grid .product-figure {
+  margin: 0;
+}
+
+/* --- Thumbnails nos cards da listagem do blog --- */
+.blog-card-img {
+  display: block;
+  width: calc(100% + 44px);
+  margin: -22px -22px 2px;
+  height: 170px;
+  object-fit: contain;
+  background-color: #FAFBFC;
+  border-bottom: 1px solid var(--border-color);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  padding: 16px;
+}
+
+@media (max-width: 720px) {
+  .product-figure--float {
+    float: none !important;
+    width: auto !important;
+    max-width: 260px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .blog-card-img {
+    height: 150px;
+  }
+}
