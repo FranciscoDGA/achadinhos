@@ -143,7 +143,7 @@ Achadinhos/
 ├── MANUAL-DO-PROJETO.md        # Este documento completo com tudo o que construímos e o plano 100k/mês
 ├── README.md                   # Guia rápido do repositório
 ├── blog/
-│   ├── index.html              # Listagem do blog (5 artigos piloto)
+│   ├── index.html              # Listagem do blog (10 artigos)
 │   ├── melhor-creatina/        # Artigo: Qual a melhor creatina? Growth vs Dark Lab vs Soldiers
 │   ├── melhor-celular-ate-1400/# Artigo: Melhor celular até R$ 1.400 (Galaxy A17 vs A07 vs Moto G)
 │   ├── melhor-fone-bluetooth/  # Artigo: Melhor fone bluetooth até R$ 200
@@ -196,12 +196,17 @@ Para fazer o site **se vender sozinho** e cair no gosto do brasileiro sem anúnc
    - Na seção verde especial antes do rodapé, o visitante pode clicar em **"🏆 Enviar Top 10 (1º Lugares) no Meu WhatsApp"** para guardar os 10 campeões de vendas no próprio celular com todos os seus links de afiliado prontos para clicar a qualquer hora.
 7. **Motor 7 — Blog de Reviews e Guias de Compra (`/blog/`):**
    - **Listagem:** `https://achadoreviews.com.br/blog/` com os cards dos artigos.
-   - **5 artigos piloto** (páginas estáticas independentes, sem JavaScript):
-     - `/blog/melhor-creatina/` — Growth vs Dark Lab vs Soldiers (Esportes)
-     - `/blog/melhor-celular-ate-1400/` — Galaxy A17 vs A07 vs Moto G (Celulares)
-     - `/blog/melhor-fone-bluetooth/` — Anker vs Xiaomi vs JBL (Eletrônicos)
-     - `/blog/melhor-parafusadeira-sem-fio/` — 48V vs impacto vs WAP (Ferramentas)
-     - `/blog/produtos-pele-sensivel/` — Cicaplast vs CeraVe vs Hidrabene (Beleza)
+   - **10 artigos** (páginas estáticas independentes, sem JavaScript, em ordem de publicação):
+     - `/blog/black-friday-2026/` — Data, preparação e ofertas (Black Friday) — 08/11/2026
+     - `/blog/melhor-creatina/` — Growth vs Dark Lab vs Soldiers (Esportes) — 07/11/2026
+     - `/blog/presentes-gamer-ate-150/` — Gift cards, controle e acessórios (Games) — 05/11/2026
+     - `/blog/melhor-celular-ate-1400/` — Galaxy A17 vs A07 vs Moto G (Celulares) — 03/11/2026
+     - `/blog/melhor-tenis-caminhada-ate-100/` — Kappa Park + kit de treino (Calçados) — 01/11/2026
+     - `/blog/melhor-fone-bluetooth/` — Anker vs Xiaomi vs JBL (Eletrônicos) — 31/10/2026
+     - `/blog/carregador-bateria-12v-6a/` — 2 carregadores inteligentes (Veículos) — 29/10/2026
+     - `/blog/melhor-parafusadeira-sem-fio/` — 48V vs impacto vs WAP (Ferramentas) — 27/10/2026
+     - `/blog/melhores-eletrodomesticos-ate-120/` — Chaleira, liquidificador e ventilador (Eletrodomésticos) — 25/10/2026
+     - `/blog/produtos-pele-sensivel/` — Cicaplast vs CeraVe vs Hidrabene (Beleza) — 24/10/2026
    - Cada artigo tem: `Schema.org` (`Article` + `FAQPage` + `BreadcrumbList`), links internos para a categoria correspondente da vitrine, links de afiliado com `rel="sponsored nofollow"` e data de publicação/atualização.
    - **Como publicar um artigo novo:** crie uma pasta em `blog/<slug-do-artigo>/index.html` seguindo o modelo dos artigos existentes, adicione o card na listagem (`blog/index.html`), a URL no `sitemap.xml` e os links no rodapé/gaveta do site. Depois é só commitar (o deploy é automático na Vercel).
    - **Manutenção:** os preços citados nos artigos têm data ("consultados em DD/MM/AAAA"). Revisar os artigos de 3 em 3 meses para atualizar preços e conferir se os links dos produtos continuam ativos.
