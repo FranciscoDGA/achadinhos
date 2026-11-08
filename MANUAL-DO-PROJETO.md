@@ -72,6 +72,7 @@ O site se atualiza **sozinho, todos os dias às 6 da manhã** (horário de Bras�
 2. O script baixa as páginas **Mais Vendidos** e **Black Friday** do Mercado Livre e reconstrói o **Top 10 de cada uma das 11 categorias** (preços, imagens, links com o seu código de afiliado e a data do dia).
 3. Se tudo sair certo, ele faz o `git push` e a **Vercel publica automaticamente**. Se o Mercado Livre bloquear a consulta ou mudar a página, o script **aborta sem publicar** — o site mantém os últimos dados bons.
 4. Quiser rodar na mão: **GitHub → aba *Actions* → "Atualização diária de produtos" → *Run workflow***.
+5. **Rede de segurança:** além do disparo das 06:00, há um segundo cron às **06:35** — se o GitHub atrasar ou perder o primeiro (acontece em horários de pico da Actions), o backup cobre. Os dois rodam o mesmo script com a trava de execução simultânea; se não houver mudanças, nenhum deploy extra é feito.
 
 As formas manuais abaixo continuam válidas para quando você quiser **incluir um produto específico**, corrigir um preço ou mudar algo à mão.
 

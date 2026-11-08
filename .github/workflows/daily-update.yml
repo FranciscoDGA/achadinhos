@@ -1,11 +1,14 @@
 # Atualização automática diária dos produtos (Mais Vendidos + Black Friday)
 # Roda todo dia às 06:00 (BRT = UTC-3) e publica as mudanças via push,
 # o que dispara o deploy automático na Vercel.
+# Rede de segurança: segundo disparo às 06:35 (BRT) caso o GitHub atrase
+# ou perca o cron do início da hora (pico de carga na Actions).
 name: Atualização diária de produtos
 
 on:
   schedule:
     - cron: '0 9 * * *' # 09:00 UTC = 06:00 (horário de Brasília)
+    - cron: '35 9 * * *' # 09:35 UTC = 06:35 (rede de segurança)
   workflow_dispatch: # permite rodar manualmente pelo painel do GitHub
 
 permissions:
