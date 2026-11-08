@@ -95,6 +95,8 @@ Como a sua **Vercel** está conectada ao seu **GitHub**, qualquer alteração fe
 5. Clique no botão verde **"Commit changes..."** no topo direito e confirme.
 6. Pronto! A Vercel detecta a mudança e publica a nova versão do site sozinha.
 
+> **⚠️ Regra de cache (importante):** os arquivos de `/assets/` são servidos com cache de 1 ano (`immutable`, definido no `vercel.json`). Por isso, **sempre que alterar `style.css` ou `app.js`, incremente a versão no HTML**: troque `style.css?v=2.2` (e `app.js?v=2.2`) por `v=2.3`, `v=2.4` etc. Sem esse passo, visitantes fiéis continuam vendo a versão antiga. **Trocar o banner:** substitua os arquivos `assets/banner.webp` e `assets/banner-mobile.webp` (e os `.jpg` equivalentes, usados no preview do WhatsApp) — o site exibe a cada 1 hora, então a mudança aparece sozinha em até 1h.
+
 ---
 
 ### Opção C — Editando no Computador (`products.json`)

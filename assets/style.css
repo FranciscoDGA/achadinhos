@@ -17,7 +17,7 @@
   --bg-card: #FFFFFF;
   --text-main: #111111;
   --text-muted: #5A6065;
-  --text-light: #878D96;
+  --text-light: #6B7280;
   --border-color: #E5E7EB;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
@@ -486,7 +486,11 @@ select {
   background-color: #FFFFFF;
   z-index: 210;
   transform: translateX(-100%);
-  transition: transform 0.25s ease;
+  /* visibility:hidden (fechado) remove o drawer do alcance do teclado/foco:
+     com aria-hidden="true" + links ainda focáveis, o axe/Lighthouse reprovava
+     (aria-hidden-focus). visibility acompanha o transform na transição. */
+  visibility: hidden;
+  transition: transform 0.25s ease, visibility 0.25s ease;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-lg);
@@ -494,6 +498,7 @@ select {
 
 .mobile-drawer.open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .drawer-header {
@@ -694,9 +699,19 @@ select {
 .hero-banner-img {
   width: 100%;
   height: auto;
+  /* Reserva o espaço do banner ANTES do load (sem isto o hero crescia de 0
+     para a altura total quando a imagem chegava = CLS alto medido pelo PSI). */
+  aspect-ratio: 1666 / 580;
   display: block;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  /* banner-mobile.jpg/webp é retrato (800x1221) — respeita a razão dele */
+  .hero-banner-img {
+    aspect-ratio: 800 / 1221;
+  }
 }
 
 .hero-full-link:hover .hero-banner-img {
@@ -1201,7 +1216,7 @@ select {
 
 .rank-badge.rank-top1 {
   background-color: #FF7733;
-  color: #FFFFFF;
+  color: var(--ml-dark);
 }
 
 .card-Quick-actions {

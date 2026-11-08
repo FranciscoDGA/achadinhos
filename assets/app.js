@@ -318,7 +318,7 @@
         .map(
           (p) => `
           <div class="compare-thumb-chip" title="${escapeHtml(p.name)}">
-            <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" />
+            <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" width="480" height="480" />
             <span class="compare-thumb-name">${escapeHtml(p.name)}</span>
             <button type="button" class="compare-thumb-remove" data-action="remove-compare" data-id="${p.id}" aria-label="Remover da comparação">&times;</button>
           </div>
@@ -353,7 +353,7 @@
               ${isCheapest ? '<span class="compare-save-badge">💰 Menor Preço</span>' : ''}
             </div>
             <div class="compare-col-img-wrap">
-              <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="compare-col-img" />
+              <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="compare-col-img" width="480" height="480" />
             </div>
             <h4 class="compare-col-title">${escapeHtml(p.name)}</h4>
             <div class="compare-col-price">
@@ -807,6 +807,8 @@
               src="${escapeHtml(product.image)}"
               alt="${escapeHtml(product.name)}"
               class="card-image"
+              width="480"
+              height="480"
               loading="lazy"
               decoding="async"
             />
@@ -1103,7 +1105,7 @@
             title="Ver 1º lugar em ${escapeHtml(p.category)} no Mercado Livre"
           >
             <span class="leader-number">${index + 1}</span>
-            <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="leader-img" loading="lazy" />
+            <img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" class="leader-img" width="480" height="480" loading="lazy" />
             <div class="leader-info">
               <span class="leader-cat">1º em ${escapeHtml(p.category)}</span>
               <span class="leader-name">${escapeHtml(p.name)}</span>

@@ -31,10 +31,12 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" /></noscript>
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/style.css?v=2.0" />
+  <link rel="stylesheet" href="assets/style.css?v=2.2" />
 
   <!-- Dados Estruturados para Google SEO (Schema.org WebSite + FAQPage) -->
   <script type="application/ld+json">
@@ -111,7 +113,7 @@
       </button>
 
       <!-- Logo -->
-      <a href="#topo" class="brand-logo" id="logoResetBtn" aria-label="Achado Reviews - Página Inicial">
+      <a href="#topo" class="brand-logo" id="logoResetBtn" aria-label="Achado Reviews Descubra. Compare. Economize. - Página Inicial">
         <div class="brand-icon" aria-hidden="true">
           <svg width="38" height="38" viewBox="0 0 44 44" fill="none">
             <path d="M5 9H11L15.5 28H34L38 14H14" stroke="#111111" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -158,7 +160,7 @@
           </div>
         </a>
 
-        <button type="button" class="header-action-link fav-toggle-btn" id="headerFavBtn" aria-label="Ver meus produtos favoritos">
+        <button type="button" class="header-action-link fav-toggle-btn" id="headerFavBtn">
           <div class="fav-icon-wrap">
             <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
@@ -240,13 +242,18 @@
     <section class="hero-section" aria-label="Destaque principal">
       <div class="container">
         <div class="hero-banner hero-banner--image-mode" id="heroBannerContainer">
-          <!-- Banner Oficial Completo (Desktop: assets/banner.jpg | Mobile: assets/banner-mobile.jpg) -->
+          <!-- Banner Oficial Completo (Desktop: assets/banner.webp | Mobile: assets/banner-mobile.webp)
+               Ao trocar a arte: substitua os .webp (mantenha o .jpg igual, usado no preview social/og:image) -->
           <a href="#vitrine" class="hero-full-link" id="heroFullLink" aria-label="As Melhores Ofertas do Mercado Livre! Produtos incríveis, preços imperdíveis e entrega para todo o Brasil. Aproveite Agora!">
             <h1 class="sr-only">As Melhores Ofertas do Mercado Livre! Produtos incríveis, preços imperdíveis e entrega para todo o Brasil!</h1>
             <picture class="hero-picture">
+              <source media="(max-width: 600px)" srcset="assets/banner-mobile.webp" type="image/webp" />
               <source media="(max-width: 600px)" srcset="assets/banner-mobile.jpg" />
+              <source srcset="assets/banner.webp" type="image/webp" />
               <img
                 src="assets/banner.jpg"
+                width="1666"
+                height="580"
                 alt="As Melhores Ofertas do Mercado Livre — Produtos incríveis, preços imperdíveis e entrega para todo o Brasil! Aproveite Agora"
                 class="hero-banner-img"
                 id="heroBannerImg"
@@ -286,7 +293,7 @@
               <div class="banner-placeholder-slot" id="bannerPlaceholderSlot" style="display: flex;">
                 <div class="placeholder-inner">
                   <strong>ESPAÇO RESERVADO PARA SUA ARTE DO BANNER</strong>
-                  <span>Coloque sua imagem em <code>assets/banner.jpg</code> (Desktop) ou <code>assets/banner-mobile.jpg</code> (Celular)</span>
+                  <span>Coloque sua imagem em <code>assets/banner.webp</code> (Desktop) ou <code>assets/banner-mobile.webp</code> (Celular)</span>
                 </div>
               </div>
             </div>
@@ -802,6 +809,6 @@
   </button>
 
   <!-- Script Principal -->
-  <script src="assets/app.js?v=2.0" defer></script>
+  <script src="assets/app.js?v=2.2" defer></script>
 </body>
 </html>
