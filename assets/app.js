@@ -1458,13 +1458,42 @@
       });
     }
 
-    [els.resetFiltersBtn, els.emptyResetBtn, els.resetCatBtn, els.logoResetBtn, els.footerAllLink].forEach((btn) => {
+    [els.resetFiltersBtn, els.emptyResetBtn, els.logoResetBtn, els.footerAllLink].forEach((btn) => {
       if (btn) {
         btn.addEventListener('click', () => {
           resetAllFilters();
           closeMobileFilterPanel();
         });
       }
+    });
+
+    // "Ver todas as categorias →" (seção de categorias): reseta os filtros
+    // e rola até a vitrine — assim o clique SEMPRE tem efeito visível,
+    // mesmo quando já está tudo limpo.
+    if (els.resetCatBtn) {
+      els.resetCatBtn.addEventListener('click', () => {
+        resetAllFilters();
+        closeMobileFilterPanel();
+        const vitrine = document.getElementById('vitrine');
+        if (vitrine) vitrine.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    // Dropdown "Todas as Categorias": fecha ao clicar fora ou apertar Esc
+    const closeCategoriesDropdown = () => {
+      if (!els.categoriesDropdownMenu || !els.allCategoriesToggle) return;
+      if (els.categoriesDropdownMenu.hidden) return;
+      els.categoriesDropdownMenu.hidden = true;
+      els.allCategoriesToggle.setAttribute('aria-expanded', 'false');
+    };
+    document.addEventListener('click', (e) => {
+      if (!els.categoriesDropdownMenu || els.categoriesDropdownMenu.hidden) return;
+      if (!els.categoriesDropdownMenu.contains(e.target) && !els.allCategoriesToggle.contains(e.target)) {
+        closeCategoriesDropdown();
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCategoriesDropdown();
     });
 
     // Gaveta Mobile
