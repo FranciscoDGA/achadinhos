@@ -3527,6 +3527,17 @@ select {
 }
 
 /* --- Responsivo do blog --- */
+/* Em telas <=860px o header-main quebra em linhas, mas o .blog-topnav tinha
+   flex-basis auto e cabia na MESMA linha da marca: o .brand-logo (flex:1,
+   min-width:0) era espremido até ~70px e o texto nowrap dele transbordava
+   por cima dos links (amontoado visto no celular). Forçando o nav a ocupar
+   a linha inteira, a marca fica com espaço total e o menu vira a 2ª linha. */
+@media (max-width: 860px) {
+  .blog-topnav {
+    flex-basis: 100%;
+  }
+}
+
 @media (max-width: 720px) {
   .blog-topnav a {
     padding: 8px 11px;
