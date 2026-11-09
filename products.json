@@ -71,7 +71,7 @@
   },
   {
     "name": "Microfone de Lapela Sem Fio Hollyland Lark M2 Combo (USB-C, Lightning e Câmera)",
-    "price": 699,
+    "price": 667,
     "consultedAt": "09/11/2026",
     "category": "Games",
     "rank": 8,
@@ -91,7 +91,7 @@
   },
   {
     "name": "Fone De Ouvido Headset Gamer Havit H2002d P3 Para PS3/PS4/PS5/XBOX/PC Cor Preto",
-    "price": 175,
+    "price": 172,
     "consultedAt": "09/11/2026",
     "category": "Games",
     "rank": 10,
@@ -171,7 +171,7 @@
   },
   {
     "name": "Refil Filtro W11199342 (CIX06AX) Purificador De Água Consul Cpc30af, Cpc30ab, Cpb35ab, Cpb35af, Cpb36af, Cpb36ab, Cpb34ab, Cpb34af, Cpb34as, Cpc31ab, Cpc31af , Original Branco",
-    "price": 84,
+    "price": 78,
     "consultedAt": "09/11/2026",
     "category": "Eletrodomésticos",
     "rank": 8,
@@ -181,7 +181,7 @@
   },
   {
     "name": "Batedeira Prática Mondial 400W - B-44-B",
-    "price": 76,
+    "price": 68,
     "consultedAt": "09/11/2026",
     "category": "Eletrodomésticos",
     "rank": 9,
@@ -390,14 +390,14 @@
     "id": 39
   },
   {
-    "name": "Body Splash Masculino Vibration 200ml - Primacial Perfume Bergamota Fresco",
-    "price": 37,
+    "name": "Hidrabene Protetor facial Solar FPS 70 Toque Seco Antissinais Clareia a pele 50g",
+    "price": 29,
     "consultedAt": "09/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_617155-MLA118231595864_102026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/body-splash-masculino-vibration-200ml-primacial-perfume-bergamota-fresco/p/MLB70449712?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 164
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_655805-MLA116956226142_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/hidrabene-protetor-facial-solar-fps-70-toque-seco-antissinais-clareia-a-pele-50g/p/MLB60416809?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 166
   },
   {
     "name": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
@@ -460,11 +460,21 @@
     "id": 45
   },
   {
+    "name": "Cartão De Memória 128 Gb Para Câmeras Wi-fi Drones Micro Sd",
+    "price": 23,
+    "consultedAt": "09/11/2026",
+    "category": "Celulares e Telefones",
+    "rank": 7,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_804604-MLB118927678949_102026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/cartao-de-memoria-128-gb-para-cameras-wi-fi-drones-micro-sd/up/MLBU5431713482?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 167
+  },
+  {
     "name": "Fone De Ouvido Bluetooth Bateria de Longa Duração Pro 4 Branco Conecta Rápido Com Case Carregador E Microfone Fast Plug",
     "price": 24,
     "consultedAt": "09/11/2026",
     "category": "Celulares e Telefones",
-    "rank": 7,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_791435-MLA118754152028_102026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-bluetooth-bateria-de-longa-duracao-pro-4-branco-conecta-rapido-com-case-carregador-e-microfone-fast-plug/p/MLB25263382?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 48
@@ -474,7 +484,7 @@
     "price": 73,
     "consultedAt": "09/11/2026",
     "category": "Celulares e Telefones",
-    "rank": 8,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_737097-MLA108177568778_032026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/power-bank-20000mah-carregador-portatil-turbo-rapido-225w-display-digital-preto/p/MLB66497052?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 158
@@ -484,20 +494,10 @@
     "price": 39,
     "consultedAt": "09/11/2026",
     "category": "Celulares e Telefones",
-    "rank": 9,
+    "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_999053-MLA112935055303_062026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/carregador-turbo-40w-para-iphone-11-12-13-14-pro-max-usb-branco/p/MLB65271168?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 121
-  },
-  {
-    "name": "Capa Capinha Anti Shock Para Samsung + Película Cerâmica 3d Transparente E Película A17",
-    "price": 19,
-    "consultedAt": "09/11/2026",
-    "category": "Celulares e Telefones",
-    "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_656233-MLB112764955318_062026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/capa-capinha-anti-shock-para-samsung-pelicula-ceramica-3d/up/MLBU4195394312?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 165
   },
   {
     "name": "Sony PlayStation Store Gift Card R$ 150 (Digital)",
@@ -681,7 +681,7 @@
   },
   {
     "name": "Fone de Ouvido Bluetooth Dapon H02D, Bluetooth 5.1, Modo Sem Fio e P2 3,5mm, Dobrável, Almofadas Macias, Bateria 350mAh até 22h, Microfone Integrado, Controle no Fone, Carregamento Tipo-C Preto",
-    "price": 70,
+    "price": 73,
     "consultedAt": "09/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
     "rank": 9,
@@ -816,7 +816,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_957035-MLB116464211603_082026-AB-tnis-kappa-park-20-original-unissex-caminhada-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190066522782?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190066522790?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 83
   },
   {
@@ -836,7 +836,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 4,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_626928-MLB82004918446_022025-AB-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4592320910-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada-_JM?searchVariation=186408020317?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4592320910-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada-_JM?searchVariation=186408020313?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 84
   },
   {
@@ -846,7 +846,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_878492-MLB108664426620_032026-AB-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598601?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598599?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 86
   },
   {
@@ -866,7 +866,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_974922-MLB118087970434_102026-AB-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=192828328473?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=192828328469?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 88
   },
   {
@@ -876,7 +876,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_658388-MLB90869609638_082025-AB-calca-legging-leg-flare-zero-transparncia-grossa-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4182420507-calca-legging-leg-flare-zero-transparncia-grossa-academia-_JM?searchVariation=185061887336?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4182420507-calca-legging-leg-flare-zero-transparncia-grossa-academia-_JM?searchVariation=185061887338?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 85
   },
   {
@@ -1056,12 +1056,12 @@
     "category": "Black Friday",
     "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_730513-MLB80451340719_112024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185925233963?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047647?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 134
   },
   {
     "name": "Câmera Inteligente Visão 360° IM4 C Intelbras",
-    "price": 229,
+    "price": 172,
     "consultedAt": "09/11/2026",
     "category": "Black Friday",
     "rank": 7,
