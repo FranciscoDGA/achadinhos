@@ -1,14 +1,22 @@
-# Atualização automática diária dos produtos (Mais Vendidos + Black Friday)
-# Roda todo dia às 06:00 (BRT = UTC-3) e publica as mudanças via push,
-# o que dispara o deploy automático na Vercel.
-# Rede de segurança: segundo disparo às 06:35 (BRT) caso o GitHub atrase
-# ou perca o cron do início da hora (pico de carga na Actions).
+# Atualização automática dos produtos (Mais Vendidos + Black Friday)
+# Publica as mudanças via push, o que dispara o deploy automático na Vercel.
+#
+# Por que 5 disparos por dia? O GitHub atrasa (ou chega a pular) crons de
+# repositórios com baixa atividade — em 11/11 e 12/11/2026 o cron das 06:00
+# só disparou às ~14:20 e em 13/11 não disparou de manhã nenhuma. Com
+# janelas espalhadas às 06:00, 06:35, 09:30, 13:00 e 16:30 (BRT) garante
+# que pelo menos um disparo caia em horário comercial todos os dias.
+# O script é idempotente: se não houve mudança de preço/ranking, ele não
+# gera commit nem deploy.
 name: Atualização diária de produtos
 
 on:
   schedule:
     - cron: '0 9 * * *' # 09:00 UTC = 06:00 (horário de Brasília)
-    - cron: '35 9 * * *' # 09:35 UTC = 06:35 (rede de segurança)
+    - cron: '35 9 * * *' # 09:35 UTC = 06:35 (rede de segurança imediata)
+    - cron: '30 12 * * *' # 12:30 UTC = 09:30 BRT (rede de segurança)
+    - cron: '0 16 * * *' # 16:00 UTC = 13:00 BRT (tarda do dia)
+    - cron: '30 19 * * *' # 19:30 UTC = 16:30 BRT (última janela do dia)
   workflow_dispatch: # permite rodar manualmente pelo painel do GitHub
 
 permissions:

@@ -115,4 +115,29 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://achadoreviews.com.br/blog/melhor-fone-cancelamento-ruido-ate-200/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://achadoreviews.com.br/blog/melhor-whey-ate-150/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://achadoreviews.com.br/blog/melhor-power-bank-e-carregador-ate-150/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://achadoreviews.com.br/blog/tv-ate-1100-com-suporte/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://achadoreviews.com.br/blog/kit-treino-em-casa-ate-100/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
