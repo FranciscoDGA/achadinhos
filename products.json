@@ -71,7 +71,7 @@
   },
   {
     "name": "Controle Joystick Sem Fio Sony PlayStation 5 CFI-ZCT1W Midnight Black",
-    "price": 438,
+    "price": 408,
     "consultedAt": "13/11/2026",
     "category": "Games",
     "rank": 8,
@@ -201,7 +201,7 @@
   },
   {
     "name": "Parafusadeira Furadeira De Impacto The Black Tools Profissional TB-21PX 2 Baterias Com Maleta 60Hz Amarelo",
-    "price": 125,
+    "price": 132,
     "consultedAt": "13/11/2026",
     "category": "Ferramentas",
     "rank": 1,
@@ -221,7 +221,7 @@
   },
   {
     "name": "Parafusadeira Furadeira 48v Profissional 2 Baterias Sem Fio Amarelo 127/220v",
-    "price": 109,
+    "price": 115,
     "consultedAt": "13/11/2026",
     "category": "Ferramentas",
     "rank": 3,
@@ -241,7 +241,7 @@
   },
   {
     "name": "Lavadora Lava Jato Portátil Pressão 2 Baterias + Maleta Preto 127/220v",
-    "price": 89,
+    "price": 94,
     "consultedAt": "13/11/2026",
     "category": "Ferramentas",
     "rank": 5,
@@ -351,7 +351,7 @@
   },
   {
     "name": "Loção Hidratante Corporal 3 Ceramidas Hidratação 120h CeraVe 473ml",
-    "price": 75,
+    "price": 84,
     "consultedAt": "13/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 6,
@@ -361,7 +361,7 @@
   },
   {
     "name": "Papel Higiênico Folha Dupla 30m L24p22 Personal",
-    "price": 33,
+    "price": 39,
     "consultedAt": "13/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 7,
@@ -521,7 +521,7 @@
   },
   {
     "name": "Filamento PLA Voolt3D High Speed Premium de 1.75mm e 1kg Verde Velvet",
-    "price": 91,
+    "price": 113,
     "consultedAt": "13/11/2026",
     "category": "Informática",
     "rank": 3,
@@ -541,7 +541,7 @@
   },
   {
     "name": "Filamento Pla Plus 1kg Impressão 3d Nacional - Cores Cor Preto",
-    "price": 101,
+    "price": 92,
     "consultedAt": "13/11/2026",
     "category": "Informática",
     "rank": 5,
@@ -650,21 +650,11 @@
     "id": 67
   },
   {
-    "name": "Suporte Articulado Para Tv Lcd Led 3d 24 32 40 42 49 50 55 Preto",
-    "price": 38,
-    "consultedAt": "13/11/2026",
-    "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_706538-MLB111795032848_062026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/suporte-articulado-para-tv-lcd-led-3d-24-32-40-42-49-50-55/up/MLBU790564718?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 160
-  },
-  {
     "name": "Projetor Portátil 4k Hd Android 11.0 Smart Wifi 5g Bluetooth Branco 127/220v",
     "price": 170,
     "consultedAt": "13/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_828936-MLB88748640584_082025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/projetor-portatil-4k-hd-android-110-smart-wifi-5g-bluetooth/up/MLBU767944712?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 68
@@ -674,17 +664,17 @@
     "price": 77,
     "consultedAt": "13/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 8,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_954504-MLA118603044502_102026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-sem-fio-xiaomi-redmi-buds-6-play-preto/p/MLB39962085?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 66
   },
   {
     "name": "Caixa De Som Boombox Aiwa AWS-BBS-01-B 200w IP66 30hs De Bateria",
-    "price": 1177,
+    "price": 1201,
     "consultedAt": "13/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 9,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_864411-MLA99591392870_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/caixa-de-som-boombox-aiwa-aws-bbs-01-b-200w-ip66-30hs-de-bateria/p/MLB34113516?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 193
@@ -694,10 +684,20 @@
     "price": 212,
     "consultedAt": "13/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 10,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_967872-MLA87279987383_072025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/samsung-galaxy-buds-core-branco/p/MLB52039200?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 192
+  },
+  {
+    "name": "Fone de Ouvido JBL Tune 530BT Bluetooth Sem Fio Preto Headphone com Microfone Wireless Estéreo Graves Potentes Confortável",
+    "price": 174,
+    "consultedAt": "13/11/2026",
+    "category": "Eletrônicos, Áudio e Vídeo",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_608030-MLA106478715282_022026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-jbl-tune-530bt-bluetooth-sem-fio-preto-headphone-com-microfone-wireless-estereo-graves-potentes-confortavel/p/MLB65541449?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 206
   },
   {
     "name": "Creatina Growth Supplements Monohidratada em pó Sem sabor x 250g",
@@ -811,12 +811,12 @@
   },
   {
     "name": "Tênis Kappa Park 2.0 Original Unissex Caminhada Academia",
-    "price": 72,
+    "price": 94,
     "consultedAt": "13/11/2026",
     "category": "Calçados, Roupas e Bolsas",
     "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_636204-MLB92283366432_092025-AB-tnis-kappa-park-20-original-unissex-caminhada-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890747?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890753?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 83
   },
   {
@@ -846,7 +846,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_797944-MLB82978249605_032025-AB-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422261?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422265?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 183
   },
   {
@@ -866,7 +866,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_878492-MLB108664426620_032026-AB-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598597?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598603?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 86
   },
   {
@@ -886,7 +886,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_660742-MLB96598298379_102025-AB-calca-legging-fitness-zero-transparncia-cintura-alta-koenig.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050110?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050112?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 152
   },
   {
@@ -1041,7 +1041,7 @@
   },
   {
     "name": "Loção Hidratante Corporal 3 Ceramidas Hidratação 120h CeraVe 473ml",
-    "price": 75,
+    "price": 84,
     "consultedAt": "13/11/2026",
     "category": "Black Friday",
     "rank": 5,
