@@ -10,24 +10,24 @@
     "id": 196
   },
   {
+    "name": "Grand Theft Auto VI - PlayStation 5",
+    "price": 410,
+    "consultedAt": "14/11/2026",
+    "category": "Games",
+    "rank": 2,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_639067-MLA114816196520_082026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/grand-theft-auto-vi-playstation-5/p/MLB74108173?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 111
+  },
+  {
     "name": "Razer Gold Digital R$ 30 (digital)",
     "price": 30,
     "consultedAt": "14/11/2026",
     "category": "Games",
-    "rank": 2,
+    "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_634164-MLA115097345074_082026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/razer-gold-digital-r-30-digital/p/MLB51757399?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 2
-  },
-  {
-    "name": "Grand Theft Auto VI - PlayStation 5",
-    "price": 418,
-    "consultedAt": "14/11/2026",
-    "category": "Games",
-    "rank": 3,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_639067-MLA114816196520_082026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/grand-theft-auto-vi-playstation-5/p/MLB74108173?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 111
   },
   {
     "name": "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4 Videogame Tv Samsung Pc P4 Ps 4 Manete Pc Gamer Tv Smart Controle Bluetooth Celular Headset Sem Fio Com P2 Marca Redfin",
@@ -40,31 +40,51 @@
     "id": 3
   },
   {
+    "name": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
+    "price": 4369,
+    "consultedAt": "14/11/2026",
+    "category": "Games",
+    "rank": 5,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_667226-MLA96871260244_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/console-playstation5-slim-digital-pacote-astro-bot-e-gran-turismo-7-branco/p/MLB57081243?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 168
+  },
+  {
     "name": "Nintendo Gift Card eShop R$ 50 (Digital)",
     "price": 50,
     "consultedAt": "14/11/2026",
     "category": "Games",
-    "rank": 5,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_845854-MLA115155718544_082026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/nintendo-gift-card-eshop-r-50-digital/p/MLB32333269?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 4
   },
   {
-    "name": "Console Playstation®5 Slim Digital - Pacote Astro Bot E Gran Turismo 7 - Branco",
-    "price": 4369,
+    "name": "Cartão de Memória Micro SD SanDisk Ultra microSDXC 128GB SDSQUNR-128G com Adaptador",
+    "price": 27,
     "consultedAt": "14/11/2026",
     "category": "Games",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_667226-MLA96871260244_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/console-playstation5-slim-digital-pacote-astro-bot-e-gran-turismo-7-branco/p/MLB57081243?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 168
+    "rank": 7,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_931423-MLA117290685353_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/cartao-de-memoria-micro-sd-sandisk-ultra-microsdxc-128gb-sdsqunr-128g-com-adaptador/p/MLB24588020?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 212
+  },
+  {
+    "name": "Controle GameSir G7 SE com Fio para Xbox One Series S X PC Hall Effect Botões Mecânicos Cor Branco",
+    "price": 269,
+    "consultedAt": "14/11/2026",
+    "category": "Games",
+    "rank": 8,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_876806-MLA99469873464_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/controle-gamesir-g7-se-com-fio-para-xbox-one-series-s-x-pc-hall-effect-botoes-mecanicos-cor-branco/p/MLB24473062?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 213
   },
   {
     "name": "Headset Gamer Redragon Zeus Lite Preto Drivers 53mm com Microfone Removível",
     "price": 130,
     "consultedAt": "14/11/2026",
     "category": "Games",
-    "rank": 7,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_743438-MLA105468591979_012026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/headset-gamer-redragon-zeus-lite-preto-drivers-53mm-com-microfone-removivel/p/MLB48468943?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 9
@@ -74,30 +94,10 @@
     "price": 438,
     "consultedAt": "14/11/2026",
     "category": "Games",
-    "rank": 8,
+    "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_759059-MLA99508283678_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/controle-joystick-sem-fio-sony-playstation-5-cfi-zct1w-midnight-black/p/MLB18010993?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 6
-  },
-  {
-    "name": "Fone de Ouvido Eardbud AIWA AWS-EB-05-B Bluetooth IPX4 24 Horas de bateria",
-    "price": 90,
-    "consultedAt": "14/11/2026",
-    "category": "Games",
-    "rank": 9,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_980288-MLA99966340125_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-eardbud-aiwa-aws-eb-05-b-bluetooth-ipx4-24-horas-de-bateria/p/MLB47519001?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 197
-  },
-  {
-    "name": "Microfone de Lapela Sem Fio Hollyland Lark M2 Combo (USB-C, Lightning e Câmera)",
-    "price": 566,
-    "consultedAt": "14/11/2026",
-    "category": "Games",
-    "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_644387-MLA119786973369_102026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/microfone-de-lapela-sem-fio-hollyland-lark-m2-combo-usb-c-lightning-e-camera/p/MLB34016199?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 5
   },
   {
     "name": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
@@ -110,24 +110,24 @@
     "id": 11
   },
   {
+    "name": "Aspirador Pó E Água Soprador Wap Gtw 10 Maré 1400w Cor Cinza",
+    "price": 338,
+    "consultedAt": "14/11/2026",
+    "category": "Eletrodomésticos",
+    "rank": 2,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_627568-MLA108247612641_032026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/aspirador-po-e-agua-soprador-wap-gtw-10-mare-1400w-cor-cinza/p/MLB21672188?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 214
+  },
+  {
     "name": "Liquidificador Turbo Power Mondial 550W - L-99 FB",
     "price": 98,
     "consultedAt": "14/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 2,
+    "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_744049-MLA99539379058_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/liquidificador-turbo-power-mondial-550w-l-99-fb/p/MLB15578948?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 13
-  },
-  {
-    "name": "Chaleira Eletrica Atacama 1,8l - Unitermi",
-    "price": 37,
-    "consultedAt": "14/11/2026",
-    "category": "Eletrodomésticos",
-    "rank": 3,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_965103-MLA99575749404_122025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/chaleira-eletrica-atacama-18l-unitermi/p/MLB13409956?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 12
   },
   {
     "name": "Liquidificador Pratic Turbo, Mondial, 550W - L-98-B",
@@ -140,11 +140,21 @@
     "id": 114
   },
   {
+    "name": "Chaleira Eletrica Atacama 1,8l - Unitermi",
+    "price": 37,
+    "consultedAt": "14/11/2026",
+    "category": "Eletrodomésticos",
+    "rank": 5,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_965103-MLA99575749404_122025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/chaleira-eletrica-atacama-18l-unitermi/p/MLB13409956?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 12
+  },
+  {
     "name": "Air Fryer Philco 6,5L Visor Glass e Redstone 1700W PAF65A",
     "price": 319,
     "consultedAt": "14/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 5,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_761173-MLA99475995202_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/air-fryer-philco-65l-visor-glass-e-redstone-1700w-paf65a/p/MLB52052995?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 186
@@ -154,17 +164,27 @@
     "price": 78,
     "consultedAt": "14/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 6,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_877834-MLA99469550350_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/batedeira-pratica-mondial-400w-b-44-b/p/MLB16016316?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 17
+  },
+  {
+    "name": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
+    "price": 145,
+    "consultedAt": "14/11/2026",
+    "category": "Eletrodomésticos",
+    "rank": 8,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_927559-MLA99450788218_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/fritadeira-eletrica-air-fryer-quad-fry-elgin-42-l-1400w/p/MLB50376945?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 215
   },
   {
     "name": "Ventilador de Mesa 30cm Super Power Mondial 60W VSP-30-B",
     "price": 134,
     "consultedAt": "14/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 7,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_620576-MLA99958768953_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/ventilador-de-mesa-30cm-super-power-mondial-60w-vsp-30-b/p/MLB18932156?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 113
@@ -174,34 +194,14 @@
     "price": 113,
     "consultedAt": "14/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 8,
+    "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_766837-MLA98259429221_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/liquidificador-philco-1200w-3l-12-velocidades-preto-ph900/p/MLB15578941?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 200
   },
   {
-    "name": "Aspirador de Pó Vertical Electrolux 1450W STK15 com Fio Portátil de Mão 2 em 1 e 1,6 Litros de capacidade com Filtro Hepa Cinza-escuro",
-    "price": 263,
-    "consultedAt": "14/11/2026",
-    "category": "Eletrodomésticos",
-    "rank": 9,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_738236-MLA116379124521_082026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/aspirador-de-po-vertical-electrolux-1450w-stk15-com-fio-portatil-de-mao-2-em-1-e-16-litros-de-capacidade-com-filtro-hepa-cinza-escuro/p/MLB18238727?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 207
-  },
-  {
-    "name": "Sanduicheira Elétrica Cadence SAN400 Preta",
-    "price": 94,
-    "consultedAt": "14/11/2026",
-    "category": "Eletrodomésticos",
-    "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_633183-MLA99468751756_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/sanduicheira-eletrica-cadence-san400-preta/p/MLB25741527?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 208
-  },
-  {
     "name": "Parafusadeira Furadeira De Impacto The Black Tools Profissional TB-21PX 2 Baterias Com Maleta 60Hz Amarelo",
-    "price": 139,
+    "price": 125,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
     "rank": 1,
@@ -221,7 +221,7 @@
   },
   {
     "name": "Parafusadeira Furadeira 48v Profissional 2 Baterias Sem Fio Amarelo 127/220v",
-    "price": 124,
+    "price": 112,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
     "rank": 3,
@@ -241,7 +241,7 @@
   },
   {
     "name": "Lavadora Lava Jato Portátil Pressão 2 Baterias + Maleta Preto 127/220v",
-    "price": 94,
+    "price": 89,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
     "rank": 5,
@@ -250,44 +250,44 @@
     "id": 25
   },
   {
-    "name": "Parafusadeira e Furadeira WF12K3.2 Bateria 12V WAP",
-    "price": 122,
-    "consultedAt": "14/11/2026",
-    "category": "Ferramentas",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_944301-MLA83202915982_042025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/parafusadeira-e-furadeira-wf12k32-bateria-12v-wap/p/MLB46189259?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 147
-  },
-  {
     "name": "Lavadora de Alta Pressão Compacta WAP WL 1800 1400W 1500PSI 360L/h 127V",
     "price": 299,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_914656-MLA112812146736_072026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/lavadora-de-alta-pressao-compacta-wap-wl-1800-1400w-1500psi-360lh-127v/p/MLB53768796?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 188
   },
   {
-    "name": "3 Mantas Asfáltica Aluminizada Telhado Auto Adesiva 45cmx10m",
-    "price": 285,
+    "name": "Parafusadeira e Furadeira WF12K3.2 Bateria 12V WAP",
+    "price": 122,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
-    "rank": 8,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_776678-MLA95631255988_102025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/3-mantas-asfaltica-aluminizada-telhado-auto-adesiva-45cmx10m/p/MLB24656724?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 27
+    "rank": 7,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_944301-MLA83202915982_042025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/parafusadeira-e-furadeira-wf12k32-bateria-12v-wap/p/MLB46189259?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 147
   },
   {
     "name": "Kit Ferramentas 46 Peças Jogo Chaves Catraca Soquetes Allen Torx Fenda Phillips Quicko Maleta Completa Manual Mecânico Manutenção Casa Carro Oficina Profissional ajustes e reparos diversos montagens",
     "price": 32,
     "consultedAt": "14/11/2026",
     "category": "Ferramentas",
-    "rank": 9,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_636676-MLA116721406480_092026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/kit-ferramentas-46-pecas-jogo-chaves-catraca-soquetes-allen-torx-fenda-phillips-quicko-maleta-completa-manual-mecanico-manutencao-casa-carro-oficina-profissional-ajustes-e-reparos-diversos-montagens/p/MLB79915624?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 28
+  },
+  {
+    "name": "3 Mantas Asfáltica Aluminizada Telhado Auto Adesiva 45cmx10m",
+    "price": 285,
+    "consultedAt": "14/11/2026",
+    "category": "Ferramentas",
+    "rank": 9,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_776678-MLA95631255988_102025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/3-mantas-asfaltica-aluminizada-telhado-auto-adesiva-45cmx10m/p/MLB24656724?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 27
   },
   {
     "name": "Mini Ventilador Soprador Ar Potente Turbo 130000rpm Assoprador Elétrico Sem Fio Recarregável USB-C 3 Níveis Jato Forte Portátil Multiuso Limpeza Teclado Carro Acende Churrasqueira Davely",
@@ -301,7 +301,7 @@
   },
   {
     "name": "L&#x27;Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz Protetor Térmico Tratamento Reconstrutor Para Todos Os Tipos De Cabelo",
-    "price": 39,
+    "price": 36,
     "consultedAt": "14/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 1,
@@ -430,53 +430,53 @@
     "id": 202
   },
   {
-    "name": "Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul",
-    "price": 798,
+    "name": "Power Bank Basike 20000mAh Preto, Carga Rápida 22.5W para iPhone e Samsung, Com Cabos Embutidos e Display",
+    "price": 139,
     "consultedAt": "14/11/2026",
     "category": "Celulares e Telefones",
     "rank": 4,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_773592-MLA105493148200_012026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/smartphone-motorola-moto-g17-4g-128gb-4gb-ram-8gb-ram-boost-camera-50mp-sony-lytia-600-tela-fhd-60hz-bateria-5200-mah-azul/p/MLB65041642?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 46
-  },
-  {
-    "name": "Power Bank Basike 20000mAh Preto, Carga Rápida 22.5W para iPhone e Samsung, Com Cabos Embutidos e Display",
-    "price": 136,
-    "consultedAt": "14/11/2026",
-    "category": "Celulares e Telefones",
-    "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_719636-MLA99381510294_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/power-bank-basike-20000mah-preto-carga-rapida-225w-para-iphone-e-samsung-com-cabos-embutidos-e-display/p/MLB50592250?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 171
   },
   {
-    "name": "Carregador Super Rápido 25w Para Samsung Galaxy S24 S23 S22 S21 S20 Fe Ultra Motorola M22 M31 M32 M62 M63 M64 G15 Xiaomi Redmi Note 12 13 14 15 LG - Super Fast Cabo Blindado Tipo Usb C -Dtimp",
-    "price": 31,
+    "name": "Smartphone Motorola Moto G17 4g - 128gb 4gb Ram + 8gb Ram Boost, Camera 50mp Sony Lytia 600, Tela Fhd+ 60hz, Bateria 5200 Mah - Azul",
+    "price": 798,
     "consultedAt": "14/11/2026",
     "category": "Celulares e Telefones",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_923598-MLA113044313715_062026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/carregador-super-rapido-25w-para-samsung-galaxy-s24-s23-s22-s21-s20-fe-ultra-motorola-m22-m31-m32-m62-m63-m64-g15-xiaomi-redmi-note-12-13-14-15-lg-super-fast-cabo-blindado-tipo-usb-c-dtimp/p/MLB47889235?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 44
+    "rank": 5,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_773592-MLA105493148200_012026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/smartphone-motorola-moto-g17-4g-128gb-4gb-ram-8gb-ram-boost-camera-50mp-sony-lytia-600-tela-fhd-60hz-bateria-5200-mah-azul/p/MLB65041642?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 46
   },
   {
     "name": "iPhone 17 de 256 GB - Lavanda - Distribuidor Autorizado",
     "price": 5566,
     "consultedAt": "14/11/2026",
     "category": "Celulares e Telefones",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_896332-MLA95400062457_102025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/iphone-17-de-256gb-lavanda-distribuidor-autorizado/p/MLB1055308835?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 209
   },
   {
-    "name": "Carregador 30w Turbo Para iPhone 8 X Xr 11 12 13 14 Pro Max Fonte Usb C Cor Branca Branco",
+    "name": "Carregador Dtimp Super Rápido 25w Fast Cabo Blindado Tipo Usb C",
+    "price": 31,
+    "consultedAt": "14/11/2026",
+    "category": "Celulares e Telefones",
+    "rank": 7,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_923598-MLA113044313715_062026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/carregador-dtimp-super-rapido-25w-fast-cabo-blindado-tipo-usb-c/p/MLB47889235?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 44
+  },
+  {
+    "name": "Carregador Dtimp 30w Turbo Fonte Usb C R-F30W Cabo 1M",
     "price": 43,
     "consultedAt": "14/11/2026",
     "category": "Celulares e Telefones",
     "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_826850-MLA116465697992_092026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/carregador-30w-turbo-para-iphone-8-x-xr-11-12-13-14-pro-max-fonte-usb-c-cor-branca-branco/p/MLB47814270?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://www.mercadolivre.com.br/carregador-dtimp-30w-turbo-fonte-usb-c-r-f30w-cabo-1m/p/MLB47814270?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 45
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
-    "price": 57,
+    "price": 56,
     "consultedAt": "14/11/2026",
     "category": "Informática",
     "rank": 2,
@@ -551,7 +551,7 @@
   },
   {
     "name": "Power Bank Basike 20000mAh Preto, Carga Rápida 22.5W para iPhone e Samsung, Com Cabos Embutidos e Display",
-    "price": 136,
+    "price": 139,
     "consultedAt": "14/11/2026",
     "category": "Informática",
     "rank": 6,
@@ -620,11 +620,21 @@
     "id": 62
   },
   {
+    "name": "Caixa de Som Bluetooth Portátil - JBL Boombox 4 - JBL Pro Sound, AI Sound Boost, 210W RMS, até 34h de Bateria, Bass Boost, IP68, Auracast e USB-C Lossless - Preta",
+    "price": 2255,
+    "consultedAt": "14/11/2026",
+    "category": "Eletrônicos, Áudio e Vídeo",
+    "rank": 3,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_863194-MLA118534430667_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/caixa-de-som-bluetooth-portatil-jbl-boombox-4-jbl-pro-sound-ai-sound-boost-210w-rms-ate-34h-de-bateria-bass-boost-ip68-auracast-e-usb-c-lossless-preta/p/MLB53924359?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 216
+  },
+  {
     "name": "Fone De Ouvido Soundcore by Anker P20i Graves Poderosos e Impactantes Bluetooth 5.3 30H de Reprodução Resistência à Água 2 Mics IA para Chamadas Claras Personalização de Som via App Cor Preto",
     "price": 129,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 3,
+    "rank": 4,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_730568-MLA99983575997_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-soundcore-by-anker-p20i-graves-poderosos-e-impactantes-bluetooth-53-30h-de-reproducao-resistencia-agua-2-mics-ia-para-chamadas-claras-personalizacao-de-som-via-app-cor-preto/p/MLB24028629?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 69
@@ -634,7 +644,7 @@
     "price": 23,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 4,
+    "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_791435-MLA118754152028_102026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-bluetooth-bateria-de-longa-duracao-pro-4-branco-conecta-rapido-com-case-carregador-e-microfone-fast-plug/p/MLB25263382?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 64
@@ -644,7 +654,7 @@
     "price": 196,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 5,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_760745-MLA95700724020_102025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-bluetooth-54-soundcore-p30i-da-anker-cancelamento-de-ruido-adaptativo-graves-poderosos-45h-de-reproducao-estojo-2-em-1-com-suporte-para-celular-ip54-fone-sem-fio-tws-preto/p/MLB38176139?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 67
@@ -654,7 +664,7 @@
     "price": 179,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 6,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_828936-MLB88748640584_082025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/projetor-portatil-4k-hd-android-110-smart-wifi-5g-bluetooth/up/MLBU767944712?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 68
@@ -664,34 +674,24 @@
     "price": 78,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 7,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_954504-MLA118603044502_102026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-sem-fio-xiaomi-redmi-buds-6-play-preto/p/MLB39962085?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 66
   },
   {
     "name": "Caixa De Som Boombox Aiwa AWS-BBS-01-B 200w IP66 30hs De Bateria",
-    "price": 1310,
+    "price": 1308,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 8,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_864411-MLA99591392870_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/caixa-de-som-boombox-aiwa-aws-bbs-01-b-200w-ip66-30hs-de-bateria/p/MLB34113516?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 193
   },
   {
-    "name": "Samsung Galaxy Buds Core branco",
-    "price": 215,
-    "consultedAt": "14/11/2026",
-    "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 9,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_967872-MLA87279987383_072025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/samsung-galaxy-buds-core-branco/p/MLB52039200?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 192
-  },
-  {
     "name": "Fone de Ouvido JBL Tune 530BT Bluetooth Sem Fio Preto Headphone com Microfone Wireless Estéreo Graves Potentes Confortável",
-    "price": 174,
+    "price": 200,
     "consultedAt": "14/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
     "rank": 10,
@@ -730,11 +730,21 @@
     "id": 73
   },
   {
+    "name": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
+    "price": 166,
+    "consultedAt": "14/11/2026",
+    "category": "Esportes e Fitness",
+    "rank": 4,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/whey-protein-growth-concentrado-1kg-sabor-baunilha/p/MLB18953093?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 194
+  },
+  {
     "name": "Proteína Max Titanium Whey Pro Concetrado em pó sabor Morango x 1kg",
     "price": 99,
     "consultedAt": "14/11/2026",
     "category": "Esportes e Fitness",
-    "rank": 4,
+    "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_608162-MLA112813208483_062026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/proteina-max-titanium-whey-pro-concetrado-em-po-sabor-morango-x-1kg/p/MLB6087971?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 74
@@ -744,20 +754,10 @@
     "price": 97,
     "consultedAt": "14/11/2026",
     "category": "Esportes e Fitness",
-    "rank": 5,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_951997-MLA99985874825_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/creatina-integralmedica-sem-sabor-pacote-x-2-frascos-de-300g/p/MLB39230611?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 77
-  },
-  {
-    "name": "Proteína Adaptogen Science Tasty Whey Gourmet em pó sabor Doce de leite x 900g",
-    "price": 219,
-    "consultedAt": "14/11/2026",
-    "category": "Esportes e Fitness",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_738007-MLA97316893807_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/proteina-adaptogen-science-tasty-whey-gourmet-em-po-sabor-doce-de-leite-x-900g/p/MLB19592776?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 211
   },
   {
     "name": "Proteína Growth Supplements Basic Whey em pó sabor Chocolate x 1kg",
@@ -781,7 +781,7 @@
   },
   {
     "name": "Whey Protein Concentrado 1kg Morango Dark Lab",
-    "price": 149,
+    "price": 134,
     "consultedAt": "14/11/2026",
     "category": "Esportes e Fitness",
     "rank": 9,
@@ -790,33 +790,23 @@
     "id": 124
   },
   {
-    "name": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
-    "price": 166,
+    "name": "Creatina Monohidratada Max Titanium Sem Sabor 100g",
+    "price": 21,
     "consultedAt": "14/11/2026",
     "category": "Esportes e Fitness",
     "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/whey-protein-growth-concentrado-1kg-sabor-baunilha/p/MLB18953093?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 194
-  },
-  {
-    "name": "Chinelo Top Havaianas Liso Branco",
-    "price": 34,
-    "consultedAt": "14/11/2026",
-    "category": "Calçados, Roupas e Bolsas",
-    "rank": 1,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_740930-MLA100107121067_122025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/chinelo-top-havaianas-liso-branco/p/MLB44923446?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 81
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_697835-MLA117269994412_102026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/creatina-monohidratada-max-titanium-sem-sabor-100g/p/MLB18630341?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 217
   },
   {
     "name": "Tênis Kappa Park 2.0 Original Unissex Caminhada Academia",
-    "price": 94,
+    "price": 72,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
-    "rank": 2,
+    "rank": 1,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_636204-MLB92283366432_092025-AB-tnis-kappa-park-20-original-unissex-caminhada-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890751?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890749?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 83
   },
   {
@@ -824,9 +814,9 @@
     "price": 54,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
-    "rank": 3,
+    "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_626928-MLB82004918446_022025-AB-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4592320910-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada-_JM?searchVariation=186408020319?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4592320910-kit-4-camiseta-dry-fit-sandrini-masculina-academia-caminhada-_JM?searchVariation=186408020313?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 84
   },
   {
@@ -834,10 +824,20 @@
     "price": 64,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
-    "rank": 4,
+    "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_952158-MLB117534658949_092026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/calca-jeans-wide-leg-feminina-cintura-alta-pantalona/up/MLBU3387021403?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 151
+  },
+  {
+    "name": "Chinelo Top Havaianas Liso Branco",
+    "price": 33,
+    "consultedAt": "14/11/2026",
+    "category": "Calçados, Roupas e Bolsas",
+    "rank": 4,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_740930-MLA100107121067_122025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/chinelo-top-havaianas-liso-branco/p/MLB44923446?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 81
   },
   {
     "name": "Kit 6 Cuecas Boxer Lupo Sem Costura Box Microfibra Original",
@@ -846,7 +846,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_797944-MLB82978249605_032025-AB-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422263?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422265?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 183
   },
   {
@@ -860,44 +860,44 @@
     "id": 125
   },
   {
-    "name": "Kit 4 Shorts 2 Em 1 Duplo Dryfit Masculino Compressão Térmic",
-    "price": 80,
+    "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
+    "price": 109,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
     "rank": 7,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_878492-MLB108664426620_032026-AB-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598603?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 86
-  },
-  {
-    "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
-    "price": 89,
-    "consultedAt": "14/11/2026",
-    "category": "Calçados, Roupas e Bolsas",
-    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_692628-MLB119722648743_102026-AB-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
     "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=189768033735?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 88
   },
   {
-    "name": "Calça Legging Fitness Zero Transparência Cintura Alta Koenig",
-    "price": 29,
+    "name": "Kit 4 Shorts 2 Em 1 Duplo Dryfit Masculino Compressão Térmic",
+    "price": 89,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
-    "rank": 9,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_660742-MLB96598298379_102025-AB-calca-legging-fitness-zero-transparncia-cintura-alta-koenig.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050110?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 152
+    "rank": 8,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_878492-MLB108664426620_032026-AB-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic.webp",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598603?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 86
   },
   {
     "name": "Tênis Mizuno Academia Creation Caminhada Corrida Conforto",
     "price": 89,
     "consultedAt": "14/11/2026",
     "category": "Calçados, Roupas e Bolsas",
-    "rank": 10,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_902125-MLB118150531134_102026-AB-tnis-mizuno-academia-creation-caminhada-corrida-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-7846891628-tnis-mizuno-academia-creation-caminhada-corrida-conforto-_JM?searchVariation=208013937095?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-7846891628-tnis-mizuno-academia-creation-caminhada-corrida-conforto-_JM?searchVariation=208013937099?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 205
+  },
+  {
+    "name": "Calça Legging Fitness Zero Transparência Cintura Alta Koenig",
+    "price": 29,
+    "consultedAt": "14/11/2026",
+    "category": "Calçados, Roupas e Bolsas",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_694011-MLB95881582766_102025-AB-calca-legging-fitness-zero-transparncia-cintura-alta-koenig.webp",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050096?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 152
   },
   {
     "name": "Tag Ultrapasse - Pagamento De Pedágios E Estacionamentos",
@@ -911,7 +911,7 @@
   },
   {
     "name": "Carregador de Bateria 12V 6A Bivolt Inteligente Carro Moto Caminhão Automotivo 4Ah a 100Ah Com Função Reparo Display Digital Proteção Carga Emergencia Portátil Resistente Eficiente Multifuncional",
-    "price": 39,
+    "price": 40,
     "consultedAt": "14/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 2,
@@ -921,7 +921,7 @@
   },
   {
     "name": "Carregador Inteligente De Bateria Automotiva 12v 6a Bivolt Recupera Baterias 4ah A 100ah Todos Veículos Moto Carro Caminhão Barco Woosh",
-    "price": 38,
+    "price": 42,
     "consultedAt": "14/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 3,
@@ -960,14 +960,14 @@
     "id": 163
   },
   {
-    "name": "Modulo Taramps 400 Rms Ts-400 Ts400x4 T400 4 Canais V6",
-    "price": 140,
+    "name": "Bomba Elétrica Portátil Digital Para Encher Pneu De Carro Moto Bicicleta Inflador Automotivo Cor Preto",
+    "price": 126,
     "consultedAt": "14/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 7,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_727270-MLA116319031959_082026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/modulo-taramps-400-rms-ts-400-ts400x4-t400-4-canais-v6/p/MLB24783436?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 96
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_919649-MLA112122698633_052026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/bomba-eletrica-portatil-digital-para-encher-pneu-de-carro-moto-bicicleta-inflador-automotivo-cor-preto/p/MLB57468779?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 218
   },
   {
     "name": "Fone De Ouvido Para Capacete Moto Bluetooth Motoboy Headset Rgb Sem Fio Comunicador Woosh",
@@ -1056,7 +1056,7 @@
     "category": "Black Friday",
     "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_730513-MLB80451340719_112024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047647?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185930355975?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 134
   },
   {
