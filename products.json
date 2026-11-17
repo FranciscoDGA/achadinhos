@@ -10,21 +10,11 @@
     "id": 196
   },
   {
-    "name": "Grand Theft Auto VI - PlayStation 5",
-    "price": 413,
-    "consultedAt": "17/11/2026",
-    "category": "Games",
-    "rank": 2,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_639067-MLA114816196520_082026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/grand-theft-auto-vi-playstation-5/p/MLB74108173?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 111
-  },
-  {
     "name": "Razer Gold Digital R$ 30 (digital)",
     "price": 30,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 3,
+    "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_634164-MLA115097345074_082026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/razer-gold-digital-r-30-digital/p/MLB51757399?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 2
@@ -34,17 +24,17 @@
     "price": 4369,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 4,
+    "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_667226-MLA96871260244_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/console-playstation5-slim-digital-pacote-astro-bot-e-gran-turismo-7-branco/p/MLB57081243?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 249
   },
   {
     "name": "Controle Sem Fio Joystick REDFIN Bluetooth Compatível Para Ps4 Videogame Tv Samsung Pc P4 Ps 4 Manete Pc Gamer Tv Smart Controle Bluetooth Celular Headset Sem Fio Com P2 Marca Redfin",
-    "price": 114,
+    "price": 54,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 5,
+    "rank": 4,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_762912-MLA105696431793_012026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/controle-sem-fio-joystick-redfin-bluetooth-compativel-para-ps4-videogame-tv-samsung-pc-p4-ps-4-manete-pc-gamer-tv-smart-controle-bluetooth-celular-headset-sem-fio-com-p2-marca-redfin/p/MLB39960346?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 3
@@ -54,7 +44,7 @@
     "price": 50,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 6,
+    "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_845854-MLA115155718544_082026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/nintendo-gift-card-eshop-r-50-digital/p/MLB32333269?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 4
@@ -64,17 +54,17 @@
     "price": 130,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_743438-MLA105468591979_012026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/headset-gamer-redragon-zeus-lite-preto-drivers-53mm-com-microfone-removivel/p/MLB48468943?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 9
   },
   {
     "name": "Controle Joystick Sem Fio Sony Playstation 5 Midnight Black Preto",
-    "price": 436,
+    "price": 404,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 8,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_759059-MLA99508283678_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/controle-joystick-sem-fio-sony-playstation-5-midnight-black-preto/p/MLB18010993?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 6
@@ -84,20 +74,30 @@
     "price": 328,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 9,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_876806-MLA99469873464_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/controle-gamesir-g7-se-com-fio-para-xbox-one-series-s-x-pc-hall-effect-botoes-mecanicos-cor-branco/p/MLB24473062?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 234
   },
   {
     "name": "Cartão de Memória Micro SD SanDisk Ultra microSDXC 128GB SDSQUNR-128G com Adaptador",
-    "price": 70,
+    "price": 78,
     "consultedAt": "17/11/2026",
     "category": "Games",
-    "rank": 10,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_931423-MLA117290685353_092026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/cartao-de-memoria-micro-sd-sandisk-ultra-microsdxc-128gb-sdsqunr-128g-com-adaptador/p/MLB24588020?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 212
+  },
+  {
+    "name": "Fone de Ouvido Eardbud AIWA AWS-EB-05-B Bluetooth IPX4 24 Horas de bateria",
+    "price": 86,
+    "consultedAt": "17/11/2026",
+    "category": "Games",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_980288-MLA99966340125_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/fone-de-ouvido-eardbud-aiwa-aws-eb-05-b-bluetooth-ipx4-24-horas-de-bateria/p/MLB47519001?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 250
   },
   {
     "name": "Kit 2 Refil De Água Acqua Pure Electrolux Pe12a Pe12b Pe12g PC01X, Cor Marrom-claro",
@@ -111,7 +111,7 @@
   },
   {
     "name": "Fritadeira Elétrica Air Fryer Quad Fry Elgin 4,2 L, 1400w",
-    "price": 279,
+    "price": 299,
     "consultedAt": "17/11/2026",
     "category": "Eletrodomésticos",
     "rank": 2,
@@ -170,18 +170,18 @@
     "id": 12
   },
   {
-    "name": "Batedeira Prática Mondial 400W - B-44-B",
+    "name": "Batedeira Mondial Prática B-44",
     "price": 78,
     "consultedAt": "17/11/2026",
     "category": "Eletrodomésticos",
     "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_877834-MLA99469550350_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/batedeira-pratica-mondial-400w-b-44-b/p/MLB16016316?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://www.mercadolivre.com.br/batedeira-mondial-pratica-b-44/p/MLB16016316?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 17
   },
   {
     "name": "Ventilador de Mesa 30cm Super Power Mondial 60W VSP-30-B",
-    "price": 134,
+    "price": 119,
     "consultedAt": "17/11/2026",
     "category": "Eletrodomésticos",
     "rank": 9,
@@ -241,7 +241,7 @@
   },
   {
     "name": "Esmerilhadeira Bosch 4,5\" 220V 710W GWS 700 06013A30E0",
-    "price": 308,
+    "price": 256,
     "consultedAt": "17/11/2026",
     "category": "Ferramentas",
     "rank": 5,
@@ -301,11 +301,11 @@
   },
   {
     "name": "L&#x27;Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz Protetor Térmico Tratamento Reconstrutor Para Todos Os Tipos De Cabelo",
-    "price": 36,
+    "price": 33,
     "consultedAt": "17/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 1,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_721705-MLA121685470597_112026-AB.webp",
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_775128-MLA120018457362_112026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/loreal-paris-elseve-oleo-extraordinario-100ml-leave-in-anti-frizz-protetor-termico-tratamento-reconstrutor-para-todos-os-tipos-de-cabelo/p/MLB26080271?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 35
   },
@@ -361,7 +361,7 @@
   },
   {
     "name": "Papel Higiênico Folha Dupla 30m L24p22 Personal",
-    "price": 38,
+    "price": 33,
     "consultedAt": "17/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 7,
@@ -411,7 +411,7 @@
   },
   {
     "name": "Celular Samsung Galaxy A17 Com Ia, 256gb, 8gb Ram, Câm De 50mp, Tela De 6.7 , Nfc, Ip54 - Azul",
-    "price": 1210,
+    "price": 1398,
     "consultedAt": "17/11/2026",
     "category": "Celulares e Telefones",
     "rank": 2,
@@ -481,7 +481,7 @@
   },
   {
     "name": "Carregador 30w Turbo Para iPhone 8 X Xr 11 12 13 14 Pro Max Fonte Usb C Cor Branca Dtimp",
-    "price": 37,
+    "price": 45,
     "consultedAt": "17/11/2026",
     "category": "Celulares e Telefones",
     "rank": 9,
@@ -571,7 +571,7 @@
   },
   {
     "name": "Bambu Lab PLA Lite vermelho",
-    "price": 120,
+    "price": 121,
     "consultedAt": "17/11/2026",
     "category": "Informática",
     "rank": 8,
@@ -591,7 +591,7 @@
   },
   {
     "name": "Papel Fotográfico Adesivo A4 Branco Glossy Masterprint 130g Com 50 Folhas",
-    "price": 29,
+    "price": 27,
     "consultedAt": "17/11/2026",
     "category": "Informática",
     "rank": 10,
@@ -671,7 +671,7 @@
   },
   {
     "name": "Fone Sem Fio Lenovo Gm2 Pro 5.3 Bluetooth - Touch - Gamer Preto Luz Azul",
-    "price": 78,
+    "price": 72,
     "consultedAt": "17/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
     "rank": 8,
@@ -816,7 +816,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_636204-MLB92283366432_092025-AB-tnis-kappa-park-20-original-unissex-caminhada-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890753?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890749?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 83
   },
   {
@@ -826,17 +826,17 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_797944-MLB82978249605_032025-AB-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422263?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-2794030545-kit-6-cuecas-boxer-lupo-sem-costura-box-microfibra-original-_JM?searchVariation=187166422265?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 183
   },
   {
     "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
-    "price": 99,
+    "price": 89,
     "consultedAt": "17/11/2026",
     "category": "Calçados, Roupas e Bolsas",
     "rank": 4,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_974922-MLB118087970434_102026-AB-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=192828328477?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_696772-MLB119102221220_112026-AB-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=202588919687?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 88
   },
   {
@@ -876,7 +876,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_694011-MLB95881582766_102025-AB-calca-legging-fitness-zero-transparncia-cintura-alta-koenig.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050122?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4240314159-calca-legging-fitness-zero-transparncia-cintura-alta-koenig-_JM?searchVariation=185997050126?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 152
   },
   {
@@ -896,7 +896,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_734599-MLB79441819532_102024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047655?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047653?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 236
   },
   {
@@ -921,7 +921,7 @@
   },
   {
     "name": "Compressor de Ar Portátil VERUNTO VER-B15 com Tela Digital para Carro, Moto e Bicicleta",
-    "price": 56,
+    "price": 63,
     "consultedAt": "17/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 3,
@@ -1021,7 +1021,7 @@
   },
   {
     "name": "Lava E Seca Samsung Wd11m Com Digital Inverter Inox 11kg Cor Inox look",
-    "price": 4299,
+    "price": 3599,
     "consultedAt": "17/11/2026",
     "category": "Black Friday",
     "rank": 3,
@@ -1056,7 +1056,7 @@
     "category": "Black Friday",
     "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_734599-MLB79441819532_102024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185920009391?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047655?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 134
   },
   {
