@@ -11,7 +11,7 @@
   },
   {
     "name": "Grand Theft Auto VI - PlayStation 5",
-    "price": 449,
+    "price": 417,
     "consultedAt": "18/11/2026",
     "category": "Games",
     "rank": 2,
@@ -50,21 +50,31 @@
     "id": 258
   },
   {
+    "name": "SSD Kingston NV3 1TB M.2 2280 PCIe 4.0 NVMe 6000 MB/s",
+    "price": 1134,
+    "consultedAt": "18/11/2026",
+    "category": "Games",
+    "rank": 6,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_930129-MLU78451929490_082024-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/ssd-kingston-nv3-1tb-m2-2280-pcie-40-nvme-6000-mbs/p/MLB39766120?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 272
+  },
+  {
     "name": "Headset Gamer Redragon Zeus Lite Preto Drivers 53mm com Microfone Removível",
     "price": 131,
     "consultedAt": "18/11/2026",
     "category": "Games",
-    "rank": 6,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_743438-MLA105468591979_012026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/headset-gamer-redragon-zeus-lite-preto-drivers-53mm-com-microfone-removivel/p/MLB48468943?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 9
   },
   {
     "name": "Controle Joystick Sem Fio Sony Playstation 5 Midnight Black Preto",
-    "price": 464,
+    "price": 474,
     "consultedAt": "18/11/2026",
     "category": "Games",
-    "rank": 7,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_759059-MLA99508283678_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/controle-joystick-sem-fio-sony-playstation-5-midnight-black-preto/p/MLB18010993?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 6
@@ -74,20 +84,10 @@
     "price": 50,
     "consultedAt": "18/11/2026",
     "category": "Games",
-    "rank": 8,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_845854-MLA115155718544_082026-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/nintendo-gift-card-eshop-r-50-digital/p/MLB32333269?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 4
-  },
-  {
-    "name": "Cartão de Memória Micro SD SanDisk Ultra microSDXC 128GB SDSQUNR-128G com Adaptador",
-    "price": 74,
-    "consultedAt": "18/11/2026",
-    "category": "Games",
-    "rank": 9,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_931423-MLA117290685353_092026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/cartao-de-memoria-micro-sd-sandisk-ultra-microsdxc-128gb-sdsqunr-128g-com-adaptador/p/MLB24588020?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 212
   },
   {
     "name": "Fone de Ouvido Eardbud AIWA AWS-EB-05-B Bluetooth IPX4 24 Horas de bateria",
@@ -130,21 +130,11 @@
     "id": 260
   },
   {
-    "name": "Sanduicheira Grill 2 Em 1 Kian Preta Elétrica 750w Cor Preto,Seu Mixto Quente Ultra Rápido, e Outros Petiscos",
-    "price": 54,
-    "consultedAt": "18/11/2026",
-    "category": "Eletrodomésticos",
-    "rank": 4,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_811189-MLA117367368715_092026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/sanduicheira-grill-2-em-1-kian-preta-eletrica-750w-cor-pretoseu-mixto-quente-ultra-rapido-e-outros-petiscos/p/MLB35276826?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 261
-  },
-  {
     "name": "Liquidificador Turbo Power Mondial 550W - L-99 FB",
     "price": 99,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 5,
+    "rank": 4,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_744049-MLA99539379058_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/liquidificador-turbo-power-mondial-550w-l-99-fb/p/MLB15578948?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 13
@@ -154,7 +144,7 @@
     "price": 94,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 6,
+    "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_766837-MLA98259429221_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/liquidificador-philco-1200w-3l-12-velocidades-preto-ph900/p/MLB15578941?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 200
@@ -164,17 +154,17 @@
     "price": 164,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_929681-MLA99450771766_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/liquidificador-pratic-turbo-mondial-550w-l-98-b/p/MLB37700507?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 114
   },
   {
     "name": "Chaleira Eletrica Atacama 1,8l - Unitermi",
-    "price": 36,
+    "price": 34,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 8,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_965103-MLA99575749404_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/chaleira-eletrica-atacama-18l-unitermi/p/MLB13409956?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 12
@@ -184,7 +174,7 @@
     "price": 145,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 9,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_620576-MLA99958768953_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/ventilador-de-mesa-30cm-super-power-mondial-60w-vsp-30-b/p/MLB18932156?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 113
@@ -194,10 +184,20 @@
     "price": 309,
     "consultedAt": "18/11/2026",
     "category": "Eletrodomésticos",
-    "rank": 10,
+    "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_761173-MLA99475995202_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/air-fryer-philco-65l-visor-glass-e-redstone-1700w-paf65a-preto-127v/p/MLB52052995?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 186
+  },
+  {
+    "name": "Batedeira Mondial Prática B-44",
+    "price": 78,
+    "consultedAt": "18/11/2026",
+    "category": "Eletrodomésticos",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_877834-MLA99469550350_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/batedeira-mondial-pratica-b-44/p/MLB16016316?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 273
   },
   {
     "name": "Parafusadeira Furadeira De Impacto The Black Tools Profissional TB-21PX 2 Baterias Com Maleta 60Hz Amarelo",
@@ -211,7 +211,7 @@
   },
   {
     "name": "Lavadora de Alta Pressão Kärcher Compacta 1.500 PSI 1400W 300L/h com Aplicador de Detergente e Lança Regulável",
-    "price": 294,
+    "price": 310,
     "consultedAt": "18/11/2026",
     "category": "Ferramentas",
     "rank": 2,
@@ -301,7 +301,7 @@
   },
   {
     "name": "L&#x27;Oréal Paris Elseve Óleo Extraordinário 100ml - Leave In Anti Frizz Protetor Térmico Tratamento Reconstrutor Para Todos Os Tipos De Cabelo",
-    "price": 28,
+    "price": 29,
     "consultedAt": "18/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 1,
@@ -371,7 +371,7 @@
   },
   {
     "name": "Papel Higiênico Folha Dupla 30m L24p22 Personal",
-    "price": 34,
+    "price": 26,
     "consultedAt": "18/11/2026",
     "category": "Beleza e Cuidado Pessoal",
     "rank": 8,
@@ -511,7 +511,7 @@
   },
   {
     "name": "Filamento 3D Petg Branco Premium Resistente Impressora 3D Master Print 1,75mm - 1kg",
-    "price": 57,
+    "price": 54,
     "consultedAt": "18/11/2026",
     "category": "Informática",
     "rank": 2,
@@ -590,14 +590,14 @@
     "id": 254
   },
   {
-    "name": "KIT 10 Resmas - Papel Sulfite A4 Report 500 Folhas Branco",
-    "price": 324,
+    "name": "Mochila Masculina Grande Notebook Impermeável Reforçada Woosh",
+    "price": 42,
     "consultedAt": "18/11/2026",
     "category": "Informática",
     "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_805455-MLA99487191924_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/kit-10-resmas-papel-sulfite-a4-report-500-folhas-branco/p/MLB11286621?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 265
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_793055-MLA115825214508_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/mochila-masculina-grande-notebook-impermeavel-reforcada-woosh/p/MLB25980994?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 274
   },
   {
     "name": "Suporte TV Fixo Universal 10\" a 100\" Polegadas Forte Para Todas as Marcas",
@@ -671,7 +671,7 @@
   },
   {
     "name": "Fone De Ouvido Sem Fio Xiaomi Redmi Buds 6 Play Preto",
-    "price": 75,
+    "price": 69,
     "consultedAt": "18/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
     "rank": 8,
@@ -680,24 +680,24 @@
     "id": 66
   },
   {
+    "name": "Fone Sem Fio Lenovo Gm2 Pro 5.3 Bluetooth - Touch - Gamer Preto Luz Azul",
+    "price": 72,
+    "consultedAt": "18/11/2026",
+    "category": "Eletrônicos, Áudio e Vídeo",
+    "rank": 9,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_896426-MLA118354508175_092026-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/fone-sem-fio-lenovo-gm2-pro-53-bluetooth-touch-gamer-preto-luz-azul/p/MLB19938121?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 275
+  },
+  {
     "name": "Samsung Galaxy Buds Core branco",
     "price": 215,
     "consultedAt": "18/11/2026",
     "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 9,
+    "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_967872-MLA87279987383_072025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/samsung-galaxy-buds-core-branco/p/MLB52039200?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 266
-  },
-  {
-    "name": "Suporte Articulado Para Tv Lcd Led 3d 24 32 40 42 49 50 55 Preto",
-    "price": 38,
-    "consultedAt": "18/11/2026",
-    "category": "Eletrônicos, Áudio e Vídeo",
-    "rank": 10,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_706538-MLB111795032848_062026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/suporte-articulado-para-tv-lcd-led-3d-24-32-40-42-49-50-55/up/MLBU790564718?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 246
   },
   {
     "name": "Creatina Growth Supplements Monohidratada em pó Sem sabor x 250g",
@@ -750,41 +750,21 @@
     "id": 74
   },
   {
-    "name": "Proteína Adaptogen Science Tasty Whey Gourmet em pó sabor Doce de leite x 900g",
-    "price": 214,
-    "consultedAt": "18/11/2026",
-    "category": "Esportes e Fitness",
-    "rank": 6,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_738007-MLA97316893807_112025-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/proteina-adaptogen-science-tasty-whey-gourmet-em-po-sabor-doce-de-leite-x-900g/p/MLB19592776?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 267
-  },
-  {
     "name": "Proteína Growth Supplements Basic Whey em pó sabor Chocolate x 1kg",
     "price": 74,
     "consultedAt": "18/11/2026",
     "category": "Esportes e Fitness",
-    "rank": 7,
+    "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_819000-MLA101180020755_122025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/proteina-growth-supplements-basic-whey-em-po-sabor-chocolate-x-1kg/p/MLB18725403?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 76
-  },
-  {
-    "name": "Anabolic Mass 28500 3kg Profit Labs Sabor Chocolate",
-    "price": 78,
-    "consultedAt": "18/11/2026",
-    "category": "Esportes e Fitness",
-    "rank": 8,
-    "image": "https://http2.mlstatic.com/D_Q_NP_2X_616506-MLA110075703952_042026-AB.webp",
-    "affiliateUrl": "https://www.mercadolivre.com.br/anabolic-mass-28500-3kg-profit-labs-sabor-chocolate/p/MLB12406685?matt_word=trgatyva20230819121948&matt_tool=21540510",
-    "id": 268
   },
   {
     "name": "Suplemento Whey Isolate Protein Fuse 1,8kg sabor Morango Dark Lab",
     "price": 179,
     "consultedAt": "18/11/2026",
     "category": "Esportes e Fitness",
-    "rank": 9,
+    "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_989007-MLA99405715766_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/suplemento-whey-isolate-protein-fuse-18kg-sabor-morango-dark-lab/p/MLB19140415?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 75
@@ -794,10 +774,30 @@
     "price": 136,
     "consultedAt": "18/11/2026",
     "category": "Esportes e Fitness",
-    "rank": 10,
+    "rank": 8,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_927988-MLA99469885866_112025-AB.webp",
     "affiliateUrl": "https://www.mercadolivre.com.br/whey-protein-concentrado-1kg-morango-dark-lab/p/MLB40182325?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 124
+  },
+  {
+    "name": "Whey Protein Growth Concentrado 1kg – Sabor Baunilha",
+    "price": 249,
+    "consultedAt": "18/11/2026",
+    "category": "Esportes e Fitness",
+    "rank": 9,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_824274-MLA98770399871_112025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/whey-protein-growth-concentrado-1kg-sabor-baunilha/p/MLB18953093?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 276
+  },
+  {
+    "name": "Creatina 100% Pura 60 Cápsulas Integralmédica",
+    "price": 16,
+    "consultedAt": "18/11/2026",
+    "category": "Esportes e Fitness",
+    "rank": 10,
+    "image": "https://http2.mlstatic.com/D_Q_NP_2X_782298-MLA100076194863_122025-AB.webp",
+    "affiliateUrl": "https://www.mercadolivre.com.br/creatina-100-pura-60-capsulas-integralmedica/p/MLB19533185?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "id": 277
   },
   {
     "name": "Chinelo Top Havaianas Liso Branco",
@@ -816,7 +816,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 2,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_636204-MLB92283366432_092025-AB-tnis-kappa-park-20-original-unissex-caminhada-academia.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890743?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-4049279695-tnis-kappa-park-20-original-unissex-caminhada-academia-_JM?searchVariation=190844890739?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 83
   },
   {
@@ -826,7 +826,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 3,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_974922-MLB118087970434_102026-AB-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=192828328471?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5408593708-tnis-casual-kappa-zenit-masculino-unissex-conforto-_JM?searchVariation=192828328473?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 88
   },
   {
@@ -846,7 +846,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 5,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_902125-MLB118150531134_102026-AB-tnis-mizuno-academia-creation-caminhada-corrida-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-7846891628-tnis-mizuno-academia-creation-caminhada-corrida-conforto-_JM?searchVariation=208013937099?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-7846891628-tnis-mizuno-academia-creation-caminhada-corrida-conforto-_JM?searchVariation=208013937089?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 205
   },
   {
@@ -866,7 +866,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 7,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_878492-MLB108664426620_032026-AB-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598597?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-6203660830-kit-4-shorts-2-em-1-duplo-dryfit-masculino-compresso-termic-_JM?searchVariation=196379598603?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 86
   },
   {
@@ -886,7 +886,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 9,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_747746-MLB114087021168_072026-AB-tnis-kappa-pulse-rx-unissex-corrida-conforto.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5532075156-tnis-kappa-pulse-rx-unissex-corrida-conforto-_JM?searchVariation=200557607867?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-5532075156-tnis-kappa-pulse-rx-unissex-corrida-conforto-_JM?searchVariation=200557607877?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 257
   },
   {
@@ -896,7 +896,7 @@
     "category": "Calçados, Roupas e Bolsas",
     "rank": 10,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_734599-MLB79441819532_102024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185927314125?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185920009391?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 236
   },
   {
@@ -921,7 +921,7 @@
   },
   {
     "name": "Compressor de Ar Portátil VERUNTO VER-B15 com Tela Digital para Carro, Moto e Bicicleta",
-    "price": 56,
+    "price": 63,
     "consultedAt": "18/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 3,
@@ -941,7 +941,7 @@
   },
   {
     "name": "Amplificador Taramps TS 800x4 800W 4 Canais para Som Automotivo",
-    "price": 258,
+    "price": 289,
     "consultedAt": "18/11/2026",
     "category": "Acessórios para Veículos",
     "rank": 5,
@@ -1056,7 +1056,7 @@
     "category": "Black Friday",
     "rank": 6,
     "image": "https://http2.mlstatic.com/D_Q_NP_2X_734599-MLB79441819532_102024-AB-tnis-flyer-runner-mesh-bdp-puma.webp",
-    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185941047657?matt_word=trgatyva20230819121948&matt_tool=21540510",
+    "affiliateUrl": "https://produto.mercadolivre.com.br/MLB-3806655487-tnis-flyer-runner-mesh-bdp-puma-_JM?searchVariation=185927314125?matt_word=trgatyva20230819121948&matt_tool=21540510",
     "id": 134
   },
   {
