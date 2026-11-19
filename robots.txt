@@ -1,4 +1,26 @@
+# Robots.txt — Achado Reviews
+# AI Context Index: https://achadoreviews.com.br/llms.txt
+
 User-agent: *
+Allow: /
+
+# Explicit permission for AI search & citation crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
 Allow: /
 
 Sitemap: https://achadoreviews.com.br/sitemap.xml
